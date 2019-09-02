@@ -5,9 +5,10 @@ body {
 .app-container {
   display: grid;
   grid-template-areas:
-    "main"
-    "navi";
+    "side main"
+    "navi navi";
   grid-template-rows: 6fr 1fr;
+  grid-template-columns: 1fr 5fr;
   grid-row-gap: 0;
   grid-column-gap: 0;
   height: 100vh;
@@ -20,6 +21,11 @@ body {
 .main-container {
   grid-area: main;
   background-color: #8ca0ff;
+}
+
+.side-container {
+  grid-area: side;
+  background-color: #444;
 }
 
 .navigation-container {

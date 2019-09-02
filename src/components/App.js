@@ -11,12 +11,12 @@ const App = () => {
   return (
     <HashRouter>
       <div className="app-container">
+        <div className="side-container">
+        </div>
         <div className="main-container">
           <Route exact path="/" component={Home}/>
           <Route path="/stuff" component={Stuff}/>
           <Route path="/new_stuff" component={Home}/>
-        </div>
-        <div className="side-container">
         </div>
         <div className="navigation-container">
           <NavLink className="nav" to="/"><NavItem title="PACIENTI"/></NavLink>
