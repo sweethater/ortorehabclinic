@@ -21,6 +21,7 @@ body {
 .main-container {
   grid-area: main;
   background-color: #8ca0ff;
+  min-width: 0;
 }
 
 .side-container {

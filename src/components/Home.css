@@ -20,3 +20,14 @@
     padding: 10px 40px 0px 40px;
     text-align: center;
 }
+
+.co-home-container__carousel {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
+
+.BrainhubCarouselItem--active img {
+    border: white solid 2px;
+}
