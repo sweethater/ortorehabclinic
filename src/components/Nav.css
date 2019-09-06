@@ -23,14 +23,18 @@
     height: 50px;
 }
 
-.co-navigation__image {
-
+.co-navigation-item__image {
+    position: absolute;
+    height: 40px;
+    right: 10px;
+    top: 16px;
 }
 
 .co-navigation-item__title {
-    top: 0;
-    left: 0;
     position: absolute;
+    top: 22px;
+    left: 120px;
+    color: #fff;
 }
 
 .co-navigation-item__bg-nav-1 {
