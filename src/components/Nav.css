@@ -1,18 +1,66 @@
-.co-navigation__wrapper {
+.co-navigation-item__wrapper {
     position: relative;
-    height: 180px;
-    /* width: 244px; */
-    background-image: url("../assets/nav-fyzio.png");
+    height: 75px;
+    width: 360px;
     background-size: cover;
     background-repeat: no-repeat;
+    border-top: 2px solid #fff;
+}
+
+.co-navigation-header__wrapper {
+    position: relative;
+    height: 478px;
+    width: 360px;
+    background-image: url("../assets/nav-header2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.co-navigation-header__image {
+    top: 20px;
+    position: relative;
+    height: 50px;
 }
 
 .co-navigation__image {
 
 }
 
-.co-navigation__title {
+.co-navigation-item__title {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.co-navigation-item__bg-nav-1 {
+    background-image: url("../assets/nav-1.png");
+}
+
+.co-navigation-item__bg-nav-2 {
+    background-image: url("../assets/nav-2.png");
+}
+
+.co-navigation-item__bg-nav-3 {
+    background-image: url("../assets/nav-3.png");
+}
+
+.co-navigation-item__bg-nav-4 {
+    background-image: url("../assets/nav-4.png");
+}
+
+.co-navigation-item__bg-nav-5 {
+    background-image: url("../assets/nav-5.png");
+}
+
+.co-navigation-item__bg-nav-6 {
+    background-image: url("../assets/nav-6.png");
+}
+
+.co-navigation-item__bg-nav-7 {
+    background-image: url("../assets/nav-7.png");
+}
+
+.co-navigation-item__bg-nav-8 {
+    background-image: url("../assets/nav-8.png");
 }

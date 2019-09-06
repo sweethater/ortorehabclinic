@@ -5,10 +5,10 @@ body {
 .app-container {
   display: grid;
   grid-template-areas:
-    "side main"
-    "navi navi";
-  grid-template-rows: 7fr 1fr;
-  grid-template-columns: 1fr 5fr;
+    "side main";
+  /* grid-template-rows: 7fr 1fr; */
+  /* grid-template-columns: 1fr 5fr; */
+  grid-template-columns: 360px auto;
   grid-row-gap: 0;
   grid-column-gap: 0;
   height: 100vh;
@@ -22,22 +22,25 @@ body {
   grid-area: main;
   background-color: #8ca0ff;
   min-width: 0;
+  border-left: 2px solid #ffffff;
 }
 
 .side-container {
   grid-area: side;
   background-color: #444;
+  grid-template-rows: 478px repeat(8, 75px);
+  display: grid;
 }
 
-.navigation-container {
+/* .navigation-container {
   grid-area: navi;
   background-color: #ffa08c;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   border-top: 2px solid #ffffff;
-}
+} */
 
-.navigation-container .nav {
+/* .navigation-container .nav {
   border: 2px solid #fff;
   background-color: #ffa000;
-}
+} */
