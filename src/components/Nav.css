@@ -1,8 +1,18 @@
+.co-navigation__wrapper {
+    position: relative;
+    height: 180px;
+    /* width: 244px; */
+    background-image: url("../assets/nav-fyzio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .co-navigation__image {
-    position: absolute;
-    height: auto;
+
 }
 
 .co-navigation__title {
+    top: 0;
+    left: 0;
     position: absolute;
 }

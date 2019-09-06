@@ -7,7 +7,7 @@ body {
   grid-template-areas:
     "side main"
     "navi navi";
-  grid-template-rows: 6fr 1fr;
+  grid-template-rows: 7fr 1fr;
   grid-template-columns: 1fr 5fr;
   grid-row-gap: 0;
   grid-column-gap: 0;
@@ -33,10 +33,11 @@ body {
   grid-area: navi;
   background-color: #ffa08c;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 2px solid #ffffff;
 }
 
 .navigation-container .nav {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   background-color: #ffa000;
 }
