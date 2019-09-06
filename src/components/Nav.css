@@ -1,3 +1,14 @@
+.navigation-item {
+    position: relative;
+}
+
+.navigation-item--back {
+    position: absolute;
+    z-index: 100;
+    left: 310px;
+    top: 354px;
+}
+
 .co-navigation-item__wrapper {
     position: relative;
     height: 75px;
@@ -25,14 +36,15 @@
 
 .co-navigation-item__image {
     position: absolute;
-    height: 40px;
-    right: 10px;
-    top: 16px;
+    height: 35px;
+    right: 8px;
+    top: 18px;
+    color: red;
 }
 
 .co-navigation-item__title {
     position: absolute;
-    top: 22px;
+    top: 24px;
     left: 120px;
     color: #fff;
 }

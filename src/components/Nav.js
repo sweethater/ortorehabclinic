@@ -1,7 +1,6 @@
 import React from 'react';
 import logoWhite from '../assets/logo-white.png';
 import arrow from '../assets/arrow.png';
-// import patientInfo from '../assets/patientInfo2.jpg';
 
 import './Nav.css';
 

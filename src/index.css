@@ -2,6 +2,20 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AvenirRoman.otf');
+}
+
+@font-face {
+  font-family: 'AvenirBold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AvenirBlack.otf');
+}
+
 .app-container {
   display: grid;
   grid-template-areas:
@@ -23,6 +37,7 @@ body {
   background-color: #8ca0ff;
   min-width: 0;
   border-left: 2px solid #ffffff;
+  font-family: 'Avenir';
 }
 
 .side-container {
@@ -30,17 +45,6 @@ body {
   background-color: #444;
   grid-template-rows: 478px repeat(8, 75px);
   display: grid;
+  font-family: 'Avenir';
+  font-size: 26px;
 }
-
-/* .navigation-container {
-  grid-area: navi;
-  background-color: #ffa08c;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  border-top: 2px solid #ffffff;
-} */
-
-/* .navigation-container .nav {
-  border: 2px solid #fff;
-  background-color: #ffa000;
-} */
