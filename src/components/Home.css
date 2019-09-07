@@ -1,8 +1,40 @@
-.co-home-container {
-    background-color: #1C8DCF;
-    color: white;
+.co-contant-container {
     height: 100%;
 }
+
+.co-home-container
+.co-patient-container {
+    background-color: #1C8DCF;
+}
+
+.co-orthopedic-container {
+    background-color: #6DBE4B;
+}
+
+.co-fyzio-container {
+    background-color: #F58221;
+}
+
+.co-rehab-container {
+    background-color: #97467F;
+}
+
+.co-denzito-container {
+    background-color: #E1BE00;
+}
+
+.co-gallery-container {
+    background-color: #E75554;
+}
+
+.co-fees-container {
+    background-color: #01D5FF;
+}
+
+.co-contact-container {
+    background-color: #9B9B9B;
+}
+
 
 .co-home-container__logo-image {
     height: 70px;
