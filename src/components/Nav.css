@@ -22,7 +22,7 @@
     position: relative;
     height: 478px;
     width: 360px;
-    background-image: url("../assets/nav-header2.png");
+    background-image: url("../assets/nav/nav-header2.png");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -50,33 +50,33 @@
 }
 
 .co-navigation-item__bg-nav-1 {
-    background-image: url("../assets/nav-1.png");
+    background-image: url("../assets/nav/nav-1.png");
 }
 
 .co-navigation-item__bg-nav-2 {
-    background-image: url("../assets/nav-2.png");
+    background-image: url("../assets/nav/nav-2.png");
 }
 
 .co-navigation-item__bg-nav-3 {
-    background-image: url("../assets/nav-3.png");
+    background-image: url("../assets/nav/nav-3.png");
 }
 
 .co-navigation-item__bg-nav-4 {
-    background-image: url("../assets/nav-4.png");
+    background-image: url("../assets/nav/nav-4.png");
 }
 
 .co-navigation-item__bg-nav-5 {
-    background-image: url("../assets/nav-5.png");
+    background-image: url("../assets/nav/nav-5.png");
 }
 
 .co-navigation-item__bg-nav-6 {
-    background-image: url("../assets/nav-6.png");
+    background-image: url("../assets/nav/nav-6.png");
 }
 
 .co-navigation-item__bg-nav-7 {
-    background-image: url("../assets/nav-7.png");
+    background-image: url("../assets/nav/nav-7.png");
 }
 
 .co-navigation-item__bg-nav-8 {
-    background-image: url("../assets/nav-8.png");
+    background-image: url("../assets/nav/nav-8.png");
 }
