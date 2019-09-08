@@ -1,0 +1,36 @@
+.co-fees-container__table{
+    margin-top: 40px;
+    width: 1280px;
+}
+
+
+#fees_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#fees_table td, #fees_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#fees_table tr:nth-child(even){
+    background-color: #f2f2f2;
+    color: #088789;
+}
+
+#fees_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.co-fees_table--item-name {
+    text-align: left;
+}
+
+.co-fees_table--item-price {
+    text-align: right;
+}

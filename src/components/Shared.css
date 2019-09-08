@@ -2,24 +2,28 @@
     height: 100%;
 }
 
-.co-home-container
+.co-home-container,
 .co-patient-container {
     background-color: #1C8DCF;
 }
 
-.co-orthopedic-container {
+.co-orthopedic-container,
+.co-component-menu-item__title-wrapper-orthopedic {
     background-color: #6DBE4B;
 }
 
-.co-fyzio-container {
+.co-fyzio-container,
+.co-component-menu-item__title-wrapper-fyzio  {
     background-color: #E1BE00;
 }
 
-.co-rehab-container {
+.co-rehab-container,
+.co-component-menu-item__title-wrapper-rehab {
     background-color: #F58221;
 }
 
-.co-denzito-container {
+.co-denzito-container,
+.co-component-menu-item__title-wrapper-denzito {
     background-color: #97467F;
 }
 
@@ -28,7 +32,7 @@
 }
 
 .co-fees-container {
-    background-color: #01D5FF;
+    background-color: #088789;
 }
 
 .co-contact-container {
@@ -67,7 +71,69 @@
     padding: 20px 40px 10px 40px;
 }
 
+.co-container__paragraph-narrow{
+    display: block;
+    font-size: 18px;
+    padding: 5px 40px 5px 40px;
+}
+
 .co-container__carousel {
     padding-top: 50px;
     max-width: 1400px;
+}
+
+.co-container-menu {
+    padding-top: 30px;
+    width: 1400px;
+}
+
+.co-component-menu-item__wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 15px 15px 15px 15px;
+    font-size: 18px;
+    width: 300px;
+    height: 207px;
+    border: 2px solid #fff;
+}
+
+.co-component-menu-item__title-wrapper {
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    opacity: 0.9;
+    bottom: 0px;
+}
+
+.co-component-menu-item__title {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.co-component-menu-item__arrow-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 30px;
+}
+
+.co-fees-container > .co-container__paragraphs {
+    margin-top: 50px;
+}
+
+.co-fees-container__button {
+    margin-top: 10px;
+    width: 310px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-family: 'AvenirBold';
+    color: #088789;
 }
