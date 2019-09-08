@@ -36,7 +36,8 @@
 }
 
 .co-contact-container {
-    background-color: #9B9B9B;
+    /* background-color: #9B9B9B; */
+    background-color: #fff
 }
 
 
@@ -117,23 +118,4 @@
     bottom: 10px;
     right: 10px;
     height: 30px;
-}
-
-.co-fees-container > .co-container__paragraphs {
-    margin-top: 50px;
-}
-
-.co-fees-container__button {
-    margin-top: 10px;
-    width: 310px;
-    height: 44px;
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    font-family: 'AvenirBold';
-    color: #088789;
 }

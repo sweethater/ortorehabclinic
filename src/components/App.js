@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink, HashRouter, Route } from 'react-router-dom';
 
-import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito, Gallery, Contact } from "./Home";
+import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito, Gallery } from "./Home";
 import { Fees, FeesOrtopedic, FeesFyzio } from "./Fees";
+import { Contacts } from "./Contacts";
 import { NavItem, NavHeader } from "./Nav";
 import back from '../assets/back2.png';
 import './App.css';
@@ -23,7 +24,7 @@ const App = () => {
           <NavLink className="navigation-item" to="/denzito"><NavItem title="Denzitometria" index={5} /></NavLink>
           <NavLink className="navigation-item" to="/gallery"><NavItem title="Galéria" index={6} /></NavLink>
           <NavLink className="navigation-item" to="/fees"><NavItem title="Cenník" index={7} /></NavLink>
-          <NavLink className="navigation-item" to="/contact"><NavItem title="Kontakt" index={8} /></NavLink>
+          <NavLink className="navigation-item" to="/contacts"><NavItem title="Kontakty" index={8} /></NavLink>
         </div>
         <div className="main-container">
           <Route exact path="/" component={Home}/>
@@ -36,7 +37,7 @@ const App = () => {
           <Route exact path="/fees" component={Fees}/>
           <Route path="/fees/fyzio" component={FeesFyzio}/>
           <Route path="/fees/ortopedic" component={FeesOrtopedic}/>
-          <Route path="/contact" component={Contact}/>
+          <Route path="/contacts" component={Contacts}/>
         </div>
       </div>
     </HashRouter>

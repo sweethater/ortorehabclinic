@@ -1,0 +1,57 @@
+.co-contact-container {
+    color: #1C8DCF;
+}
+
+.co-container__contacts {
+    width: 1200px;
+    margin-top: 20px;
+}
+
+.co-container__contact {
+    width: 600px;
+    display: inline-block;
+}
+
+.co-container__contact-header {
+    font-size: 22px;
+    font-family: 'AvenirBold';
+}
+
+.co-container__contact-image {
+    margin-top: 10px;
+    border: 3px solid #1C8DCF;
+}
+
+.co-container__contact-address {
+    font-size: 16px;
+    color: #000;
+}
+
+.co-container__ambulances {
+    font-size: 20px;
+    font-family: 'AvenirBold';
+}
+
+.co-container__phone {
+    margin-top: 15px;
+    width: 300px;
+    height: 100px;
+    background-color: #1C8DCF;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'AvenirBold'
+}
+
+.co-phone__paragraph {
+    padding-top: 30px;
+}
+
+.co-companies__paragraph {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'AvenirBold';
+}
+
+.co-container__companies {
+    margin-top: 15px;
+}

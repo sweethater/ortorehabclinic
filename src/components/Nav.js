@@ -1,6 +1,6 @@
 import React from 'react';
 import logoWhite from '../assets/logo-white.png';
-import arrow from '../assets/arrow.png';
+import arrow from '../assets/arrow.svg';
 
 // import { Img } from './Utils'
 

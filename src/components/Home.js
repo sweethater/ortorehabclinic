@@ -135,17 +135,19 @@ export const Rehab = props => {
 export const Denzito = props => {
   const section = "denzito";
   return (
-    <div className="co-denzito-container co-content-container">
-      <p className="co-container__header co-center">DENZITOMETRIA</p>
-      <div className="co-container__paragraphs co-center">
-          <p className="co-container__paragraph co-center">Denzitometrická ambulancia je vybavená najmodernejším denzitometrickým zariadením.</p>
-          <p className="co-container__paragraph co-center">Denzitometria je neinvazívne, bezbolestné, rýchle a presné vyšetrenie, pomocou ktorého sa stanovuje hustota kosti. Pomocou celotelového denzitometra Hologic QDR Discovery vieme neinvazívnym spôsobom prostredníctvom mäkkých rtg lúčov zistiť diagnózu osteoporózy i stupeň rednutia kosti a následne odporučiť vhodnú liečbu.</p>
-          <p className="co-container__paragraph co-center">Tento prístroj, na základe zabudovaného softwaru, porovnáva snímané kosti voči zdravému kostnému tkanivu. Kosti sa snímajú z dvoch lokalít: z driekových stavcov, kde sa ochorenie najčastejšie začína a z oblasti krčka stehennej kosti, časti stehna, kde sa najčastejšie kosť lomí. Software je aplikovateľný ako u dospelých tak aj u detí.</p>
+    <Fade>
+      <div className="co-denzito-container co-content-container">
+        <p className="co-container__header co-center">DENZITOMETRIA</p>
+        <div className="co-container__paragraphs co-center">
+            <p className="co-container__paragraph co-center">Denzitometrická ambulancia je vybavená najmodernejším denzitometrickým zariadením.</p>
+            <p className="co-container__paragraph co-center">Denzitometria je neinvazívne, bezbolestné, rýchle a presné vyšetrenie, pomocou ktorého sa stanovuje hustota kosti. Pomocou celotelového denzitometra Hologic QDR Discovery vieme neinvazívnym spôsobom prostredníctvom mäkkých rtg lúčov zistiť diagnózu osteoporózy i stupeň rednutia kosti a následne odporučiť vhodnú liečbu.</p>
+            <p className="co-container__paragraph co-center">Tento prístroj, na základe zabudovaného softwaru, porovnáva snímané kosti voči zdravému kostnému tkanivu. Kosti sa snímajú z dvoch lokalít: z driekových stavcov, kde sa ochorenie najčastejšie začína a z oblasti krčka stehennej kosti, časti stehna, kde sa najčastejšie kosť lomí. Software je aplikovateľný ako u dospelých tak aj u detí.</p>
+        </div>
+        <div className="co-container-menu co-center">
+          <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="Denzitometrické vyšetrenie" section={section} imageName="denzitometricke_vysetrenie"></ComponentMenuItem></NavLink>
+        </div>
       </div>
-      <div className="co-container-menu co-center">
-        <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="Denzitometrické vyšetrenie" section={section} imageName="denzitometricke_vysetrenie"></ComponentMenuItem></NavLink>
-      </div>
-    </div>
+    </Fade>
   );
 }
 
