@@ -1,0 +1,73 @@
+.co-content-container {
+    height: 100%;
+}
+
+.co-home-container
+.co-patient-container {
+    background-color: #1C8DCF;
+}
+
+.co-orthopedic-container {
+    background-color: #6DBE4B;
+}
+
+.co-fyzio-container {
+    background-color: #E1BE00;
+}
+
+.co-rehab-container {
+    background-color: #F58221;
+}
+
+.co-denzito-container {
+    background-color: #97467F;
+}
+
+.co-gallery-container {
+    background-color: #E75554;
+}
+
+.co-fees-container {
+    background-color: #01D5FF;
+}
+
+.co-contact-container {
+    background-color: #9B9B9B;
+}
+
+
+.co-container__logo-image {
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.co-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+.co-container__header {
+    display: block;
+    font-size: 36px;
+    padding: 60px 40px 0px 40px;
+    text-transform: uppercase;
+    font-family: 'AvenirBold';
+}
+
+.co-container__paragraphs {
+    width: 1200px;
+}
+
+.co-container__paragraph{
+    display: block;
+    font-size: 18px;
+    padding: 20px 40px 10px 40px;
+}
+
+.co-container__carousel {
+    padding-top: 50px;
+    max-width: 1400px;
+}
