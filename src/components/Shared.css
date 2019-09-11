@@ -62,8 +62,19 @@
     font-family: 'AvenirBold';
 }
 
+.co-container__section-header {
+    display: block;
+    font-size: 28px;
+    padding: 60px 40px 0px 40px;
+    text-transform: uppercase;
+    font-family: 'AvenirBold';
+}
+
 .co-container__paragraphs {
     width: 1200px;
+}
+.co-container__tabs {
+    width: 1400px;
 }
 
 .co-container__paragraph{

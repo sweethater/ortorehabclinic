@@ -30,7 +30,7 @@ const App = (props) => {
           <Route exact path="/" component={Home}/>
           <Route path="/patient" component={withBackButton(Patient)}/>
           <Route path="/orthopedic/:item" component={withBackButton(ItemWrapper)}/>
-          <Route path="/orthopedic" component={withBackButton(Orthopedic)}/>
+          <Route exact path="/orthopedic" component={withBackButton(Orthopedic)}/>
           <Route path="/fyzio" component={withBackButton(Fyzio)}/>
           <Route path="/rehab" component={withBackButton(Rehab)}/>
           <Route path="/denzito" component={withBackButton(Denzito)}/>
