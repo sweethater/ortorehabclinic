@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, HashRouter, Route } from 'react-router-dom';
+import { NavLink, Route, BrowserRouter } from 'react-router-dom';
 
 import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito, Gallery } from "./Home";
 import { Fees, FeesOrtopedic, FeesFyzio } from "./Fees";
@@ -16,10 +16,10 @@ const backTo = (href) => {
 
 const App = (props) => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="app-container">
         <div className="side-container">
-          <NavLink className="navigation-item--back" to={backTo(window)}><img src={back} /></NavLink>
+          <NavLink className="navigation-item--back" to={backTo(window.location.href)}><img src={back} /></NavLink>
 
           <NavLink className="navigation-item" to="/"><NavHeader /></NavLink>
           <NavLink className="navigation-item" to="/patient"><NavItem title="Pacienti" index={1} /></NavLink>
@@ -46,7 +46,7 @@ const App = (props) => {
           <Route path="/contacts" component={Contacts}/>
         </div>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
