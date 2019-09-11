@@ -8,7 +8,7 @@ import './Shared.css';
 import './Fees.css';
 
 export const Fees = props => {
-  const section = 'fees'
+  const section = 'fees';
   return (
     <Fade>
       <div className="co-fees-container co-content-container">

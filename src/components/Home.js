@@ -5,6 +5,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import { Fade, Slide } from 'react-reveal';
 
 import { ComponentMenuItem } from "./Nav";
+import { allSectionItems } from "./Shared";
 
 import logo from '../assets/logo-white.png';
 import detskyUltrazvuk from '../assets//carousel/detsky-ultrazvuk.jpg';
@@ -54,6 +55,7 @@ export const Patient = props => {
 
 export const Orthopedic = props => {
   const section = "orthopedic";
+  const sectionItems = allSectionItems[section];
   return (
     <Fade>
       <div className="co-orthopedic-container co-content-container">
@@ -63,16 +65,16 @@ export const Orthopedic = props => {
           <p className="co-container__paragraph co-center">Ortopédia je špecializačný medicínsky odbor, ktorý sa zaoberá vývojom, formovaním a ochoreniami, vrodenými a získanými deformitami, funkčnými ochoreniami, poraneniami podporného a pohybového aparátu, všetkých vekových kategórii, ich diagnostikou, liečbou a prevenciou, rehabilitáciou, posudzovaním a vedeckým výskumom. Okrem možností konzervatívnej liečby, najmä medikamentóznej a rehabilitačnej, využívame aj operačné liečebné postupy, ktoré sú v odbore ortopédia dominantné. Realizujeme nadštandardné interaktívne diagnostické a terapeutické postupy, etiopatogenetické analýzy a metódy regeneratívnej ortopédie.</p>
         </div>
         <div className="co-container-menu co-center">
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Liečba autolognými proteínmi" section={section} imageName="liecba_autolognymi_proteinmi"></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Detský ultrazvuk - USG" section={section} imageName="detsky_ultrazvuk"></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Ortopedické vyšetrenia" section={section} imageName="ortopedicke_vysetrenia"></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Plazmoterapia" section={section} imageName="plazmoterapia"></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.liecba_autolognymi_proteinmi.key}`}><ComponentMenuItem title={`${sectionItems.liecba_autolognymi_proteinmi.name}`} section={section} imageName={`${sectionItems.liecba_autolognymi_proteinmi.key}`}></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.detsky_ultrazvuk.key}`}><ComponentMenuItem title={`${sectionItems.detsky_ultrazvuk.name}`} section={section} imageName={`${sectionItems.detsky_ultrazvuk.key}`}></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.ortopedicke_vysetrenia.key}`}><ComponentMenuItem title={`${sectionItems.ortopedicke_vysetrenia.name}`} section={section} imageName={sectionItems.ortopedicke_vysetrenia.key}></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.plazmoterapia.key}`}><ComponentMenuItem title={`${sectionItems.plazmoterapia.name}`} section={section} imageName={sectionItems.plazmoterapia.key}></ComponentMenuItem></NavLink>
         </div>
         <div className="co-container-menu co-center">
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Rázové vlny" section={section} imageName="razove_vlny"></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Biostimulačný laser" section={section} imageName="biostimulacny_laser"></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Kolagénove injekcie" section={section} imageName="kolagenove_injekcie"></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to="/orthopedic"><ComponentMenuItem title="Konzultácie a posúdenia	" section={section} imageName="ortopedicke_konzultacie"></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.razove_vlny.key}`}><ComponentMenuItem title={`${sectionItems.razove_vlny.name}`} section={section} imageName={sectionItems.razove_vlny.key}></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.biostimulacny_laser.key}`}><ComponentMenuItem title={`${sectionItems.biostimulacny_laser.name}`} section={section} imageName={sectionItems.biostimulacny_laser.key}></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.kolagenove_injekcie.key}`}><ComponentMenuItem title={`${sectionItems.kolagenove_injekcie.name}`} section={section} imageName={sectionItems.kolagenove_injekcie.key}></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/orthopedic/${sectionItems.ortopedicke_konzultacie.key}`}><ComponentMenuItem title={`${sectionItems.ortopedicke_konzultacie.name}`} section={section} imageName={sectionItems.ortopedicke_konzultacie.key}></ComponentMenuItem></NavLink>
         </div>
       </div>
     </Fade>
