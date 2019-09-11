@@ -5,22 +5,17 @@ import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito, Gallery } from "./Hom
 import { Fees, FeesOrtopedic, FeesFyzio } from "./Fees";
 import { Contacts } from "./Contacts";
 import { ItemWrapper } from "./Items";
+import { withBackButton } from "./Shared";
 import { NavItem, NavHeader } from "./Nav";
 import back from '../assets/back2.png';
 import './App.css';
 
-const backTo = (href) => {
-  console.log(href);
-  return "/";
-}
-
 const App = (props) => {
+  console.log(window)
   return (
     <BrowserRouter>
       <div className="app-container">
         <div className="side-container">
-          <NavLink className="navigation-item--back" to={backTo(window.location.href)}><img src={back} /></NavLink>
-
           <NavLink className="navigation-item" to="/"><NavHeader /></NavLink>
           <NavLink className="navigation-item" to="/patient"><NavItem title="Pacienti" index={1} /></NavLink>
           <NavLink className="navigation-item" to="/orthopedic"><NavItem title="Ortopédia" index={2} /></NavLink>
@@ -33,17 +28,17 @@ const App = (props) => {
         </div>
         <div className="main-container">
           <Route exact path="/" component={Home}/>
-          <Route path="/patient" component={Patient}/>
-          <Route path="/orthopedic/:item" component={ItemWrapper}/>
-          <Route path="/orthopedic" component={Orthopedic}/>
-          <Route path="/fyzio" component={Fyzio}/>
-          <Route path="/rehab" component={Rehab}/>
-          <Route path="/denzito" component={Denzito}/>
-          <Route path="/gallery" component={Gallery}/>
-          <Route exact path="/fees" component={Fees}/>
-          <Route path="/fees/fyzio" component={FeesFyzio}/>
-          <Route path="/fees/ortopedic" component={FeesOrtopedic}/>
-          <Route path="/contacts" component={Contacts}/>
+          <Route path="/patient" component={withBackButton(Patient)}/>
+          <Route path="/orthopedic/:item" component={withBackButton(ItemWrapper)}/>
+          <Route path="/orthopedic" component={withBackButton(Orthopedic)}/>
+          <Route path="/fyzio" component={withBackButton(Fyzio)}/>
+          <Route path="/rehab" component={withBackButton(Rehab)}/>
+          <Route path="/denzito" component={withBackButton(Denzito)}/>
+          <Route path="/gallery" component={withBackButton(Gallery)}/>
+          <Route exact path="/fees" component={withBackButton(Fees)}/>
+          <Route path="/fees/fyzio" component={withBackButton(FeesFyzio)}/>
+          <Route path="/fees/ortopedic" component={withBackButton(FeesOrtopedic)}/>
+          <Route path="/contacts" component={withBackButton(Contacts)}/>
         </div>
       </div>
     </BrowserRouter>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import { Fade, Slide } from 'react-reveal';
+import { Fade } from 'react-reveal';
 
 import { ComponentMenuItem } from "./Nav";
 import { allSectionItems } from "./Shared";
@@ -11,6 +11,7 @@ import logo from '../assets/logo-white.png';
 import detskyUltrazvuk from '../assets//carousel/detsky-ultrazvuk.jpg';
 import smSystem from '../assets//carousel/sm-system.jpg';
 import trTherapy from '../assets//carousel/tr-therapy.jpg';
+import back from '../assets/back2.png';
 import './Home.css';
 import './Shared.css'
  
@@ -40,21 +41,21 @@ export const Home = props => {
 }
 
 export const Patient = props => {
+  const { section } = props;
   return (
-    <Fade>
-      <div className="co-patient-container co-content-container">
-        <img className="co-container__logo-image" src={logo}/>
-        <p className="co-container__paragraph">ORTO REHAB CLINIC je dynamicky sa rozvíjajúcim moderným zdravotníckym pracoviskom, ktoré poskytuje svojim pacientom vysoko kvalifikovanú lekársku starostlivosť v špecializovanom odbore ortopédia, denzitometria, cievna chirurgia a fyzioterapia.</p>
-        <p className="co-container__paragraph">ORTO REHAB CLINIC disponuje najmodernejšou zdravotníckou technikou v segmente ambulantnej zdravotnej starostlivosti, a to nielen v oblasti ortopédie, denzitometrie, ale aj fyzioterapie.</p>
-        <p className="co-container__paragraph">Hlavnou devízou ORTO REHAB CLINIC je najmä efektívne objednávanie pacientov a minimálne čakacie doby, čo nám umožňuje rýchlo definovať a identifikovať zdravotný problém pacienta.</p>
-
-      </div>
-    </Fade>
+      <Fade>
+        <div className="co-patient-container co-content-container">
+          <img className="co-container__logo-image" src={logo}/>
+          <p className="co-container__paragraph">ORTO REHAB CLINIC je dynamicky sa rozvíjajúcim moderným zdravotníckym pracoviskom, ktoré poskytuje svojim pacientom vysoko kvalifikovanú lekársku starostlivosť v špecializovanom odbore ortopédia, denzitometria, cievna chirurgia a fyzioterapia.</p>
+          <p className="co-container__paragraph">ORTO REHAB CLINIC disponuje najmodernejšou zdravotníckou technikou v segmente ambulantnej zdravotnej starostlivosti, a to nielen v oblasti ortopédie, denzitometrie, ale aj fyzioterapie.</p>
+          <p className="co-container__paragraph">Hlavnou devízou ORTO REHAB CLINIC je najmä efektívne objednávanie pacientov a minimálne čakacie doby, čo nám umožňuje rýchlo definovať a identifikovať zdravotný problém pacienta.</p>
+        </div>
+      </Fade>
   );
 }
 
 export const Orthopedic = props => {
-  const section = "orthopedic";
+  const { section } = props;
   const sectionItems = allSectionItems[section];
   return (
     <Fade>
@@ -82,7 +83,7 @@ export const Orthopedic = props => {
 }
 
 export const Fyzio = props => {
-  const section = "fyzio";
+  const { section } = props;
   return (
     <Fade>
       <div className="co-fyzio-container co-content-container">
@@ -112,7 +113,7 @@ export const Fyzio = props => {
 }
 
 export const Rehab = props => {
-  const section = "rehab";
+  const { section } = props;
   return (
     <Fade>
       <div className="co-rehab-container co-content-container">
@@ -135,7 +136,7 @@ export const Rehab = props => {
 }
 
 export const Denzito = props => {
-  const section = "denzito";
+  const { section } = props;
   return (
     <Fade>
       <div className="co-denzito-container co-content-container">
