@@ -4,7 +4,7 @@ import { NavLink, Route, BrowserRouter } from 'react-router-dom';
 import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito, Gallery } from "./Home";
 import { Fees, FeesOrtopedic, FeesFyzio } from "./Fees";
 import { Contacts } from "./Contacts";
-import { ItemWrapper } from "./Items";
+import { ItemWrapper } from "./Tabs";
 import { withBackButton } from "./Shared";
 import { NavItem, NavHeader } from "./Nav";
 import back from '../assets/back2.png';

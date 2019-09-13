@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from 'react-router-dom';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -11,7 +11,6 @@ import logo from '../assets/logo-white.png';
 import detskyUltrazvuk from '../assets//carousel/detsky-ultrazvuk.jpg';
 import smSystem from '../assets//carousel/sm-system.jpg';
 import trTherapy from '../assets//carousel/tr-therapy.jpg';
-import back from '../assets/back2.png';
 import './Home.css';
 import './Shared.css'
  
@@ -158,14 +157,6 @@ export const Gallery = props => {
   return (
     <div className="co-gallery-container co-content-container">
       <p className="co-container__header co-center">GALÉRIA</p>
-    </div>
-  );
-}
-
-export const Contact = props => {
-  return (
-    <div className="co-contact-container co-content-container">
-      <p className="co-container__header co-center">KONTAKT</p>
     </div>
   );
 }
