@@ -168,25 +168,12 @@ export const Orthopedic7 = {
     tabName: "BENEFITY TERAPIE",
     tabContent: <React.Fragment>
     <p className="co-container__paragraph co-center">Zásadným benefitom daného terapeutického prístupu je liečba bolesti bez rizika liekových interakcií (kolagén nezasahuje do účinnosti ostatných liekov, napr. warfarínu), bez významných nežiaducich účinkov (kolagén je telu vlastná látka dodávaná v injekčnej mikrosuplementačnej dávke), bez alergických reakcií (nezaznamenali sme žiadne alergické reakcie). Pre konkrétnu oblasť protibolestivého použitia sú určené konkrétne kolagénové injekcie (napr. gonartróza MD-Knee, coxartróza MD-Hip, syndróm zmrznutého ramena MD-Shoulder, lumbalgia MD-Lumbar, svalová bolesť MD-Muscle, neuralgická/neuropatická bolesť MD-Neural).</p>
-    <NavLink className="nav" to={`/`}><div className="co-tabs-container__button co-center">Viac Info</div></NavLink>
   </React.Fragment>,
   }],
   about: <p className="co-container__paragraph co-center">"Kolagén podaný injekčne zlepšuje kĺbovú mobilitu, ale napomáha aj uvoľneniu a fyziologickej funkcii svalstva v danej oblasti. Odstraňuje tak príčinu bolesti a prispieva k jej odstráneniu. Kolagén je základnou stavebnou jednotkou spojivového tkaniva kĺbových systémov, a preto jeho mikrosuplementácia zlepšuje profil kolagénového vlákna. Kolagén tak reprezentuje štrukturálny účinok, t.j. chráni a posilňuje kĺbové puzdro, väzy, šľachy, a preto spevňuje ochabnuté a hypermobilné kĺbové systémy.</p>
 };
 
 export const Orthopedic8 = {
-  tabs: [{
-    tabName: "Informacie",
-    tabContent: <React.Fragment>
-    <p className="co-container__paragraph co-center">Jedná sa o bezpečnú neoperačnú metódu, ktorá využíva bunky z vlastnej krvi.. Liečba vlastnou plazmou je efektívna biologická metóda využitia koncentrovaných rastových faktorov získaných úpravou krvi pacienta pre terapeutické využitie úrazov, bolestivých stavov pohybového aparátu (svalov, väzov, šliach...) a kĺbnej artrózy.</p>
-    <NavLink className="nav" to={`/`}><div className="co-tabs-container__button co-center">Viac Info</div></NavLink>
-  </React.Fragment>,
-  }, {
-    tabName: "PODSTATA TERAPIE",
-    tabContent: <React.Fragment>
-    <p className="co-container__paragraph co-center">Podstatou tejto bioterapie je, že získame z krvi pacienta plazmu obohatenú o trombocyty a vysoké množstvo rôznych rastových faktorov (PDGF, AB a BB, IGF, EGF, VEGF, TGF Beta 1 a Beta 2) a iné hojace faktory. Tieto rastové faktory sú zodpovedné za regeneračné a reparačné procesy vo viacerých tkanivách vrátane kostí, šliach, chrupavky a kože. Napomáhajú procesu hojenia pri akútnych úrazoch, alebo pri prechode do chronického štádia. Tento výťažok z krvi sa aplikuje pomocou injekcie do poraneného miesta resp. kĺbu. Rastové faktory aktivujú kaskádu protizápalových, regeneračných a reparačných procesov v patologicky zmenených tkanivách.</p>
-    <p className="co-container__paragraph co-center">Liečba vlastnou krvou je čoraz populárnejším ošetrením pleti, ktoré spomaľuje účinky starnutia prirodzenou formou. Jej jedinečnou výhodou je, že je bezpečná, bez komplikácií, a je “BIO”, je to Vaša vlastná krv.</p>
-  </React.Fragment>,
-  }],
+  tabs: [],
   about: <p className="co-container__paragraph co-center">Ortopedické konzultácie sú určené pre konzultáciu so špecializovaným lekárom v odbore ortopédia v súvislosti s konkrétnou, Vami trpiacou, ortopedickou diagnózou. Konzultácie sú určené aj za účelom posudku pre zdravotné poisťovne.</p>,
 };

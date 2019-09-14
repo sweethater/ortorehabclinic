@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 
 import { Orthopedic1, Orthopedic2, Orthopedic3, Orthopedic4, Orthopedic5, Orthopedic6, Orthopedic7, Orthopedic8 } from "./OrtopedicItems"
+import { Fyzio1, Fyzio2, Fyzio3, Fyzio4, Fyzio5, Fyzio6, Fyzio7, Fyzio8, Fyzio9, Fyzio10 } from "./FyzioItems"
 
 import back from '../assets/back2.png';
 
@@ -80,4 +81,56 @@ export const allSectionItems = {
       component: Orthopedic8,
     },
   },
+  fyzio: {
+    vykonny_indukcny_system: {
+      key: "vykonny_indukcny_system",
+      name: "Výkonný indukčný systém",
+      component: Fyzio1,
+    },
+    laser_12: {
+      key: "laser_12",
+      name: "Laserová terapia",
+      component: Fyzio2,
+    },
+    tr_therapy: {
+      key: "tr_therapy",
+      name: "TR terapia",
+      component: Fyzio3,
+    },
+    makke_techniky: {
+      key: "makke_techniky",
+      name: "Mäkké techniky",
+      component: Fyzio4,
+    },
+    sm_system: {
+      key: "sm_system",
+      name: "SM systém",
+      component: Fyzio5,
+    },
+    trx: {
+      key: "trx",
+      name: "TRX",
+      component: Fyzio6,
+    },
+    kineziotaping: {
+      key: "kineziotaping",
+      name: "Kinesiotaping",
+      component: Fyzio7,
+    },
+    individualne_cvicenia: {
+      key: "individualne_cvicenia",
+      name: "Individuálne cvičenia",
+      component: Fyzio8,
+    },
+    skupinove_cvicenia: {
+      key: "skupinove_cvicenia",
+      name: "Skupinové cvičenia",
+      component: Fyzio9,
+    },
+    motodlaha: {
+      key: "motodlaha",
+      name: "Monodlaha",
+      component: Fyzio10,
+    },
+  }
 }

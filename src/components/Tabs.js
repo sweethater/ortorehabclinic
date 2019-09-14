@@ -1,15 +1,16 @@
 import React from "react";
 import { Fade } from 'react-reveal';
 import { Tabs } from 'antd';
+import { NavLink } from 'react-router-dom';
 
 import { allSectionItems } from "./Shared";
 
 import 'antd/dist/antd.css';
 import './Tabs.css';
 import './Shared.css';
+import arrow from '../assets/arrow.svg';
 
 export const ItemWrapper = props => {
-  // console.log(props);
   const item = props.match.params.item;
   const section = props.location.pathname.split("/").filter(Boolean)[0];
   const itemData = allSectionItems[section][item];
@@ -30,9 +31,22 @@ export const ItemWrapper = props => {
           {renderTabs}            
         </Tabs>
         </div>
+        {component.footer}
       </div>
     </Fade>
   );
+}
+
+export const TabListLinks = ({items}) => {
+  return (
+    <div className="co-container__tab-list-links-column co-center">
+      <ul>
+        {items.map((item, i) => <NavLink key={i} className="nav" to={`/`}>
+          <li key={i}><img className="co-tab-item__arrow-image" src={arrow}/>{item}</li>
+        </NavLink>)}
+      </ul>
+    </div>
+  )
 }
 
 export const TabList = ({items}) => {
