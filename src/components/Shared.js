@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
+import { Orthopedic1, Orthopedic2, Orthopedic3, Orthopedic4, Orthopedic5, Orthopedic6, Orthopedic7, Orthopedic8 } from "./OrtopedicItems"
+
 import back from '../assets/back2.png';
 
 import './Nav';
@@ -40,42 +42,42 @@ export const allSectionItems = {
     liecba_autolognymi_proteinmi: {
       key: "liecba_autolognymi_proteinmi",
       name: "Liečba autolognými proteínmi",
-      component: "Orthopedic1",
+      component: Orthopedic1,
     },
     detsky_ultrazvuk: {
       key: "detsky_ultrazvuk",
       name: "Detský ultrazvuk - USG",
-      component: "Orthopedic1",
+      component: Orthopedic2,
     },
     ortopedicke_vysetrenia: {
       key: "ortopedicke_vysetrenia",
       name: "Ortopedické vyšetrenia",
-      component: "Orthopedic1",
+      component: Orthopedic3,
     },
     plazmoterapia: {
       key: "plazmoterapia",
       name: "Plazmoterapia",
-      component: "Orthopedic1",
+      component: Orthopedic4,
     },
     razove_vlny: {
       key: "razove_vlny",
       name: "Rázové vlny",
-      component: "Orthopedic1",
+      component: Orthopedic5,
     },
     biostimulacny_laser: {
       key: "biostimulacny_laser",
       name: "Biostimulačný laser",
-      component: "Orthopedic1",
+      component: Orthopedic6,
     },
     kolagenove_injekcie: {
       key: "kolagenove_injekcie",
       name: "Kolagénove injekcie",
-      component: "Orthopedic1",
+      component: Orthopedic7,
     },
     ortopedicke_konzultacie: {
       key: "ortopedicke_konzultacie",
       name: "Konzultácie a posúdenia",
-      component: "Orthopedic1",
+      component: Orthopedic8,
     },
   },
 }

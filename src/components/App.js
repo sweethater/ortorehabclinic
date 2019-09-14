@@ -7,7 +7,6 @@ import { Contacts } from "./Contacts";
 import { ItemWrapper } from "./Tabs";
 import { withBackButton } from "./Shared";
 import { NavItem, NavHeader } from "./Nav";
-import back from '../assets/back2.png';
 import './App.css';
 
 const App = (props) => {

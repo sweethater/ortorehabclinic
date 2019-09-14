@@ -6,6 +6,36 @@
     font-family: 'AvenirBold';
 }
 
+.co-container__tab-list {
+    display: flex;
+    font-size: 18px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.co-container__tab-list-column {
+    text-align: left !important;
+}
+
+.co-container__tab-list-column li {
+    padding-top: 15px;
+}
+
+.co-tabs-container__button {
+    margin-top: 10px;
+    width: 260px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'AvenirBold';
+    color: #fff;;
+}
+
 .co-container__tabs {
     width: 1400px;
 }
