@@ -41,8 +41,8 @@ export const TabListLinks = ({items}) => {
   return (
     <div className="co-container__tab-list-links-column co-center">
       <ul>
-        {items.map((item, i) => <NavLink key={i} className="nav" to={`/`}>
-          <li key={i}><img className="co-tab-item__arrow-image" src={arrow}/>{item}</li>
+        {items.map((item, i) => <NavLink key={i} className="nav" to={item.link}>
+          <li key={i}><img className="co-tab-item__arrow-image" src={arrow}/>{item.name}</li>
         </NavLink>)}
       </ul>
     </div>
