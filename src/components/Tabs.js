@@ -20,14 +20,14 @@ export const ItemWrapper = props => {
   const callback = (key) => {
     console.log(key);
   }
-  const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={(i+1).toString()}>{tab.tabContent}</TabPane>)
+  const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
   return (
     <Fade>
       <div className={`co-${section}-container co-item-container co-content-container`}>
         <p className="co-container__header co-center">{name}</p>
         {component.about}
         <div className="co-container__tabs co-center">
-        <Tabs defaultActiveKey="1" onChange={callback}>
+        <Tabs defaultActiveKey={`${item}-1`} onChange={callback}>
           {renderTabs}            
         </Tabs>
         </div>
