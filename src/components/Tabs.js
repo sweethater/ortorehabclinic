@@ -62,7 +62,7 @@ export const TabList = ({items}) => {
   return (
     <div className="co-container__tab-list-column co-center">
       <ul>
-        {items.map((item, i) => <li key={i}>{item}</li>)}
+        {items.map((item, i) => <li key={i}>{item.charAt(0).toUpperCase() + item.slice(1)}</li>)}
       </ul>
     </div>
   )

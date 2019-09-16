@@ -10,7 +10,6 @@
     display: flex;
     font-size: 18px;
     text-align: left;
-    text-transform: capitalize;
 }
 
 .co-container__tab-list-column,
