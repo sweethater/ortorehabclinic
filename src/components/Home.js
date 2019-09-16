@@ -138,6 +138,7 @@ export const Rehab = props => {
 
 export const Denzito = props => {
   const { section } = props;
+  const sectionItems = allSectionItems[section];
   return (
     <Fade>
       <div className="co-denzito-container co-content-container">
@@ -148,7 +149,7 @@ export const Denzito = props => {
             <p className="co-container__paragraph co-center">Tento prístroj, na základe zabudovaného softwaru, porovnáva snímané kosti voči zdravému kostnému tkanivu. Kosti sa snímajú z dvoch lokalít: z driekových stavcov, kde sa ochorenie najčastejšie začína a z oblasti krčka stehennej kosti, časti stehna, kde sa najčastejšie kosť lomí. Software je aplikovateľný ako u dospelých tak aj u detí.</p>
         </div>
         <div className="co-container-menu co-center">
-          <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="Denzitometrické vyšetrenie" section={section} imageName="denzitometricke_vysetrenie"></ComponentMenuItem></NavLink>
+          <NavLink className="nav" to={`/${section}/${sectionItems.denzitometricke_vysetrenie.key}`}><ComponentMenuItem title={`${sectionItems.denzitometricke_vysetrenie.name}`} section={section} imageName={`${sectionItems.denzitometricke_vysetrenie.key}`}>></ComponentMenuItem></NavLink>
         </div>
       </div>
     </Fade>

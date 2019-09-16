@@ -34,7 +34,8 @@ const App = (props) => {
           <Route exact path="/fyzio" component={withBackButton(Fyzio)}/>
           <Route path="/rehab/:item" component={withBackButton(ItemWrapper)}/>
           <Route exact path="/rehab" component={withBackButton(Rehab)}/>
-          <Route path="/denzito" component={withBackButton(Denzito)}/>
+          <Route path="/denzito/:item" component={withBackButton(ItemWrapper)}/>
+          <Route exact path="/denzito" component={withBackButton(Denzito)}/>
           <Route path="/gallery" component={withBackButton(Gallery)}/>
           <Route exact path="/fees" component={withBackButton(Fees)}/>
           <Route path="/fees/fyzio" component={withBackButton(FeesFyzio)}/>
