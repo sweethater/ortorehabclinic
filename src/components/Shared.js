@@ -132,5 +132,32 @@ export const allSectionItems = {
       name: "Monodlaha",
       component: Fyzio10,
     },
+  },
+  rehab: {
+    vykonny_indukcny_system: {
+      key: "vykonny_indukcny_system",
+      name: "Výkonný indukčný systém",
+      component: Fyzio1,
+    },
+    laser_12: {
+      key: "laser_12",
+      name: "Laserová terapia",
+      component: Fyzio2,
+    },
+    tr_therapy: {
+      key: "tr_therapy",
+      name: "TR terapia",
+      component: Fyzio3,
+    },
+    plazmoterapia: {
+      key: "plazmoterapia",
+      name: "Plazmoterapia",
+      component: Orthopedic4,
+    },
+    sm_system: {
+      key: "sm_system",
+      name: "SM systém",
+      component: Fyzio5,
+    },
   }
 }

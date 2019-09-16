@@ -98,14 +98,14 @@ export const Fyzio = props => {
             <NavLink className="nav" to={`/${section}/${sectionItems.makke_techniky.key}`}><ComponentMenuItem title={`${sectionItems.makke_techniky.name}`} section={section} imageName={`${sectionItems.makke_techniky.key}`}></ComponentMenuItem></NavLink>
           </div>
           <div className="co-container-menu co-center">
-          <NavLink className="nav" to={`/${section}/${sectionItems.sm_system.key}`}><ComponentMenuItem title={`${sectionItems.sm_system.name}`} section={section} imageName={`${sectionItems.sm_system.key}`}></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to={`/${section}/${sectionItems.trx.key}`}><ComponentMenuItem title={`${sectionItems.trx.name}`} section={section} imageName={`${sectionItems.trx.key}`}></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to={`/${section}/${sectionItems.kineziotaping.key}`}><ComponentMenuItem title={`${sectionItems.kineziotaping.name}`} section={section} imageName={`${sectionItems.kineziotaping.key}`}></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to={`/${section}/${sectionItems.individualne_cvicenia.key}`}><ComponentMenuItem title={`${sectionItems.individualne_cvicenia.name}`} section={section} imageName={`${sectionItems.individualne_cvicenia.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.sm_system.key}`}><ComponentMenuItem title={`${sectionItems.sm_system.name}`} section={section} imageName={`${sectionItems.sm_system.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.trx.key}`}><ComponentMenuItem title={`${sectionItems.trx.name}`} section={section} imageName={`${sectionItems.trx.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.kineziotaping.key}`}><ComponentMenuItem title={`${sectionItems.kineziotaping.name}`} section={section} imageName={`${sectionItems.kineziotaping.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.individualne_cvicenia.key}`}><ComponentMenuItem title={`${sectionItems.individualne_cvicenia.name}`} section={section} imageName={`${sectionItems.individualne_cvicenia.key}`}></ComponentMenuItem></NavLink>
           </div>
           <div className="co-container-menu co-center">
-          <NavLink className="nav" to={`/${section}/${sectionItems.skupinove_cvicenia.key}`}><ComponentMenuItem title={`${sectionItems.skupinove_cvicenia.name}`} section={section} imageName={`${sectionItems.skupinove_cvicenia.key}`}></ComponentMenuItem></NavLink>
-          <NavLink className="nav" to={`/${section}/${sectionItems.motodlaha.key}`}><ComponentMenuItem title={`${sectionItems.motodlaha.name}`} section={section} imageName={`${sectionItems.motodlaha.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.skupinove_cvicenia.key}`}><ComponentMenuItem title={`${sectionItems.skupinove_cvicenia.name}`} section={section} imageName={`${sectionItems.skupinove_cvicenia.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.motodlaha.key}`}><ComponentMenuItem title={`${sectionItems.motodlaha.name}`} section={section} imageName={`${sectionItems.motodlaha.key}`}></ComponentMenuItem></NavLink>
           </div>
       </div>
     </Fade>
@@ -114,6 +114,7 @@ export const Fyzio = props => {
 
 export const Rehab = props => {
   const { section } = props;
+  const sectionItems = allSectionItems[section];
   return (
     <Fade>
       <div className="co-rehab-container co-content-container">
@@ -122,13 +123,13 @@ export const Rehab = props => {
           <p className="co-container__paragraph co-center">Klinika poskytuje rôzne služby spojené so športovou rehabilitáciou. Zoznam poskytovaných služieb si môžete pozrieť nižšie.</p>
         </div>
         <div className="co-container-menu co-center">
-            <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="Výkonný indukčný systém" section={section} imageName="vykonny_indukcny_system"></ComponentMenuItem></NavLink>
-            <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="Laser 12 W - high intensity" section={section} imageName="laser_12"></ComponentMenuItem></NavLink>
-            <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="TR therapy" section={section} imageName="tr_therapy"></ComponentMenuItem></NavLink>
-            <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="Plazmo terapia" section={section} imageName="plazmoterapia"></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.vykonny_indukcny_system.key}`}><ComponentMenuItem title={`${sectionItems.vykonny_indukcny_system.name}`} section={section} imageName={`${sectionItems.vykonny_indukcny_system.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.laser_12.key}`}><ComponentMenuItem title={`${sectionItems.laser_12.name}`} section={section} imageName={`${sectionItems.laser_12.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.tr_therapy.key}`}><ComponentMenuItem title={`${sectionItems.tr_therapy.name}`} section={section} imageName={`${sectionItems.tr_therapy.key}`}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/orthopedic/${sectionItems.plazmoterapia.key}`}><ComponentMenuItem title={`${sectionItems.plazmoterapia.name}`} section={section} imageName={sectionItems.plazmoterapia.key}></ComponentMenuItem></NavLink>
           </div>
           <div className="co-container-menu co-center">
-            <NavLink className="nav" to={`/${section}`}><ComponentMenuItem title="SM systém" section={section} imageName="sm_system"></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.sm_system.key}`}><ComponentMenuItem title={`${sectionItems.sm_system.name}`} section={section} imageName={`${sectionItems.sm_system.key}`}></ComponentMenuItem></NavLink>
           </div>
       </div>
     </Fade>
