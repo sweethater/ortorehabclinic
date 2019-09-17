@@ -1,10 +1,10 @@
 import React from "react";
 
-import { NavLink } from 'react-router-dom';
 import { TabList } from './Tabs';
 
 import 'antd/dist/antd.css';
 import './Tabs.css';
+import './Shared.css';
 
 export const Orthopedic1 = {
   about: <p className="co-container__paragraph co-center">nSTRIDE APS je nová terapia určená na liečbu bolesti pri osteoartróze kolena, ktorá spomaľuje progresiu osteoartrózy a deštrukciu chrupavky v kolene.</p>,
@@ -67,15 +67,21 @@ export const Orthopedic2 = {
     <p className="co-container__paragraph co-center">Ultrazvukové vyšetrenie bedrových kĺbov je jedným z prvých vyšetrení dieťaťa. Ide o preventívne screeningové vyšetrenie zamerané na skorú diagnostiku dysplázie bedrových kĺbov.</p>
     </React.Fragment>,
   tabs: [{
-    tabName: "DETSKÝ ULTRAZVUK - USG (VYŠETRENIA BEDROVÝCH KĹBOV NOVORODENCOV)",
+    tabName: "DETSKÝ ULTRAZVUK",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">Ultrazvukové vyšetrenie bedrových kĺbov je jedným z prvých vyšetrení dieťaťa. Ide o preventívne screeningové vyšetrenie zamerané na skorú diagnostiku dysplázie bedrových kĺbov. Dysplázia bedrového kĺbu je vývojová porucha, pri ktorej dochádza k chybnému vývoju jamky a hlavice v bedrovom kĺbe. Prvé vyšetrenie robia deťom už v pôrodnici. Druhé vyšetrenie musí novorodenec absolvovať najneskôr v 4. týždni, respektíve podľa odporúčania ortopéda aj v 3. mesiaci. V prípade, ak je všetko v poriadku, dieťa nie je potrebné ďalej sledovať a vyšetrenie opakovať. Vyšetrenie bedrových kĺbov môžete absolvovať aj na našej klinike u certifikovaného ortopéda, a to v príjemnom prostredí, bez čakania a bez zbytočných stresov pre vás a vaše bábätko.</p>
+      <div className="co-container__tab-list co-center">
+        <TabList items={["Vyšetrenie bedrových kĺbov na našej klinike", "Certifikovaný ortopéd", "V príjemnom prostredí", "Bez čakania a bez zbytočných stresov"]} />
+        <div className="co-tabs__paragraphs co-center">
+          <p className="co-tabs__paragraph co-left">Ultrazvukové vyšetrenie bedrových kĺbov je jedným z prvých vyšetrení dieťaťa. Ide o preventívne screeningové vyšetrenie zamerané na skorú diagnostiku dysplázie bedrových kĺbov. Dysplázia bedrového kĺbu je vývojová porucha, pri ktorej dochádza ku chybnému vývoju jamky a hlavice v bedrovom kĺbe.</p>
+          <p className="co-tabs__paragraph co-left">Prvé vyšetrenie robia deťom už v pôrodnici. Druhé vyšetrenie musí novorodenec absolvovať najneskôr v 4. týždni, respektíve podľa odporúčania ortopéda aj v 3. mesiaci. V prípade, ak je všetko v poriadku, dieťa nie je potrebné ďalej sledovať a vyšetrenie opakovať.</p>
+        </div>
+      </div>
     </React.Fragment>,
   }, {
     tabName: "ČO VÁS U ORTOPÉDA ČAKÁ?",
     tabContent: <React.Fragment>
-      <p className="co-container__tab-section-header co-center">ČO VÁS U ORTOPÉDA ČAKÁ?</p>
-      <p className="co-container__paragraph co-center">Najprv zistíme Vašu anamnézu, dieťatko vyšetríme, zistíme, či má v poriadku hybnosť kĺbov, urobíme mu ultrazvukové vyšetrenie a podľa výsledkov vám odporučíme ďalší vhodný postup. Napríklad špeciálne balenie bábätka. Nemusíte mať žiadne obavy, ide o neinvazívne, nebolestivé ultrazvukové vyšetrenie, ktoré trvá približne 10 minút. Žiadnym spôsobom nepoškodzuje detský organizmus a pomôže odhaliť skryté vývojové vady bedrových kĺbov. Pred vyšetrením bábätka nie je nutná žiadna príprava.</p>
+      <p className="co-tabs__paragraph co-center">Najprv zistíme Vašu anamnézu, dieťatko vyšetríme, zistíme, či má v poriadku hybnosť kĺbov, urobíme mu ultrazvukové vyšetrenie a podľa výsledkov vám odporučíme ďalší vhodný postup. Napríklad špeciálne balenie bábätka. Nemusíte mať žiadne obavy, ide o neinvazívne, nebolestivé ultrazvukové vyšetrenie, ktoré trvá približne 10 minút.</p>
+      <p className="co-tabs__paragraph co-center">Žiadnym spôsobom nepoškodzuje detský organizmus a pomôže odhaliť skryté vývojové vady bedrových kĺbov. Pred vyšetrením bábätka nie je nutná žiadna príprava.</p>
     </React.Fragment>,
   }]
 };
@@ -96,16 +102,51 @@ export const Orthopedic3 = {
 export const Orthopedic4 = {
   about: <p className="co-container__paragraph co-center">Jedná sa o bezpečnú neoperačnú metódu, ktorá využíva bunky z vlastnej krvi.. Liečba vlastnou plazmou je efektívna biologická metóda využitia koncentrovaných rastových faktorov získaných úpravou krvi pacienta pre terapeutické využitie úrazov, bolestivých stavov pohybového aparátu (svalov, väzov, šliach...) a kĺbnej artrózy.</p>,
   tabs: [{
-    tabName: "Informacie",
-    tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">Jedná sa o bezpečnú neoperačnú metódu, ktorá využíva bunky z vlastnej krvi.. Liečba vlastnou plazmou je efektívna biologická metóda využitia koncentrovaných rastových faktorov získaných úpravou krvi pacienta pre terapeutické využitie úrazov, bolestivých stavov pohybového aparátu (svalov, väzov, šliach...) a kĺbnej artrózy.</p>
-      <NavLink className="nav" to={`/`}><div className="co-tabs-container__button co-center">Viac Info</div></NavLink>
-    </React.Fragment>,
-  }, {
     tabName: "PODSTATA TERAPIE",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">Podstatou tejto bioterapie je, že získame z krvi pacienta plazmu obohatenú o trombocyty a vysoké množstvo rôznych rastových faktorov (PDGF, AB a BB, IGF, EGF, VEGF, TGF Beta 1 a Beta 2) a iné hojace faktory. Tieto rastové faktory sú zodpovedné za regeneračné a reparačné procesy vo viacerých tkanivách vrátane kostí, šliach, chrupavky a kože. Napomáhajú procesu hojenia pri akútnych úrazoch, alebo pri prechode do chronického štádia. Tento výťažok z krvi sa aplikuje pomocou injekcie do poraneného miesta resp. kĺbu. Rastové faktory aktivujú kaskádu protizápalových, regeneračných a reparačných procesov v patologicky zmenených tkanivách.</p>
-      <p className="co-container__paragraph co-center">Liečba vlastnou krvou je čoraz populárnejším ošetrením pleti, ktoré spomaľuje účinky starnutia prirodzenou formou. Jej jedinečnou výhodou je, že je bezpečná, bez komplikácií, a je “BIO”, je to Vaša vlastná krv.</p>
+      <div className="co-tabs__paragraphs co-center">
+        <p className="co-tabs__paragraph co-center">Liečba vlastnou krvou je čoraz populárnejším ošetrením pleti, ktoré spomaľuje účinky starnutia prirodzenou formou. Jej jedinečnou výhodou je, že je bezpečná, bez komplikácií a je “BIO”, je to Vaša vlastná krv.</p>
+        <p className="co-tabs__paragraph co-center">Podstatou tejto bioterapie je, že získame z krvi pacienta plazmu obohatenú o trombocyty a vysoké množstvo rôznych rastových faktorov (PDGF, AB a BB, IGF, EGF, VEGF, TGF Beta 1 a Beta 2) a iné hojace faktory. Tieto rastové faktory sú zodpovedné za regeneračné a reparačné procesy vo viacerých tkanivách vrátane kostí, šliach, chrupavky a kože. Napomáhajú procesu hojenia pri akútnych úrazoch, alebo pri prechode do chronického štádia. Tento výťažok z krvi sa aplikuje pomocou injekcie do poraneného miesta resp. kĺbu. Rastové faktory aktivujú kaskádu protizápalových, regeneračných a reparačných procesov v patologicky zmenených tkanivách.</p>
+      </div>
+    </React.Fragment>,
+  }, {
+    tabName: "APLIKÁCIA",
+    tabContent: <React.Fragment>
+      <div className="co-tabs__paragraphs co-center">
+        <p className="co-tabs__paragraph co-center">Artróza (čiže osteoartróza) kĺbov - koleno, rameno, členok, lakeť, bedro, malé kĺby cca. 5 aplikácií, vhodné u 1., 2. a časti 3. stupňa artrózy podľa RTG, kedy je ešte v kĺbe prítomná chrupavka.</p>
+        <p className="co-tabs__paragraph co-center">Existujú pozitívne skúsenosti s aplikáciou krvnej plazmy do kĺbov s artrózou 4. stupňa, kedy môže zmierniť bolesti. Táto analgetická indikácia môže byť riešením pre pacientov trpiacich bolesťami, ktorí nemôžu z iných dôvodov podstúpiť operačnú náhradu kĺbu alebo nemôžu trvalo užívať protizápalové lieky s množstvom vedľajších účinkov. Každého pacienta musí dôkladne vyšetriť ortopéd a navrhnúť riešenie. Definitívne rozhodnutie je vždy na pacientovi.</p>
+      </div>
+    </React.Fragment>,
+  }, {
+    tabName: "INDIKÁCIE PRE APLIKÁCIU",
+    tabContent: <React.Fragment>
+    <div className="co-container__tab-list co-center">
+      <TabList items={["Postihnutie chrupavky 1. až 3. stupňa - chondromalacie, chondropatie",
+                       "Ložiskové defekty kĺbovej chrupavky - poúrazové stavy, osteochondrosis dissecans",
+                       "Akútne a subakútne poškodenie meniskov kolenného kĺbu",
+                       "Akútne a subakútne poškodenia kĺbových väzov (rameno, koleno, členok, atď.)",
+                       "Podvrtnutie kĺbov a natiahnutie väzov - najmä distorzie kolena a pätyartróza",
+                       "bechterevova choroba",
+                       "Po atroskopickej sutúre menisku",
+                       "Po rekonštrukcii predného skríženého väzu kolena"]} />
+      <TabList items={["Po operačnej stabilizácii ramena či sutúre rotátorov ramena",
+                       "Ochorenie úponov šliach a väzov - tzv. Entezopatie (ostroha pätovej kosti, natiahnuté triesla)",
+                       "Tenisový a golfový lakeť – entezopatie",
+                       "Postihnutie Achillovej šľachy - entezopatie (úponové bolesti) či tendinóza (chronický zápal a hmatateľné zdurenie)",
+                       "Akútne a chronické zápaly šliach a väzov",
+                       "Skokanské koleno, poškodenie AC kĺbu",
+                       "Podpora hojenia chrupaviek, väzov, svalov, šliach a kostí po úrazoch, operáciách a plastikách",
+                       "kalcifikáci"]} />
+    </div>
+  </React.Fragment>,
+  }, {
+    tabName: "POSTUP LIEČBY",
+    tabContent: <React.Fragment>
+      <div className="co-tabs__paragraphs co-center">
+        <p className="co-tabs__paragraph co-center">Metóda krvnej plazmy je založená na odbere vlastnej krvi. Čerstvé sérum získané z tejto krvi je po špeciálnej úprave injekčne aplikované priamo do postihnutého miesta. Ide o bežný ambulantný zákrok, u ktorého nie sú používané anestetiká.</p>
+        <p className="co-tabs__paragraph co-center">Pri všetkých uvedených indikáciách počet potrebných aplikáciu krvnej plazmy určí ortopéd.</p>
+        <p className="co-tabs__paragraph co-center">Aplikácia vlastnej krvnej plazmy otvorila novú etapu a významne rozšírila možnosti boja s artrózou, avšak budúcnosť liečby artrózy naďalej spočíva v komplexnosti. Racionálna kombinácia dostupných liečebných postupov, liečby kmeňovými bunkami, krvnou plazmou, rehabilitácie, balneoterapie a režimových opatrení (redukcie váhy, pohyb, zdravý životný štýl) je štandardom terapie. Až pri vyčerpaní týchto liečebných opatrení zostáva možnosť náhrady kĺbu umelým. S rozvojom biochirurgické medicíny a nových technológií liečby artrózy bude týchto operácií iste ubúdať.</p>
+      </div>
     </React.Fragment>,
   }]
 };

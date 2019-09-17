@@ -1,17 +1,17 @@
 import React from "react";
 
+// import { AdditionalTreatment } from './Shared';
 import { TabList, TabListLinks } from './Tabs';
 
 import 'antd/dist/antd.css';
 import './Tabs.css';
 import './Shared.css';
 
-
 export const AdditionalTreatment = () => {
   return <React.Fragment>
     <div className="co-container__tab-list co-center">
-    <TabListLinks items={[{name: "Výkonný indukčný systém", link: `/fyzio/vykonny_indukcny_system`}, {name: "Plazmoterapia", link: `/orthopedic/plazmoterapia`}, {name: "TR terapia", link: `/fyzio/tr_therapy`}, {name: "Mäkké techniky", link: `/fyzio/makke_techniky`}, {name: "SM systém", link: `/fyzio/sm_system`}]} />
-    <TabListLinks items={[{name: "TRX", link: `/fyzio/trx`}, {name: "Kinesiotaping", link: `/fyzio/kineziotaping`}, {name: "Skupinové cvičenia", link: `/fyzio/skupinove_cvicenia`}, {name: "Motodlaha", link: `/fyzio/motodlaha`}]} />
+    <TabListLinks items={[{name: "Výkonný indukčný systém", link: "/fyzio/vykonny_indukcny_system"}, {name: "Plazmoterapia", link: "/orthopedic/plazmoterapia"}, {name: "TR terapia", link: "/fyzio/tr_therapy"}, {name: "Mäkké techniky", link: "/fyzio/makke_techniky"}, {name: "SM systém", link: "/fyzio/sm_system"}]} />
+    <TabListLinks items={[{name: "TRX", link: "/fyzio/trx"}, {name: "Kinesiotaping", link: "/fyzio/kineziotaping"}, {name: "Skupinové cvičenia", link: "/fyzio/skupinove_cvicenia"}, {name: "Motodlaha", link: "/fyzio/motodlaha"}]} />
     </div>
   </React.Fragment>
 }

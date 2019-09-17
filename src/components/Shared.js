@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
+import { TabListLinks } from './Tabs';
 import { Orthopedic1, Orthopedic2, Orthopedic3, Orthopedic4, Orthopedic5, Orthopedic6, Orthopedic7, Orthopedic8 } from "./OrtopedicItems"
 import { Fyzio1, Fyzio2, Fyzio3, Fyzio4, Fyzio5, Fyzio6, Fyzio7, Fyzio8, Fyzio9, Fyzio10 } from "./FyzioItems"
 import { Denzito1 } from "./DenzitoItems"
