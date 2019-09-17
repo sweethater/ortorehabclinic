@@ -1,4 +1,5 @@
 import React from "react";
+import VideoPlayer from 'react-simple-video-player';
 
 // import { AdditionalTreatment } from './Shared';
 import { TabList, TabListLinks } from './Tabs';
@@ -6,6 +7,8 @@ import { TabList, TabListLinks } from './Tabs';
 import 'antd/dist/antd.css';
 import './Tabs.css';
 import './Shared.css';
+
+import acp from '../assets/videos/ACP.mp4';
 
 export const AdditionalTreatment = () => {
   return <React.Fragment>
@@ -40,7 +43,8 @@ export const Fyzio1 = {
   </React.Fragment>,
   }, {
     tabName: "VIDEO",
-    tabContent: <React.Fragment></React.Fragment>,
+    tabContent: <React.Fragment>
+    </React.Fragment>,
   }, {
     tabName: "DOPLNKOVÁ LIEČBA",
     tabContent: <AdditionalTreatment />,
@@ -87,7 +91,8 @@ export const Fyzio2 = {
   </React.Fragment>,
   }, {
     tabName: "Video",
-    tabContent: <React.Fragment></React.Fragment>,
+    tabContent: <React.Fragment>
+    </React.Fragment>,
   }, {
     tabName: "Doplnková liečba",
     tabContent: <AdditionalTreatment />,
@@ -119,7 +124,9 @@ export const Fyzio3 = {
     </React.Fragment>,
   }, {
     tabName: "Video",
-    tabContent: <React.Fragment></React.Fragment>,
+    tabContent: <React.Fragment>
+      <div className="kokot"><VideoPlayer url={acp} /></div>
+    </React.Fragment>,
   }, {
     tabName: "Doplnková liečba",
     tabContent: <AdditionalTreatment />,

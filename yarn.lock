@@ -9148,6 +9148,11 @@ react-scripts@3.1.1:
   optionalDependencies:
     fsevents "2.0.7"
 
+react-simple-video-player@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-simple-video-player/-/react-simple-video-player-1.0.0.tgz#96a2f2777da3009c3a73904fdc16f35f4ddd2e0e"
+  integrity sha512-yY5zdYsJ2wsW0tEE6GwZCOoDe4Ix6sOCUmkk+xO/wVc7/8bxNJAtMSmwzp6wPGIxunn95eIgiONef2yaIJOvaA==
+
 react-slick@~0.25.2:
   version "0.25.2"
   resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.25.2.tgz#56331b67d47d8bcfe2dceb6acab1c8fd5bd1f6bc"

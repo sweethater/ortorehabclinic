@@ -10,6 +10,20 @@ import './Tabs.css';
 import './Shared.css';
 import arrow from '../assets/arrow.svg';
 
+import ReactDOM from "react-dom";
+
+const node = ReactDOM.findDOMNode(this);
+
+const simulateClick = () => {
+  var evt = document.createEvent("MouseEvents");
+  evt.initMouseEvent("click", true, true, window,
+    0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  const a = node.querySelector('.kokot svg');
+  // var a = $(".kokot svg"); 
+  console.log(a);
+  a.dispatchEvent(evt);      
+}
+
 export const ItemWrapper = props => {
   const item = props.match.params.item;
   const section = props.location.pathname.split("/").filter(Boolean)[0];
@@ -19,6 +33,7 @@ export const ItemWrapper = props => {
 
   const callback = (key) => {
     console.log(key);
+    simulateClick();
   }
   const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
   return (
