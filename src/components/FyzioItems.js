@@ -43,7 +43,13 @@ export const Fyzio1 = {
   </React.Fragment>,
   }, {
     tabName: "VIDEO",
+    videos: [{
+      url: "ACP.mp4",
+      ref: "fyzio-liecba_autolognymi_proteinmi",
+      play: false,
+    }],
     tabContent: <React.Fragment>
+      {/* <div className="kokot"><VideoPlayer url={acp} /></div> */}
     </React.Fragment>,
   }, {
     tabName: "DOPLNKOVÁ LIEČBA",

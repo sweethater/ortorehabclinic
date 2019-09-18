@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade } from 'react-reveal';
 import { Tabs } from 'antd';
 import { NavLink } from 'react-router-dom';
+import VideoPlayer from 'react-simple-video-player';
 
 import { allSectionItems } from "./Shared";
 
@@ -10,21 +11,36 @@ import './Tabs.css';
 import './Shared.css';
 import arrow from '../assets/arrow.svg';
 
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
-const node = ReactDOM.findDOMNode(this);
+// const node = ReactDOM.findDOMNode(this);
 
 const simulateClick = () => {
-  var evt = document.createEvent("MouseEvents");
-  evt.initMouseEvent("click", true, true, window,
-    0, 0, 0, 0, 0, false, false, false, false, 0, null);
-  const a = node.querySelector('.kokot svg');
+  // var evt = document.createEvent("MouseEvents");
+  // evt.initMouseEvent("click", true, true, window,
+  //   0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  // const a = node.querySelector('.kokot svg');
   // var a = $(".kokot svg"); 
-  console.log(a);
-  a.dispatchEvent(evt);      
+  // console.log(a);
+  // a.dispatchEvent(evt);      
+}
+
+export const VideoWrapper = (props) => {
+  const [section, setSection] = useState();
+  const { videos } = props; 
+  const video = videos[0]
+  // const myRef = React.createRef();
+  const url = require ('../assets/videos/ACP.mp4');
+  return (
+    <React.Fragment>
+      <div className="111111"><VideoPlayer url={url} /></div><div className="2222222"><VideoPlayer url={url} /></div>
+    </React.Fragment>
+  );
 }
 
 export const ItemWrapper = props => {
+  const [render, setRender] = useState(false);
+
   const item = props.match.params.item;
   const section = props.location.pathname.split("/").filter(Boolean)[0];
   const itemData = allSectionItems[section][item];
@@ -33,9 +49,20 @@ export const ItemWrapper = props => {
 
   const callback = (key) => {
     console.log(key);
+    setRender(key)
     simulateClick();
   }
-  const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
+  const getTabPane = (tab, i) => {
+    if (tab.videos) {
+      // const { url, ref, play } = tab.videos
+      return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
+        <VideoWrapper videos/>
+      </TabPane>
+    }
+    return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>
+  }
+  // const renderTabs = component.tabs.map((tab, i) => getTabPane(tab, i))
+  // const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
   return (
     <Fade>
       <div className={`co-${section}-container co-item-container co-content-container`}>
@@ -43,7 +70,7 @@ export const ItemWrapper = props => {
         {component.about}
         <div className="co-container__tabs co-center">
         <Tabs defaultActiveKey={`${item}-1`} onChange={callback}>
-          {renderTabs}            
+          {component.tabs.map((tab, i) => getTabPane(tab, i))}            
         </Tabs>
         </div>
         {component.footer}
