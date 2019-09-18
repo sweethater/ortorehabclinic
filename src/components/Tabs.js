@@ -134,18 +134,20 @@ export class ItemWrapper extends React.Component {
     console.log(`${section} => ${item}`);
 
     const getTabPane = (tab, i) => {
-      if (tab.videos) {
+      if (tab.tabName === "VIDEO") {
         return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
           <VideoWrapper item={item} videoRef={this.videoRef}/>
+        </TabPane>
+      }
+      if (tab.tabName === "DOPLNKOVÁ LIEČBA") {
+        return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
+          <AdditionalTreatmentTab redirect={this.redirect.bind(this)}/>
         </TabPane>
       }
       return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
         {tab.tabContent}
       </TabPane>
     }
-    console.log(component)
-    // const renderTabs = component.tabs.map((tab, i) => getTabPane(tab, i))
-    // const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
     return (
     <React.Fragment>
       <NavLink className="navigation-item--back" to={backTo(window.location.pathname)}><img src={back} /></NavLink>
@@ -156,9 +158,6 @@ export class ItemWrapper extends React.Component {
           <div className="co-container__tabs co-center">
           <Tabs defaultActiveKey={`${item}-1`} onChange={() => this._tabCallback()} >
             {component.tabs.map((tab, i) => getTabPane(tab, i))}
-            <TabPane tab="DOPLNKOVÁ LIEČBA" key={`${item}-${(component.tabs.length+1).toString()}`}>
-              <AdditionalTreatmentTab redirect={this.redirect.bind(this)}/>
-            </TabPane>
           </Tabs>
           </div>
           {component.footer}
@@ -174,35 +173,23 @@ const AdditionalTreatmentTab = ({redirect}) => {
     <div className="co-container__tab-list co-center">
       <div className="co-container__tab-list-links-column co-center">
         <ul>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "vykonny_indukcny_system")} src={arrow}/>Výkonný indukčný systém</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("orthopedic", "plazmoterapia")} src={arrow}/>Plazmoterapia</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "tr_therapy")} src={arrow}/>TR terapia</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "makke_techniky")} src={arrow}/>Mäkké techniky</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "sm_system")} src={arrow}/>SM systém</li>
+          <li onClick={() => redirect("fyzio", "vykonny_indukcny_system")}><img className="co-tab-item__arrow-image" src={arrow}/>Výkonný indukčný systém</li>
+          <li onClick={() => redirect("orthopedic", "plazmoterapia")}><img className="co-tab-item__arrow-image" src={arrow}/>Plazmoterapia</li>
+          <li onClick={() => redirect("fyzio", "tr_therapy")}><img className="co-tab-item__arrow-image" src={arrow}/>TR terapia</li>
+          <li onClick={() => redirect("fyzio", "makke_techniky")}><img className="co-tab-item__arrow-image" src={arrow}/>Mäkké techniky</li>
+          <li onClick={() => redirect("fyzio", "sm_system")}><img className="co-tab-item__arrow-image" src={arrow}/>SM systém</li>
         </ul>
       </div>
       <div className="co-container__tab-list-links-column co-center">
         <ul>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "trx")} src={arrow}/>TRX</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("orthopedic", "kineziotaping")} src={arrow}/>Kinesiotaping</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "skupinove_cvicenia")} src={arrow}/>Skupinové cvičenia</li>
-          <li><img className="co-tab-item__arrow-image" onClick={() => redirect("fyzio", "motodlaha")} src={arrow}/>Motodlaha</li>
+          <li onClick={() => redirect("fyzio", "trx")}><img className="co-tab-item__arrow-image" src={arrow}/>TRX</li>
+          <li onClick={() => redirect("orthopedic", "kineziotaping")}><img className="co-tab-item__arrow-image" src={arrow}/>Kinesiotaping</li>
+          <li onClick={() => redirect("fyzio", "skupinove_cvicenia")}><img className="co-tab-item__arrow-image" src={arrow}/>Skupinové cvičenia</li>
+          <li onClick={() => redirect("fyzio", "motodlaha")}><img className="co-tab-item__arrow-image" src={arrow}/>Motodlaha</li>
         </ul>
       </div>
     </div>
   </React.Fragment>
-}
-
-export const TabListLinks = ({items}) => {
-  return (
-    <div className="co-container__tab-list-links-column co-center">
-      <ul>
-        {items.map((item, i) => <NavLink key={i} className="nav" to={item.link}>
-          <li key={i}><img className="co-tab-item__arrow-image" src={arrow}/>{item.name}</li>
-        </NavLink>)}
-      </ul>
-    </div>
-  )
 }
 
 export const TabList = ({items}) => {
