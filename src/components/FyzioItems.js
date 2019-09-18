@@ -43,11 +43,7 @@ export const Fyzio1 = {
   </React.Fragment>,
   }, {
     tabName: "VIDEO",
-    videos: [{
-      url: "../assets/videos/ACP.mp4",
-    },{
-      url: "../assets/videos/ACP2.mp4",
-    }],
+    videos: {},
     tabContent: <React.Fragment>
       {/* <div className="kokot"><VideoPlayer url={acp} /></div> */}
     </React.Fragment>,
@@ -97,6 +93,7 @@ export const Fyzio2 = {
   </React.Fragment>,
   }, {
     tabName: "Video",
+    videos: {},
     tabContent: <React.Fragment>
     </React.Fragment>,
   }, {

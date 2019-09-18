@@ -26,51 +26,85 @@ import 'video-react/dist/video-react.css';
 //   a.dispatchEvent(evt);      
 // }
 
-const loadVideoAndPoster = (source) => {
-  let url;
+const loadThumbs = (setSource, item) => {
+  switch (item) {
+    case "laser_12":
+      return <React.Fragment>
+        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/HighIntensityLaser.jpg")} onClick={() => setSource("../assets/videos/HighIntensityLaser.mp4")} />
+        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/HighIntensityLaser2.jpg")} onClick={() => setSource("../assets/videos/HighIntensityLaser2.mp4")} />
+      </React.Fragment>
+    default:
+      return <React.Fragment>
+        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/ACP.jpg")} onClick={() => setSource("../assets/videos/ACP.mp4")} />
+        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/ACP2.jpg")} onClick={() => setSource("../assets/videos/ACP2.mp4")} />
+      </React.Fragment>
+  }
+}
+
+const getDefaultVideoAndPoster = (item) => {
+  let video;
+  let poster;
+  switch(item) {
+    case "laser_12":
+      video = require ('../assets/videos/HighIntensityLaser.mp4');
+      poster = require ('../assets/videos/posters/HighIntensityLaser.jpg');
+      break;
+    default:
+      video = require ('../assets/videos/ACP.mp4');
+      poster = require ('../assets/videos/posters/ACP.jpg');
+  }
+  return {video, poster}
+}
+
+const loadVideoAndPoster = (source, item) => {
+  let video;
   let poster;
   switch (source) {
+    case '../assets/videos/HighIntensityLaser.mp4':
+      video = require ('../assets/videos/HighIntensityLaser.mp4');
+      poster = require ('../assets/videos/posters/HighIntensityLaser.jpg');
+      break;
+    case '../assets/videos/HighIntensityLaser2.mp4':
+      video = require ('../assets/videos/HighIntensityLaser2.mp4');
+      poster = require ('../assets/videos/posters/HighIntensityLaser2.jpg');
+      break;
     case '../assets/videos/ACP.mp4':
-      url = require ('../assets/videos/ACP.mp4');
+      video = require ('../assets/videos/ACP.mp4');
       poster = require ('../assets/videos/posters/ACP.jpg');
       break;
     case '../assets/videos/ACP2.mp4':
-      url = require ('../assets/videos/ACP2.mp4');
+      video = require ('../assets/videos/ACP2.mp4');
       poster = require ('../assets/videos/posters/ACP2.jpg');
       break;
     default:
-      url = require ('../assets/videos/ACP.mp4');
-      poster = require ('../assets/videos/posters/ACP.jpg');
+      const videoAndPoster = getDefaultVideoAndPoster(item);
+      video = videoAndPoster.video;
+      poster = videoAndPoster.poster
   }
-  return {url, poster };
+  return {video, poster};
 }
 
 export const VideoWrapper = (props) => {
-  const { videos } = props; 
-  const video = videos[0]
-  const [source, setSource] = useState(video.url);
-
-  console.log(props);
-  
-  const urlAndPoster = loadVideoAndPoster(source);
-  const { url, poster } = urlAndPoster;
+  // const { urls } = props.videos;
+  const { item } = props;
+  const [source, setSource] = useState("");
+  const thumbs = loadThumbs(setSource, item)
+  const urlAndPoster = loadVideoAndPoster(source, item);
+  const { video, poster } = urlAndPoster;
   return (
     <React.Fragment>
       <Player
         className="co-center"
         autoPlay={false}
         fluid={false}
-        // aspectRatio="auto"
         height={520}
         poster={poster}
-        src={url}>
+        src={video}>
         <ControlBar className="co-video-player__constol-bar" autoHide={false} disableDefaultControls></ControlBar>
       </Player>
       <span className="co-tabs--video-divider">ZOZNAM VIDEÍ</span>
-      
       <div className="co-tabs--video-thumbs co-center">
-        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/ACP.jpg")} onClick={() => setSource("../assets/videos/ACP.mp4")} />
-        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/ACP2.jpg")} onClick={() => setSource("../assets/videos/ACP2.mp4")} />
+        {thumbs}
       </div>
     </React.Fragment>
   );
@@ -86,14 +120,13 @@ export const ItemWrapper = props => {
   const { TabPane } = Tabs;
 
   const callback = (key) => {
-    console.log(key);
+    // console.log(key);
     setRender(key)
-    // simulateClick();
   }
   const getTabPane = (tab, i) => {
     if (tab.videos) {
       return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
-        <VideoWrapper videos={tab.videos}/>
+        <VideoWrapper item={item} />
       </TabPane>
     }
     return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>
