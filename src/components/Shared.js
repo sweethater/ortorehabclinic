@@ -13,11 +13,12 @@ import './Nav';
 export const withBackButton = (WrappedComponent) => {
   return class extends React.Component {
     render() {
-      const section = getSection(window.location.pathname)
+      const section = this.props.location.pathname.split("/").filter(Boolean)[0];
+      const item = this.props.location.pathname.split("/").filter(Boolean)[1];
       return (
         <React.Fragment>
           <NavLink className="navigation-item--back" to={backTo(window.location.pathname)}><img src={back} /></NavLink>
-          <WrappedComponent {...this.props} section={section}/>
+          <WrappedComponent {...this.props} section={section} item={item} />
         </React.Fragment>
       );
     }

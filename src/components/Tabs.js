@@ -11,6 +11,7 @@ import './Tabs.css';
 import './Shared.css';
 import arrow from '../assets/arrow.svg';
 import 'video-react/dist/video-react.css';
+import { render } from "react-dom";
 
 // import ReactDOM from "react-dom";
 
@@ -85,15 +86,16 @@ const loadVideoAndPoster = (source, item) => {
 }
 
 export const VideoWrapper = (props) => {
-  // const { urls } = props.videos;
-  const { item } = props;
+  const { item, videoRef} = props;
   const [source, setSource] = useState("");
   const thumbs = loadThumbs(setSource, item)
   const urlAndPoster = loadVideoAndPoster(source, item);
   const { video, poster } = urlAndPoster;
+  
   return (
     <React.Fragment>
       <Player
+        ref={videoRef}
         className="co-center"
         autoPlay={false}
         fluid={false}
@@ -110,43 +112,54 @@ export const VideoWrapper = (props) => {
   );
 }
 
-export const ItemWrapper = props => {
-  const [render, setRender] = useState(false);
-
-  const item = props.match.params.item;
-  const section = props.location.pathname.split("/").filter(Boolean)[0];
-  const itemData = allSectionItems[section][item];
-  const { name, component } = itemData;
-  const { TabPane } = Tabs;
-
-  const callback = (key) => {
-    // console.log(key);
-    setRender(key)
-  }
-  const getTabPane = (tab, i) => {
-    if (tab.videos) {
-      return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
-        <VideoWrapper item={item} />
-      </TabPane>
+export class ItemWrapper extends React.Component {
+  constructor(props) {
+    super(props);
+    this.videoRef = React.createRef();
+    this.state = {
+      section: props.section,
+      item: props.item
     }
-    return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>
   }
-  // const renderTabs = component.tabs.map((tab, i) => getTabPane(tab, i))
-  // const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
-  return (
-    <Fade>
-      <div className={`co-${section}-container co-item-container co-content-container`}>
-        <p className="co-container__header co-center">{name}</p>
-        {component.about}
-        <div className="co-container__tabs co-center">
-        <Tabs defaultActiveKey={`${item}-1`} onChange={callback}>
-          {component.tabs.map((tab, i) => getTabPane(tab, i))}            
-        </Tabs>
+  _tabCallback(key) {
+    console.log(this.videoRef.current);
+    if (this.videoRef.current) {
+      this.videoRef.current.pause();
+    }
+    console.log(key);
+  } 
+
+  render() {
+    const { section, item } = this.state;
+    const itemData = allSectionItems[section][item];
+    const { name, component } = itemData;
+    const { TabPane } = Tabs;
+
+    const getTabPane = (tab, i) => {
+      if (tab.videos) {
+        return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
+          <VideoWrapper item={item} videoRef={this.videoRef}/>
+        </TabPane>
+      }
+      return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>
+    }
+    // const renderTabs = component.tabs.map((tab, i) => getTabPane(tab, i))
+    // const renderTabs = component.tabs.map((tab, i) => <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>)
+    return (
+      <Fade>
+        <div className={`co-${section}-container co-item-container co-content-container`}>
+          <p className="co-container__header co-center">{name}</p>
+          {component.about}
+          <div className="co-container__tabs co-center">
+          <Tabs defaultActiveKey={`${item}-1`} onChange={() => this._tabCallback()} >
+            {component.tabs.map((tab, i) => getTabPane(tab, i))}            
+          </Tabs>
+          </div>
+          {component.footer}
         </div>
-        {component.footer}
-      </div>
-    </Fade>
-  );
+      </Fade>
+    );
+  }
 }
 
 export const TabListLinks = ({items}) => {
