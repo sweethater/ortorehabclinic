@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Fade } from 'react-reveal';
 import { Tabs } from 'antd';
 import { NavLink } from 'react-router-dom';
-import VideoPlayer from 'react-simple-video-player';
+import { Player, ControlBar, VolumeMenuButton  } from 'video-react';
 
 import { allSectionItems } from "./Shared";
 
@@ -10,30 +10,68 @@ import 'antd/dist/antd.css';
 import './Tabs.css';
 import './Shared.css';
 import arrow from '../assets/arrow.svg';
+import 'video-react/dist/video-react.css';
 
 // import ReactDOM from "react-dom";
 
 // const node = ReactDOM.findDOMNode(this);
 
-const simulateClick = () => {
-  // var evt = document.createEvent("MouseEvents");
-  // evt.initMouseEvent("click", true, true, window,
-  //   0, 0, 0, 0, 0, false, false, false, false, 0, null);
-  // const a = node.querySelector('.kokot svg');
-  // var a = $(".kokot svg"); 
-  // console.log(a);
-  // a.dispatchEvent(evt);      
+// const simulateClick = () => {
+//   var evt = document.createEvent("MouseEvents");
+//   evt.initMouseEvent("click", true, true, window,
+//     0, 0, 0, 0, 0, false, false, false, false, 0, null);
+//   const a = node.querySelector('.video-react-video');
+//   var a = $(".video-react-video"); 
+//   console.log(a);
+//   a.dispatchEvent(evt);      
+// }
+
+const loadVideoAndPoster = (source) => {
+  let url;
+  let poster;
+  switch (source) {
+    case '../assets/videos/ACP.mp4':
+      url = require ('../assets/videos/ACP.mp4');
+      poster = require ('../assets/videos/posters/ACP.jpg');
+      break;
+    case '../assets/videos/ACP2.mp4':
+      url = require ('../assets/videos/ACP2.mp4');
+      poster = require ('../assets/videos/posters/ACP2.jpg');
+      break;
+    default:
+      url = require ('../assets/videos/ACP.mp4');
+      poster = require ('../assets/videos/posters/ACP.jpg');
+  }
+  return {url, poster };
 }
 
 export const VideoWrapper = (props) => {
-  const [section, setSection] = useState();
   const { videos } = props; 
   const video = videos[0]
-  // const myRef = React.createRef();
-  const url = require ('../assets/videos/ACP.mp4');
+  const [source, setSource] = useState(video.url);
+
+  console.log(props);
+  
+  const urlAndPoster = loadVideoAndPoster(source);
+  const { url, poster } = urlAndPoster;
   return (
     <React.Fragment>
-      <div className="111111"><VideoPlayer url={url} /></div><div className="2222222"><VideoPlayer url={url} /></div>
+      <Player
+        className="co-center"
+        autoPlay={false}
+        fluid={false}
+        // aspectRatio="auto"
+        height={520}
+        poster={poster}
+        src={url}>
+        <ControlBar className="co-video-player__constol-bar" autoHide={false} disableDefaultControls></ControlBar>
+      </Player>
+      <span className="co-tabs--video-divider">ZOZNAM VIDEÍ</span>
+      
+      <div className="co-tabs--video-thumbs co-center">
+        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/ACP.jpg")} onClick={() => setSource("../assets/videos/ACP.mp4")} />
+        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/ACP2.jpg")} onClick={() => setSource("../assets/videos/ACP2.mp4")} />
+      </div>
     </React.Fragment>
   );
 }
@@ -50,13 +88,12 @@ export const ItemWrapper = props => {
   const callback = (key) => {
     console.log(key);
     setRender(key)
-    simulateClick();
+    // simulateClick();
   }
   const getTabPane = (tab, i) => {
     if (tab.videos) {
-      // const { url, ref, play } = tab.videos
       return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>
-        <VideoWrapper videos/>
+        <VideoWrapper videos={tab.videos}/>
       </TabPane>
     }
     return <TabPane tab={tab.tabName} key={`${item}-${(i+1).toString()}`}>{tab.tabContent}</TabPane>
