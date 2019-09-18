@@ -28,13 +28,13 @@ const App = (props) => {
         <div className="main-container">
           <Route exact path="/" component={Home}/>
           <Route path="/patient" component={withBackButton(Patient)}/>
-          <Route path="/orthopedic/:item" component={withBackButton(ItemWrapper)}/>
+          <Route path="/orthopedic/:item" component={ItemWrapper}/>
           <Route exact path="/orthopedic" component={withBackButton(Orthopedic)}/>
-          <Route path="/fyzio/:item" component={withBackButton(ItemWrapper)}/>
+          <Route path="/fyzio/:item" component={ItemWrapper}/>
           <Route exact path="/fyzio" component={withBackButton(Fyzio)}/>
-          <Route path="/rehab/:item" component={withBackButton(ItemWrapper)}/>
+          <Route path="/rehab/:item" component={ItemWrapper}/>
           <Route exact path="/rehab" component={withBackButton(Rehab)}/>
-          <Route path="/denzito/:item" component={withBackButton(ItemWrapper)}/>
+          <Route path="/denzito/:item" component={ItemWrapper}/>
           <Route exact path="/denzito" component={withBackButton(Denzito)}/>
           <Route path="/gallery" component={withBackButton(Gallery)}/>
           <Route exact path="/fees" component={withBackButton(Fees)}/>
