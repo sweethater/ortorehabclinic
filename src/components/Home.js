@@ -156,10 +156,3 @@ export const Denzito = props => {
   );
 }
 
-export const Gallery = props => {
-  return (
-    <div className="co-gallery-container co-content-container">
-      <p className="co-container__header co-center">GALÉRIA</p>
-    </div>
-  );
-}

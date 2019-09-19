@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink, Route, BrowserRouter } from 'react-router-dom';
 
-import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito, Gallery } from "./Home";
+import { Home, Orthopedic, Patient, Fyzio, Rehab, Denzito } from "./Home";
+import { Gallery } from './Gallery';
 import { Fees, FeesOrtopedic, FeesFyzio } from "./Fees";
 import { Contacts } from "./Contacts";
 import { ItemWrapper } from "./Tabs";
