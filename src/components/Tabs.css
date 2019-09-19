@@ -90,13 +90,14 @@
 /* overriders video */
 
 .video-react {
-    background-color: transparent !important;
+    border: 3px solid #fff;
+    border-radius: 10px;
 }
 
 .video-react .video-react-video,
 .video-react .video-react-poster {
     background-color: transparent !important;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* overrides ant-tabs*/

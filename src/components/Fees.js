@@ -2,12 +2,36 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { Fade } from 'react-reveal';
+import { Tabs } from 'antd';
 
+import 'antd/dist/antd.css';
 import './Home.css';
 import './Shared.css';
 import './Fees.css';
 
 export const Fees = props => {
+  const section = 'fees';
+  const { TabPane } = Tabs;
+  return (
+    <Fade>
+      <div className="co-fees-container co-content-container">
+        <p className="co-container__header co-center">CENNÍK</p>
+        <div className="co-container__tabs co-center">
+          <Tabs defaultActiveKey={`${section}-1`} >
+            <TabPane tab="Cenník fyzioterapia" key={`${section}-1`}>
+              <FeesFyzio></FeesFyzio>
+            </TabPane>
+            <TabPane tab="Cenník ortopédia" key={`${section}-2`}>
+              <FeesOrtopedic></FeesOrtopedic>
+            </TabPane>
+          </Tabs>
+        </div>
+      </div>
+    </Fade>
+  );
+}
+
+export const Fees2 = props => {
   const section = 'fees';
   return (
     <Fade>
@@ -15,13 +39,12 @@ export const Fees = props => {
         <p className="co-container__header co-center">CENNÍK</p>
         <div className="co-container__paragraphs co-center">
           <p className="co-container__paragraph-narrow co-center"><b>Cenník fyzioterapia</b></p>
-          <p className="co-container__paragraph-narrow co-center">Cenník fyzioterapeutických vyšetrení je platný pre Liptovský Mikuláš a Ružomberok.</p>
+          
           <NavLink className="nav" to={`/${section}/fyzio`}><div className="co-fees-container__button co-center">Cenník fyzioterapia</div></NavLink>
         </div>
         <div className="co-container__paragraphs co-center">
           <p className="co-container__paragraph-narrow co-center"><b>Cenník ortopédia</b></p>
-          <p className="co-container__paragraph-narrow co-center">Cenník ortopedických vyšetrení je platný pre Ružomberok.</p>
-          <p className="co-container__paragraph-narrow co-center"><b>Ortopédia v Liptovskom Mikuláši je plne hradená zdravotnými poisťovňami.</b></p>
+
           <NavLink className="nav" to={`/${section}/ortopedic`}><div className="co-fees-container__button co-center">Cenník ortopédia</div></NavLink>
         </div>
       </div>
@@ -43,7 +66,6 @@ export const FeesFyzio = props => {
   return (
     <Fade>
       <div className="co-fees-container co-content-container">
-        <p className="co-container__header co-center">Cenník fyzioterapia</p>
         <div className="co-fees-container__table co-center">
           <table id="fees_table">
             <tbody>
@@ -61,6 +83,7 @@ export const FeesFyzio = props => {
             </tbody>
           </table>
         </div>
+        <p className="co-container__paragraph-narrow co-center">Cenník fyzioterapeutických vyšetrení je platný pre Liptovský Mikuláš a Ružomberok.</p>
       </div>
     </Fade>
   );
@@ -71,12 +94,11 @@ export const FeesOrtopedic = props => {
   return (
     <Fade>
       <div className="co-fees-container co-content-container">
-        <p className="co-container__header co-center">Cenník ortopédia</p>
         <div className="co-fees-container__table co-center">
           <table id="fees_table">
             <tbody>
               <TableItem itemName="Ortopedické vyšetrenie" itemPrice="10,- Eur"></TableItem>
-              <TableItem itemName="Ortopedické vyšetrenie pre posudkové účely /Sociálna poisťovňa/" itemPrice="10,- Eur"></TableItem>
+              <TableItem itemName="Ortopedické vyšetrenie pre posudkové účely (Sociálna poisťovňa)" itemPrice="10,- Eur"></TableItem>
               <TableItem itemName="Denzitometrické vyšetrenie" itemPrice="10,- Eur"></TableItem>
               <TableItem itemName="Intraartikulárna inj. kys. hyaluronovej + kolagén s obsahom účinnej látky 20 mg" itemPrice="35,- Eur"></TableItem>
               <TableItem itemName="Intraartikulárna inj. kys. hyaluronovej + kolagén s obsahom účinnej látky 30 mg" itemPrice="40,- Eur"></TableItem>
@@ -95,6 +117,8 @@ export const FeesOrtopedic = props => {
             </tbody>
           </table>
         </div>
+        <p className="co-container__paragraph-narrow co-center">Cenník ortopedických vyšetrení je platný pre Ružomberok.</p>
+        <p className="co-container__paragraph-narrow co-center"><b>Ortopédia v Liptovskom Mikuláši je plne hradená zdravotnými poisťovňami.</b></p>
       </div>
     </Fade>
   );
