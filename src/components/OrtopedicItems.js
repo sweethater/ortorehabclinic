@@ -148,6 +148,8 @@ export const Orthopedic4 = {
         <p className="co-tabs__paragraph co-center">Aplikácia vlastnej krvnej plazmy otvorila novú etapu a významne rozšírila možnosti boja s artrózou, avšak budúcnosť liečby artrózy naďalej spočíva v komplexnosti. Racionálna kombinácia dostupných liečebných postupov, liečby kmeňovými bunkami, krvnou plazmou, rehabilitácie, balneoterapie a režimových opatrení (redukcie váhy, pohyb, zdravý životný štýl) je štandardom terapie. Až pri vyčerpaní týchto liečebných opatrení zostáva možnosť náhrady kĺbu umelým. S rozvojom biochirurgické medicíny a nových technológií liečby artrózy bude týchto operácií iste ubúdať.</p>
       </div>
     </React.Fragment>,
+  }, {
+    tabName: "VIDEO",
   }]
 };
 

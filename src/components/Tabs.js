@@ -17,13 +17,30 @@ const loadThumbs = (setSource, item) => {
   switch (item) {
     case "laser_12":
       return <React.Fragment>
-        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/HighIntensityLaser.jpg")} onClick={() => setSource("../assets/videos/HighIntensityLaser.mp4")} />
-        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/HighIntensityLaser2.jpg")} onClick={() => setSource("../assets/videos/HighIntensityLaser2.mp4")} />
+        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/laser_12-1.jpg")} onClick={() => setSource("../assets/videos/laser_12-1.mp4")} />
+        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/laser_12-2.jpg")} onClick={() => setSource("../assets/videos/laser_12-2.mp4")} />
       </React.Fragment>
+    case "plazmoterapia":
+      return <React.Fragment>
+        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/plazmoterapia-1.jpg")} onClick={() => setSource("../assets/videos/plazmoterapia-1.mp4")} />
+        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/plazmoterapia-2.jpg")} onClick={() => setSource("../assets/videos/plazmoterapia-2.mp4")} />
+      </React.Fragment>
+    case "tr_therapy":
+        return <React.Fragment>
+          <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/tr_therapy-1.jpg")} onClick={() => setSource("../assets/videos/tr_therapy-1.mp4")} />
+          <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/tr_therapy-2.jpg")} onClick={() => setSource("../assets/videos/tr_therapy-2.mp4")} />
+        </React.Fragment>
+    case "vykonny_indukcny_system":
+        return <React.Fragment>
+          <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/vykonny_indukcny_system-1.jpg")} onClick={() => setSource("../assets/videos/vykonny_indukcny_system-1.mp4")} />
+          <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/vykonny_indukcny_system-2.jpg")} onClick={() => setSource("../assets/videos/vykonny_indukcny_system-2.mp4")} />
+          <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/vykonny_indukcny_system-3.jpg")} onClick={() => setSource("../assets/videos/vykonny_indukcny_system-3.mp4")} />
+          <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/vykonny_indukcny_system-4.jpg")} onClick={() => setSource("../assets/videos/vykonny_indukcny_system-4.mp4")} />
+        </React.Fragment>
     default:
       return <React.Fragment>
-        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/ACP.jpg")} onClick={() => setSource("../assets/videos/ACP.mp4")} />
-        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/ACP2.jpg")} onClick={() => setSource("../assets/videos/ACP2.mp4")} />
+        <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/laser_12-1.jpg")} onClick={() => setSource("../assets/videos/laser_12-1.mp4")} />
+        <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/laser_12-2.jpg")} onClick={() => setSource("../assets/videos/laser_12-2.mp4")} />
       </React.Fragment>
   }
 }
@@ -33,12 +50,24 @@ const getDefaultVideoAndPoster = (item) => {
   let poster;
   switch(item) {
     case "laser_12":
-      video = require ('../assets/videos/HighIntensityLaser.mp4');
-      poster = require ('../assets/videos/posters/HighIntensityLaser.jpg');
+      video = require ('../assets/videos/laser_12-1.mp4');
+      poster = require ('../assets/videos/posters/laser_12-1.jpg');
+      break;
+    case "plazmoterapia":
+      video = require ('../assets/videos/plazmoterapia-1.mp4');
+      poster = require ('../assets/videos/posters/plazmoterapia-1.jpg');
+      break;
+    case "tr_therapy":
+      video = require ('../assets/videos/tr_therapy-1.mp4');
+      poster = require ('../assets/videos/posters/tr_therapy-1.jpg');
+      break;
+    case "vykonny_indukcny_system":
+      video = require ('../assets/videos/vykonny_indukcny_system-1.mp4');
+      poster = require ('../assets/videos/posters/vykonny_indukcny_system-1.jpg');
       break;
     default:
-      video = require ('../assets/videos/ACP.mp4');
-      poster = require ('../assets/videos/posters/ACP.jpg');
+      video = require ('../assets/videos/laser_12-1.mp4');
+      poster = require ('../assets/videos/posters/laser_12-1.jpg');
   }
   return {video, poster}
 }
@@ -47,21 +76,45 @@ const loadVideoAndPoster = (source, item) => {
   let video;
   let poster;
   switch (source) {
-    case '../assets/videos/HighIntensityLaser.mp4':
-      video = require ('../assets/videos/HighIntensityLaser.mp4');
-      poster = require ('../assets/videos/posters/HighIntensityLaser.jpg');
+    case '../assets/videos/laser_12-1.mp4':
+      video = require ('../assets/videos/laser_12-1.mp4');
+      poster = require ('../assets/videos/posters/laser_12-1.jpg');
       break;
-    case '../assets/videos/HighIntensityLaser2.mp4':
-      video = require ('../assets/videos/HighIntensityLaser2.mp4');
-      poster = require ('../assets/videos/posters/HighIntensityLaser2.jpg');
+    case '../assets/videos/laser_12-2.mp4':
+      video = require ('../assets/videos/laser_12-2.mp4');
+      poster = require ('../assets/videos/posters/laser_12-2.jpg');
       break;
-    case '../assets/videos/ACP.mp4':
-      video = require ('../assets/videos/ACP.mp4');
-      poster = require ('../assets/videos/posters/ACP.jpg');
+    case '../assets/videos/plazmoterapia-1.mp4':
+      video = require ('../assets/videos/plazmoterapia-1.mp4');
+      poster = require ('../assets/videos/posters/plazmoterapia-1.jpg');
       break;
-    case '../assets/videos/ACP2.mp4':
-      video = require ('../assets/videos/ACP2.mp4');
-      poster = require ('../assets/videos/posters/ACP2.jpg');
+    case '../assets/videos/plazmoterapia-2.mp4':
+      video = require ('../assets/videos/plazmoterapia-2.mp4');
+      poster = require ('../assets/videos/posters/plazmoterapia-2.jpg');
+      break;
+    case '../assets/videos/tr_therapy-1.mp4':
+      video = require ('../assets/videos/tr_therapy-1.mp4');
+      poster = require ('../assets/videos/posters/tr_therapy-1.jpg');
+      break;
+    case '../assets/videos/tr_therapy-2.mp4':
+      video = require ('../assets/videos/tr_therapy-2.mp4');
+      poster = require ('../assets/videos/posters/tr_therapy-2.jpg');
+      break;
+    case '../assets/videos/vykonny_indukcny_system-1.mp4':
+      video = require ('../assets/videos/vykonny_indukcny_system-1.mp4');
+      poster = require ('../assets/videos/posters/vykonny_indukcny_system-1.jpg');
+      break;
+    case '../assets/videos/vykonny_indukcny_system-2.mp4':
+      video = require ('../assets/videos/vykonny_indukcny_system-2.mp4');
+      poster = require ('../assets/videos/posters/vykonny_indukcny_system-2.jpg');
+      break;
+    case '../assets/videos/vykonny_indukcny_system-3.mp4':
+      video = require ('../assets/videos/vykonny_indukcny_system-3.mp4');
+      poster = require ('../assets/videos/posters/vykonny_indukcny_system-3.jpg');
+      break;
+    case '../assets/videos/vykonny_indukcny_system-4.mp4':
+      video = require ('../assets/videos/vykonny_indukcny_system-4.mp4');
+      poster = require ('../assets/videos/posters/vykonny_indukcny_system-4.jpg');
       break;
     default:
       const videoAndPoster = getDefaultVideoAndPoster(item);
