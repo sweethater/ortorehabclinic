@@ -126,7 +126,7 @@ export const Rehab = props => {
             <NavLink className="nav" to={`/${section}/${sectionItems.vykonny_indukcny_system.key}`}><ComponentMenuItem title={`${sectionItems.vykonny_indukcny_system.name}`} section={section} imageName={`${sectionItems.vykonny_indukcny_system.key}`}></ComponentMenuItem></NavLink>
             <NavLink className="nav" to={`/${section}/${sectionItems.laser_12.key}`}><ComponentMenuItem title={`${sectionItems.laser_12.name}`} section={section} imageName={`${sectionItems.laser_12.key}`}></ComponentMenuItem></NavLink>
             <NavLink className="nav" to={`/${section}/${sectionItems.tr_therapy.key}`}><ComponentMenuItem title={`${sectionItems.tr_therapy.name}`} section={section} imageName={`${sectionItems.tr_therapy.key}`}></ComponentMenuItem></NavLink>
-            <NavLink className="nav" to={`/orthopedic/${sectionItems.plazmoterapia.key}`}><ComponentMenuItem title={`${sectionItems.plazmoterapia.name}`} section={section} imageName={sectionItems.plazmoterapia.key}></ComponentMenuItem></NavLink>
+            <NavLink className="nav" to={`/${section}/${sectionItems.plazmoterapia.key}`}><ComponentMenuItem title={`${sectionItems.plazmoterapia.name}`} section={section} imageName={sectionItems.plazmoterapia.key}></ComponentMenuItem></NavLink>
           </div>
           <div className="co-container-menu co-center">
             <NavLink className="nav" to={`/${section}/${sectionItems.sm_system.key}`}><ComponentMenuItem title={`${sectionItems.sm_system.name}`} section={section} imageName={`${sectionItems.sm_system.key}`}></ComponentMenuItem></NavLink>

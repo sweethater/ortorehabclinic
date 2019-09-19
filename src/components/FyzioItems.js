@@ -64,7 +64,7 @@ export const Fyzio2 = {
     tabContent: <React.Fragment>
     <div className="co-tab__list-with-paragraphs">
       <div className="co-container__tab-list">
-        <TabList items={["Biostimulácia", "Regenerácia", "Regenerácia", "Protizápalový účinok", "Vysokoúčinný a dlhotrvajúci analgetický účinok"]} />
+        <TabList items={["Biostimulácia", "Regenerácia", "Protiopuchový účinok", "Protizápalový účinok", "Vysokoúčinný a dlhotrvajúci analgetický účinok"]} />
       </div>
       <div className="co-tabs__paragraphs co-center">
         <p className="co-tabs__paragraph co-left">Vlnová dĺžka laserového svetla okolo hranice 1000 nm v extrémne krátkom pulznom režime dodáva BTL terapii využívajúcej technológiu vysokovýkonného lasera úplne novú terapeutickú vlastnosť - schopnosť vytvárať mechanickú vlnu v biologickom tkanive. Vlnové dĺžky 1064nm a 980nm sú špeciálne navrhnuté tak, aby sa veľmi dobre vstrebávali v štruktúrach na tekutej báze. Potom, čo sa laserové svetlo dostane na pokožku, vytvára v ľudskom tkanive fotomechanickú vlnu o špecifickej vlnovej dĺžke.</p>

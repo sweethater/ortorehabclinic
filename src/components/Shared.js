@@ -9,57 +9,6 @@ import back from '../assets/back2.png';
 
 import './Nav';
 
-const loadVideoAndPoster = (source, item) => {
-  let video;
-  let poster;
-  switch (source) {
-    case '../assets/videos/laser_12-1.mp4':
-      video = require ('../assets/videos/laser_12-1.mp4');
-      poster = require ('../assets/videos/posters/laser_12-1.jpg');
-      break;
-    case '../assets/videos/laser_12-2.mp4':
-      video = require ('../assets/videos/laser_12-2.mp4');
-      poster = require ('../assets/videos/posters/laser_12-2.jpg');
-      break;
-    case '../assets/videos/plazmoterapia-1.mp4':
-      video = require ('../assets/videos/plazmoterapia-1.mp4');
-      poster = require ('../assets/videos/posters/plazmoterapia-1.jpg');
-      break;
-    case '../assets/videos/plazmoterapia-2.mp4':
-      video = require ('../assets/videos/plazmoterapia-2.mp4');
-      poster = require ('../assets/videos/posters/plazmoterapia-2.jpg');
-      break;
-    case '../assets/videos/tr_therapy-1.mp4':
-      video = require ('../assets/videos/tr_therapy-1.mp4');
-      poster = require ('../assets/videos/posters/tr_therapy-1.jpg');
-      break;
-    case '../assets/videos/tr_therapy-2.mp4':
-      video = require ('../assets/videos/tr_therapy-2.mp4');
-      poster = require ('../assets/videos/posters/tr_therapy-2.jpg');
-      break;
-    case '../assets/videos/vykonny_indukcny_system-1.mp4':
-      video = require ('../assets/videos/vykonny_indukcny_system-1.mp4');
-      poster = require ('../assets/videos/posters/vykonny_indukcny_system-1.jpg');
-      break;
-    case '../assets/videos/vykonny_indukcny_system-2.mp4':
-      video = require ('../assets/videos/vykonny_indukcny_system-2.mp4');
-      poster = require ('../assets/videos/posters/vykonny_indukcny_system-2.jpg');
-      break;
-    case '../assets/videos/vykonny_indukcny_system-3.mp4':
-      video = require ('../assets/videos/vykonny_indukcny_system-3.mp4');
-      poster = require ('../assets/videos/posters/vykonny_indukcny_system-3.jpg');
-      break;
-    case '../assets/videos/vykonny_indukcny_system-4.mp4':
-      video = require ('../assets/videos/vykonny_indukcny_system-4.mp4');
-      poster = require ('../assets/videos/posters/vykonny_indukcny_system-4.jpg');
-      break;
-    default:
-      video = require ('../assets/videos/laser_12-1.mp4');
-      poster = require ('../assets/videos/posters/laser_12-1.jpg');
-  }
-  return {video, poster};
-}
-
 export const withBackButton = (WrappedComponent) => {
   return class extends React.Component {
     render() {
