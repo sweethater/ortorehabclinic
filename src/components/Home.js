@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
 import { Fade } from 'react-reveal';
 
 import { ComponentMenuItem } from "./Nav";
@@ -23,16 +21,9 @@ export const Home = props => {
         <p className="co-container__paragraph">ORTO REHAB CLINIC disponuje najmodernejšou zdravotníckou technikou v segmente ambulantnej zdravotnej starostlivosti, a to nielen v oblasti ortopédie, denzitometrie, ale aj fyzioterapie.</p>
         <p className="co-container__paragraph">Hlavnou devízou ORTO REHAB CLINIC je najmä efektívne objednávanie pacientov a minimálne čakacie doby, čo nám umožňuje rýchlo definovať a identifikovať zdravotný problém pacienta.</p>
         <div className="co-container__carousel co-center">
-          <Carousel centered
-            infinite
-            arrows
-            itemWidth={1100}
-            offset={20}
-            slidesPerPage={2}>
-            <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>
-            <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={smSystem} href="#"/></NavLink>
-            <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={trTherapy} href="#"/></NavLink>
-          </Carousel>
+          <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>
+          <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={smSystem} href="#"/></NavLink>
+          <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={trTherapy} href="#"/></NavLink>
         </div>
       </div>
     </Fade>
