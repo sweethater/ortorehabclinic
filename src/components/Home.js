@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import { Fade } from 'react-reveal';
+import AliceCarousel from 'react-alice-carousel'
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import { ComponentMenuItem } from "./Nav";
 import { allSectionItems } from "./Shared";
@@ -9,6 +11,17 @@ import logo from '../assets/logo-white.png';
 import detskyUltrazvuk from '../assets//carousel/detsky-ultrazvuk.jpg';
 import smSystem from '../assets//carousel/sm-system.jpg';
 import trTherapy from '../assets//carousel/tr-therapy.jpg';
+import laser12 from '../assets//carousel/laser-12w.jpg';
+import plazmoterapia from '../assets//carousel/plazmoterapia.jpg';
+import magnetoTerapia from '../assets//carousel/magneto-terapia.jpg';
+
+import detskyUltrazvukSmall from '../assets//carousel/detsky-ultrazvuk_small.jpg';
+import smSystemSmall from '../assets//carousel/sm-system_small.jpg';
+import trTherapySmall from '../assets//carousel/tr-therapy_small.jpg';
+import laser12Small from '../assets//carousel/laser-12w_small.jpg';
+import plazmoterapiaSmall from '../assets//carousel/plazmoterapia_small.jpg';
+import magnetoTerapiaSmall from '../assets//carousel/magneto-terapia_small.jpg';
+
 import './Home.css';
 import './Shared.css'
  
@@ -21,13 +34,85 @@ export const Home = props => {
         <p className="co-container__paragraph">ORTO REHAB CLINIC disponuje najmodernejšou zdravotníckou technikou v segmente ambulantnej zdravotnej starostlivosti, a to nielen v oblasti ortopédie, denzitometrie, ale aj fyzioterapie.</p>
         <p className="co-container__paragraph">Hlavnou devízou ORTO REHAB CLINIC je najmä efektívne objednávanie pacientov a minimálne čakacie doby, čo nám umožňuje rýchlo definovať a identifikovať zdravotný problém pacienta.</p>
         <div className="co-container__carousel co-center">
-          <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>
+          <Gallery />
+          {/* <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>
           <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={smSystem} href="#"/></NavLink>
-          <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={trTherapy} href="#"/></NavLink>
+          <NavLink className="nav" to="/stuff"><img className="co-container__carousel-image" src={trTherapy} href="#"/></NavLink> */}
         </div>
       </div>
     </Fade>
   );
+}
+
+class Gallery extends React.Component {
+  state = {
+    currentIndex: 0,
+    itemsInSlide: 1,
+    galleryItems: this.galleryItems(),
+  }
+
+  galleryItems() {
+    return (
+      [<NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>,
+      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={smSystem} href="#"/></NavLink>,
+      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={trTherapy} href="#"/></NavLink>,
+      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={laser12} href="#"/></NavLink>,
+      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={plazmoterapia} href="#"/></NavLink>,
+      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={magnetoTerapia} href="#"/></NavLink>]
+    )
+  }
+
+  slidePrevPage = () => {
+    const currentIndex = this.state.currentIndex - this.state.itemsInSlide
+    this.setState({ currentIndex })
+  }
+
+  slideNextPage = () => {
+    const { itemsInSlide, galleryItems: { length }} = this.state
+    let currentIndex = this.state.currentIndex + itemsInSlide
+    if (currentIndex > length) currentIndex = length
+
+    this.setState({ currentIndex })
+  }
+
+  handleOnSlideChange = (event) => {
+    const { itemsInSlide, item } = event
+    this.setState({ itemsInSlide, currentIndex: item })
+  }
+
+  slideTo = (i) => this.setState({ currentIndex: i })
+
+  render() {
+    const { currentIndex, galleryItems, responsive } = this.state
+    return (
+      <div>
+        <AliceCarousel
+          autoPlayInterval={4000}
+          autoPlayDirection="lrt"
+          autoPlay={true}
+          items={galleryItems}
+          dotsDisabled={true}
+          buttonsDisabled={true}
+          mouseDragEnabled={false}
+          slideToIndex={currentIndex}
+          responsive={responsive}
+          onInitialized={this.handleOnSlideChange}
+          onSlideChanged={this.handleOnSlideChange}
+          onResized={this.handleOnSlideChange}
+        />
+        <div className="co-home__carousel-thumb">
+          <img onClick={() => this.slideTo(0)} className="co-home__carousel-thumb" src={detskyUltrazvukSmall} href="#"/>
+          <img onClick={() => this.slideTo(1)} className="co-home__carousel-thumb" src={smSystemSmall} href="#"/>
+          <img onClick={() => this.slideTo(2)} className="co-home__carousel-thumb" src={trTherapySmall} href="#"/>
+          <img onClick={() => this.slideTo(3)} className="co-home__carousel-thumb" src={laser12Small} href="#"/>
+          <img onClick={() => this.slideTo(4)} className="co-home__carousel-thumb" src={plazmoterapiaSmall} href="#"/>
+          <img onClick={() => this.slideTo(5)} className="co-home__carousel-thumb" src={magnetoTerapiaSmall} href="#"/>
+        </div>
+        <button onClick={this.slidePrevPage}>Prev Page</button>
+        <button onClick={this.slideNextPage}>Next Page</button>
+      </div>
+    )
+  }
 }
 
 export const Patient = props => {

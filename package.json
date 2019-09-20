@@ -9,6 +9,7 @@
     "@types/react-dom": "16.8.4",
     "antd": "^3.23.2",
     "react": "16.8.6",
+    "react-alice-carousel": "^1.15.3",
     "react-dom": "16.8.6",
     "react-icons": "^3.7.0",
     "react-photo-gallery": "^8.0.0",
