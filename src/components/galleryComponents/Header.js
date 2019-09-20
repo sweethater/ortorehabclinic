@@ -8,8 +8,8 @@ import ButtonControl from "./ButtonControl";
 const LightboxHeader = ({ galleryTitle, images, currentIndex, onClose }) => (
   <TopHeaderBar>
     <LeftSideDescriptionContainer>
-      <GalleryHeading>{galleryTitle}</GalleryHeading>
-      <GallerySubheading>{images[currentIndex].alt}</GallerySubheading>
+      <GalleryHeading>{images[currentIndex].alt}</GalleryHeading>
+      <GallerySubheading>{images[currentIndex].caption}</GallerySubheading>
     </LeftSideDescriptionContainer>
 
     <RightSideContainer>
