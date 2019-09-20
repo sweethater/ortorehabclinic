@@ -31,12 +31,12 @@ export class Carousel extends React.Component {
 
   galleryItems() {
     return (
-      [<NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>,
-      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={smSystem} href="#"/></NavLink>,
-      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={trTherapy} href="#"/></NavLink>,
-      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={laser12} href="#"/></NavLink>,
-      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={plazmoterapia} href="#"/></NavLink>,
-      <NavLink className="nav" to="/stuff"><img className="co-home__carousel-image" src={magnetoTerapia} href="#"/></NavLink>]
+      [<NavLink className="nav" to="/orthopedic/detsky_ultrazvuk"><img className="co-home__carousel-image" src={detskyUltrazvuk} href="#"/></NavLink>,
+      <NavLink className="nav" to="/fyzio/sm_system"><img className="co-home__carousel-image" src={smSystem} href="#"/></NavLink>,
+      <NavLink className="nav" to="/fyzio/tr_therapy"><img className="co-home__carousel-image" src={trTherapy} href="#"/></NavLink>,
+      <NavLink className="nav" to="/orthopedic/biostimulacny_laser"><img className="co-home__carousel-image" src={laser12} href="#"/></NavLink>,
+      <NavLink className="nav" to="/orthopedic/plazmoterapia"><img className="co-home__carousel-image" src={plazmoterapia} href="#"/></NavLink>,
+      <NavLink className="nav" to="fyzio/vykonny_indukcny_system"><img className="co-home__carousel-image" src={magnetoTerapia} href="#"/></NavLink>]
     )
   }
 
