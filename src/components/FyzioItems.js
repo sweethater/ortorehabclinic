@@ -145,8 +145,6 @@ export const Fyzio5 = {
       </div>
     </React.Fragment>,
   }, {
-    tabName: "VIDEO",
-  }, {
     tabName: "DOPLNKOVÁ LIEČBA",
   }]
 };
