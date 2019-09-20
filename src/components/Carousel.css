@@ -1,0 +1,35 @@
+img.co-home__carousel-thumb {
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top: 30px;
+    margin-right: 8px;
+    border: 2px solid;
+}
+
+img.co-home__carousel-image {
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+.co-home__carousel-thumb--highlight {
+    border: 3px solid #97467F !important;
+}
+
+.co-home__carousel-buttons {
+    position: relative;
+    width: 100%;
+    font-size: 150px;
+    z-index: 100;
+}
+
+.co-home__carousel-button--left {
+    top: 105px;
+    left: 0;
+    position: absolute;
+}
+
+.co-home__carousel-button--right {
+    top: 105px;
+    right: 0;
+    position: absolute;
+}

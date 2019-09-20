@@ -1,16 +1,18 @@
-img.co-home__carousel-thumb {
-    border-radius: 5px;
-    margin-left: 8px;
+.co-home__content {
+    position: relative;
+}
+
+.co-container__logo-image {
+    padding-top: 40px;
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.co-home-container .co-container__paragraph {
     margin-top: 20px;
-    margin-right: 8px;
-    border: 2px solid;
-}
-
-img.co-home__carousel-image {
-    border: 3px solid #fff;
-    border-radius: 10px;
-}
-
-.co-home__carousel-thumb--highlight {
-    border: 3px solid #97467F !important;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
