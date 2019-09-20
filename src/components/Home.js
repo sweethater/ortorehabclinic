@@ -75,15 +75,23 @@ class Gallery extends React.Component {
     this.setState({ currentIndex })
   }
 
+  highlightCurrentThumb = (index) => {
+
+  }
+
   handleOnSlideChange = (event) => {
     const { itemsInSlide, item } = event
-    this.setState({ itemsInSlide, currentIndex: item })
+    this.setState(
+      { itemsInSlide, currentIndex: item },
+      () => this.highlightCurrentThumb(this.state.currentIndex))
   }
 
   slideTo = (i) => this.setState({ currentIndex: i })
 
   render() {
-    const { currentIndex, galleryItems, responsive } = this.state
+    const { currentIndex, galleryItems, responsive } = this.state;
+    const thumbsArray = [detskyUltrazvukSmall, smSystemSmall, trTherapySmall, laser12Small, plazmoterapiaSmall, magnetoTerapiaSmall];
+    const thumbs = thumbsArray.map((thumb, i) => <img onClick={() => this.slideTo(i)} className={`co-home__carousel-thumb ${currentIndex === i ? 'co-home__carousel-thumb--highlight' : ''}`} src={thumb} href="#"/>);
     return (
       <div>
         <AliceCarousel
@@ -101,12 +109,7 @@ class Gallery extends React.Component {
           onResized={this.handleOnSlideChange}
         />
         <div className="co-home__carousel-thumb">
-          <img onClick={() => this.slideTo(0)} className="co-home__carousel-thumb" src={detskyUltrazvukSmall} href="#"/>
-          <img onClick={() => this.slideTo(1)} className="co-home__carousel-thumb" src={smSystemSmall} href="#"/>
-          <img onClick={() => this.slideTo(2)} className="co-home__carousel-thumb" src={trTherapySmall} href="#"/>
-          <img onClick={() => this.slideTo(3)} className="co-home__carousel-thumb" src={laser12Small} href="#"/>
-          <img onClick={() => this.slideTo(4)} className="co-home__carousel-thumb" src={plazmoterapiaSmall} href="#"/>
-          <img onClick={() => this.slideTo(5)} className="co-home__carousel-thumb" src={magnetoTerapiaSmall} href="#"/>
+          {thumbs}
         </div>
         <button onClick={this.slidePrevPage}>Prev Page</button>
         <button onClick={this.slideNextPage}>Next Page</button>

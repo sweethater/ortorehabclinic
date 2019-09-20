@@ -10,3 +10,7 @@ img.co-home__carousel-image {
     border: 3px solid #fff;
     border-radius: 10px;
 }
+
+.co-home__carousel-thumb--highlight {
+    border: 3px solid #97467F !important;
+}
