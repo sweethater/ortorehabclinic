@@ -27,7 +27,7 @@ export class Carousel extends React.Component {
     currentIndex: 0,
     itemsInSlide: 1,
     galleryItems: this.galleryItems(),
-  }
+  };
 
   galleryItems() {
     return (
@@ -41,27 +41,21 @@ export class Carousel extends React.Component {
   }
 
   slidePrevPage = () => {
-    const currentIndex = this.state.currentIndex - this.state.itemsInSlide
-    this.setState({ currentIndex })
+    const currentIndex = this.state.currentIndex - this.state.itemsInSlide;
+    this.setState({ currentIndex });
   }
 
   slideNextPage = () => {
-    const { itemsInSlide, galleryItems: { length }} = this.state
-    let currentIndex = this.state.currentIndex + itemsInSlide
-    if (currentIndex > length) currentIndex = length
+    const { itemsInSlide, galleryItems: { length }} = this.state;
+    let currentIndex = this.state.currentIndex + itemsInSlide;
+    if (currentIndex > length) currentIndex = length;
 
-    this.setState({ currentIndex })
-  }
-
-  highlightCurrentThumb = (index) => {
-
+    this.setState({ currentIndex });
   }
 
   handleOnSlideChange = (event) => {
-    const { itemsInSlide, item } = event
-    this.setState(
-      { itemsInSlide, currentIndex: item },
-      () => this.highlightCurrentThumb(this.state.currentIndex))
+    const { itemsInSlide, item } = event;
+    this.setState({ itemsInSlide, currentIndex: item });
   }
 
   slideTo = (i) => this.setState({ currentIndex: i })
