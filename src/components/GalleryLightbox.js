@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Lightbox from "react-spring-lightbox";
 import styled from "styled-components";
 import Color from "color";
-import { ArrowButton, Header, Footer } from "./components";
+import { ArrowButton, Header } from "./galleryComponents";
 
 export const CoolLightbox = ({
   images,
@@ -27,7 +27,6 @@ export const CoolLightbox = ({
       onClose={onClose}
       images={images}
       currentIndex={currentImageIndex}
-      renderFooter={() => <Footer />}
       renderHeader={() => (
         <Header
           galleryTitle="Dark Mode: OS Level Control In Your CSS"

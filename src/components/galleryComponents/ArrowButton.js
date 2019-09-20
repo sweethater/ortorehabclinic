@@ -45,6 +45,8 @@ export default ArrowButton;
 
 const Button = styled(ButtonControl)`
   position: absolute;
+  font-size: 180px;
+  bottom: 300px;
   left: ${({ position }) => (position === "left" ? 0 : "unset")};
   right: ${({ position }) => (position === "right" ? 0 : "unset")};
 `;

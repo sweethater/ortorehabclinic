@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 
 import { ImageMosaic } from './GalleryMosaic';
 import { CoolLightbox } from './GalleryLightbox';
+import { imagesOperations, imagesRK, imagesLM } from './GalleryImages'
 
 import { Fade } from 'react-reveal';
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { Tabs } from 'antd';
 
+import './Gallery.css';
 import 'antd/dist/antd.css';
 import './Tabs.css';
 
@@ -19,19 +21,13 @@ export const Gallery = props => {
         <div className="co-container__tabs co-center">
         <Tabs defaultActiveKey="gallery-1" >
           <TabPane tab="Operačné sály a lôžka" key="gallery-1">
-            <GalleryWrapper />
+            <GalleryWrapper images={imagesOperations}/>
           </TabPane>
-
-          <TabPane tab="Klinika Ružomberok" key="gallery-2">
-
+          <TabPane tab="Klinika a lekáreň Ružomberok" key="gallery-2">
+            <GalleryWrapper images={imagesRK}/>
           </TabPane>
-
-          <TabPane tab="Klinika Liptovský Mikuláš" key="gallery-3">
-
-          </TabPane>
-
-          <TabPane tab="Lekárne" key="gallery-4">
-
+          <TabPane tab="Klinika a lekáreň Liptovský Mikuláš" key="gallery-3">
+            <GalleryWrapper images={imagesLM}/>
           </TabPane>
         </Tabs>
         </div>
@@ -40,25 +36,25 @@ export const Gallery = props => {
   );
 }
 
-const GalleryWrapper = () => (
+const GalleryWrapper = ({images}) => (
   <ThemeProvider
     theme={{
       pageBackgroundColor: "#101010",
       pageContentFontColor: "#e2e5ec",
-      pageContentLinkHoverColor: "aquamarine",
-      pageContentSelectionColor: "aquamarine",
-      headerNavFontColor: "#e2e5ec",
+      pageContentLinkHoverColor: "#fff",
+      pageContentSelectionColor: "#fff",
+      headerNavFontColor: "#fff",
       accentColor: "#1f1f1f"
     }}
   >
     <AppContainer>
       <GlobalStyles />
-      <ImageGallery />
+      <ImageGallery images={images}/>
     </AppContainer>
   </ThemeProvider>
 );
 
-const ImageGallery = () => {
+const ImageGallery = ({images}) => {
   const [isOpen, setOpen] = useState(false);
   const [currentImageIndex, setCurrentIndex] = useState(0);
 
@@ -107,69 +103,3 @@ export const GlobalStyles = createGlobalStyle`
     padding-left: 8px;
   }
 `;
-
-
-const images = [
-  {
-    src: require ('../assets/videos/posters/laser_12-1.jpg'),
-    alt: "README.md",
-    caption: "README.md",
-    width: 2486,
-    height: 1469
-  },
-  {
-    src:
-      "https://timellenberger.com/static/blog-content/dark-mode/win10-dark-mode.jpg",
-    alt: "Windows 10 Dark Mode Setting",
-    caption: "Windows 10 Dark Mode Setting",
-    width: 2848,
-    height: 2035
-  },
-  {
-    src:
-      "https://timellenberger.com/static/blog-content/dark-mode/macos-dark-mode.png",
-    alt: "macOS Mojave Dark Mode Setting",
-    caption: "macOS Mojave Dark Mode Setting",
-    width: 1200,
-    height: 1218
-  },
-  {
-    src:
-      "https://timellenberger.com/static/blog-content/dark-mode/android-9-dark-mode.jpg",
-    alt: "Android 9.0 Dark Mode Setting",
-    caption: "Android 9.0 Dark Mode Setting",
-    width: 1280,
-    height: 600
-  },
-  {
-    src: "https://i.imgur.com/8oNzu0S.png",
-    alt: "README.md",
-    caption: "README.md",
-    width: 2486,
-    height: 1469
-  },
-  {
-    src:
-      "https://timellenberger.com/static/blog-content/dark-mode/win10-dark-mode.jpg",
-    alt: "Windows 10 Dark Mode Setting",
-    caption: "Windows 10 Dark Mode Setting",
-    width: 2848,
-    height: 2035
-  },
-  {
-    src:
-      "https://timellenberger.com/static/blog-content/dark-mode/macos-dark-mode.png",
-    alt: "macOS Mojave Dark Mode Setting",
-    caption: "macOS Mojave Dark Mode Setting",
-    width: 1200,
-    height: 1218
-  },
-  {
-    src:
-      "https://timellenberger.com/static/blog-content/dark-mode/android-9-dark-mode.jpg",
-    alt: "Android 9.0 Dark Mode Setting",
-    caption: "Android 9.0 Dark Mode Setting",
-    width: 1280,
-    height: 600
-  }
-];

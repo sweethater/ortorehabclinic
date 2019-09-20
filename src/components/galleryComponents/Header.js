@@ -17,7 +17,7 @@ const LightboxHeader = ({ galleryTitle, images, currentIndex, onClose }) => (
         {currentIndex + 1} / {images.length}
       </PageIndicator>
       <CloseButton onClick={onClose} type="button">
-        <IoIosClose size={60} />
+        <IoIosClose size={120} />
       </CloseButton>
     </RightSideContainer>
   </TopHeaderBar>
@@ -40,6 +40,7 @@ export default LightboxHeader;
 const GalleryHeading = styled.h2`
   margin: 0 0 5px 0;
   font-weight: normal;
+  color: ${({ theme }) => theme.pageContentLinkHoverColor};
 `;
 
 const GallerySubheading = styled.h4`
@@ -52,10 +53,12 @@ const PageIndicator = styled.span`
   white-space: nowrap;
   min-width: 60px;
   text-align: center;
+  font-size: 22px;
+  margin-right: 20px;
 `;
 
 const RightSideContainer = styled.div`
-  width: 117px;
+  // width: 117px;
   display: flex;
   justify-content: space-between;
   align-items: center;

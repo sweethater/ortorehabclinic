@@ -1,0 +1,12 @@
+.react-photo-gallery--gallery h4 {
+    color: #fff;
+    font-size: 18px;
+}
+.react-photo-gallery--gallery img {
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.ant-tabs-content {
+    height: 820px;
+}

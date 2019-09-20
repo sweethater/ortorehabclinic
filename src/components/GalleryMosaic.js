@@ -15,9 +15,9 @@ export const GridImage = ({ key, index, left, top, photo, onClick }) => {
     >
       <OverlayContainer>
         <Image src={src} alt={alt} caption={caption} />
-        <Caption>
+        {/* <Caption>
           <h4>{caption}</h4>
-        </Caption>
+        </Caption> */}
       </OverlayContainer>
     </ImageContainer>
   );
@@ -26,13 +26,7 @@ export const GridImage = ({ key, index, left, top, photo, onClick }) => {
 export const ImageMosaic = ({ images, handleClick }) => (
   <GalleryContainer>
     <Gallery
-      columns={containerWidth => {
-        let columns = 1;
-        if (containerWidth >= 500) columns = 2;
-        if (containerWidth >= 900) columns = 3;
-
-        return columns;
-      }}
+      columns={images.length > 9 ? 4 : 3}
       onClick={handleClick}
       photos={images}
       margin={6}
@@ -44,8 +38,8 @@ export const ImageMosaic = ({ images, handleClick }) => (
   
 const GalleryContainer = styled.div`
   overflow-y: auto;
-  height: 100%;
-  max-height: calc(100% - 4em);
+  // height: 100%;
+  // max-height: calc(100% - 4em);
   padding: 2em;
 `;
   
@@ -76,13 +70,13 @@ const ImageContainer = styled.div`
   border-width: 2px;
   border-color: transparent;
   border-style: solid;
-  :hover {
-    border-color: ${({ theme }) => theme.pageContentLinkHoverColor};
-  }
+  // :hover {
+  //   border-color: ${({ theme }) => theme.pageContentLinkHoverColor};
+  // }
 `;
 
 const Image = styled.img`
   width: inherit;
   height: inherit;
-  position: absolute;
+  // position: absolute;
 `;
