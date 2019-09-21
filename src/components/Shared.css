@@ -1,3 +1,11 @@
+/* Disable dragging and selecting of elements */
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
+
 .co-content-container {
     height: 100%;
 }
