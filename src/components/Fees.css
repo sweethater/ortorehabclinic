@@ -2,6 +2,14 @@
     margin-top: 50px;
 }
 
+.co-fees-container > .co-container__tabs {
+    height: 900px;
+}
+
+.co-container__tabs > .ant-tabs {
+    height: 100%;
+}
+
 .co-fees-container__button {
     margin-top: 10px;
     width: 310px;

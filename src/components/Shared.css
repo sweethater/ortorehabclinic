@@ -6,6 +6,13 @@
 	cursor: default;
 }
 
+/* Disable scrolling  */
+html, body {
+    margin: 0;
+    height: 1080px;
+    overflow: hidden
+}
+
 .co-content-container {
     height: 100%;
 }

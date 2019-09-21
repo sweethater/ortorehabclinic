@@ -30,27 +30,6 @@ export const Fees = props => {
   );
 }
 
-export const Fees2 = props => {
-  const section = 'fees';
-  return (
-    <Fade>
-      <div className="co-fees-container co-content-container">
-        <p className="co-container__header co-center">CENNÍK</p>
-        <div className="co-container__paragraphs co-center">
-          <p className="co-container__paragraph-narrow co-center"><b>Cenník fyzioterapia</b></p>
-          
-          <NavLink className="nav" to={`/${section}/fyzio`}><div className="co-fees-container__button co-center">Cenník fyzioterapia</div></NavLink>
-        </div>
-        <div className="co-container__paragraphs co-center">
-          <p className="co-container__paragraph-narrow co-center"><b>Cenník ortopédia</b></p>
-
-          <NavLink className="nav" to={`/${section}/ortopedic`}><div className="co-fees-container__button co-center">Cenník ortopédia</div></NavLink>
-        </div>
-      </div>
-    </Fade>
-  );
-}
-
 const TableItem = ({itemName, itemPrice}) => {
   return (
     <tr>
@@ -64,7 +43,7 @@ export const FeesFyzio = props => {
   const section = 'fees'
   return (
     <Fade>
-      <div className="co-fees-container co-content-container">
+      <div className="co-fees-container__tab co-content-container">
         <div className="co-fees-container__table co-center">
           <table id="fees_table">
             <tbody>
