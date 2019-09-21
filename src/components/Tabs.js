@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Fade } from 'react-reveal';
 import { Tabs } from 'antd';
-import { withRouter, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Player, ControlBar, BigPlayButton  } from 'video-react';
 
 import { allSectionItems, backTo } from "./Shared";

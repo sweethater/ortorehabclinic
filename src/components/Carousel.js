@@ -63,7 +63,7 @@ export class Carousel extends React.Component {
   render() {
     const { currentIndex, galleryItems, responsive } = this.state;
     const thumbsArray = [detskyUltrazvukSmall, smSystemSmall, trTherapySmall, laser12Small, plazmoterapiaSmall, magnetoTerapiaSmall];
-    const thumbs = thumbsArray.map((thumb, i) => <img onClick={() => this.slideTo(i)} className={`co-home__carousel-thumb ${currentIndex === i ? 'co-home__carousel-thumb--highlight' : ''}`} src={thumb} href="#"/>);
+    const thumbs = thumbsArray.map((thumb, i) => <img key={`thumb-${i}`} onClick={() => this.slideTo(i)} className={`co-home__carousel-thumb ${currentIndex === i ? 'co-home__carousel-thumb--highlight' : ''}`} src={thumb} href="#"/>);
     return (
       <div>
         <div className="co-home__carousel-buttons">

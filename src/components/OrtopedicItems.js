@@ -173,7 +173,7 @@ export const Orthopedic5 = {
       <div className="co-container__tab-list co-center">
         <div className="co-container__tab-list-column co-center">
           <ul>
-            {["Liečba tenisového lakťa a jeho oblastí", "Bolesti v ramenného kĺbu a svalových spojení ramena s obmedzenou pohyblivosťou", "Rehabilitácia zápalu Achillovej šľachy", "Bolesť a tlak na tibiálnej kosti", "Šľachy a svalové spojenia v hornej časti dolných končatín, hlavne triesla", "Bolesti pri nadmernej záťaži kolena", "Akútne aj chronické zápaly päty", "Zápaly a hromadenie vápenatých zrazenín", "Bolesti z preťaženia (tenisový lakeť, ostrohy na pätách)", ].map(item => <li>{item}</li>)}
+            {["Liečba tenisového lakťa a jeho oblastí", "Bolesti v ramenného kĺbu a svalových spojení ramena s obmedzenou pohyblivosťou", "Rehabilitácia zápalu Achillovej šľachy", "Bolesť a tlak na tibiálnej kosti", "Šľachy a svalové spojenia v hornej časti dolných končatín, hlavne triesla", "Bolesti pri nadmernej záťaži kolena", "Akútne aj chronické zápaly päty", "Zápaly a hromadenie vápenatých zrazenín", "Bolesti z preťaženia (tenisový lakeť, ostrohy na pätách)", ].map((item,i) => <li key={`indikacia-${i}`}>{item}</li>)}
           </ul>
         </div>
       </div>
