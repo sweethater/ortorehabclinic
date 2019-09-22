@@ -126,7 +126,7 @@ const AdditionalTreatmentTab = ({redirect}) => {
       <div className="co-container__tab-list-links-column co-center">
         <ul>
           <li onClick={() => redirect("fyzio", "trx")}><img className="co-tab-item__arrow-image" src={arrow}/>TRX</li>
-          <li onClick={() => redirect("orthopedic", "kineziotaping")}><img className="co-tab-item__arrow-image" src={arrow}/>Kinesiotaping</li>
+          <li onClick={() => redirect("fyzio", "kineziotaping")}><img className="co-tab-item__arrow-image" src={arrow}/>Kinesiotaping</li>
           <li onClick={() => redirect("fyzio", "skupinove_cvicenia")}><img className="co-tab-item__arrow-image" src={arrow}/>Skupinové cvičenia</li>
           <li onClick={() => redirect("fyzio", "motodlaha")}><img className="co-tab-item__arrow-image" src={arrow}/>Motodlaha</li>
         </ul>

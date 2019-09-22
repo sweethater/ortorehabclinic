@@ -71,7 +71,7 @@ export class Carousel extends React.Component {
           <IoIosArrowForward onClick={this.slideNextPage} className="co-home__carousel-button--right"/>
         </div>
         <AliceCarousel
-          autoPlayInterval={4000}
+          autoPlayInterval={10000}
           autoPlayDirection="lrt"
           autoPlay={true}
           items={galleryItems}
