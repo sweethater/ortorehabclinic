@@ -8,6 +8,7 @@ else
 fi
 
 # standard
+docker pull docker.io/jhadvig/ortorehabclinic-app:latest
 amixer -q -D pulse sset Master 100%
 docker run -d -p 8080:80 docker.io/jhadvig/ortorehabclinic-app:latest
 sleep 3
