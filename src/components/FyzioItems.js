@@ -163,16 +163,27 @@ export const Fyzio6 = {
 
 
 export const Fyzio7 = {
-  about: <React.Fragment>
+  about: <React.Fragment></React.Fragment>,
+  tabs: [{
+    tabName: "O Kinesiotapingu",
+    tabContent: <React.Fragment>
     <div className="co-container__paragraphs co-center">
       <p className="co-container__paragraph co-center">Kinesiotaping je metóda využívaná vo fyzioterapii na ovplyvnenie muskuloskeletálneho systému, lymfatického systému. </p>
       <p className="co-container__paragraph co-center">Používa elastické pásky – kinesiotape, vďaka ktorým sa zvýši intresticiálny priestor, čo má za následok zvýšené prúdenie lymfy a krvi, zníži sa tlak na cievy a tým je urýchlený proces hojenia. Nalepený „tape“ súčasne stimuluje špeciálne kožné receptory, následkom čoho sa zvýši aktivita v danom tkanive, čo proces hojenia ešte umocňuje. Ďalej sa využíva na spevňovanie alebo uvedenie kĺbov do správnej polohy. Výhodou tejto techniky je to, že neobmedzuje sval v pohybe.</p>
-      <p className="co-container__paragraph co-center">Podľa toho, aký je terapeutický zámer, sa využíva buď na facilitáciu – teda podporu svalovej činnosti, alebo inhibíciu – zníženie svalového napätia.</p>
+      <p className="co-container__paragraph co-center">
+        Podľa toho, aký je terapeutický zámer, sa využíva buď na:
+        <ul className="co-list--no-dots">
+          <li><b>facilitáciu</b> – podpora svalovej činnosti</li>
+          <li><b>inhibíciu</b> – zníženie svalového napätia</li>
+        </ul>
+      </p>
       <p className="co-container__paragraph co-center">Slúži tiež na relaxáciu preťažených, natiahnutých alebo natrhnutých svalov. Umožňuje redukciu bolesti, opuchov a rýchlejšie vstrebanie hematómov.</p>
       <p className="co-container__paragraph co-center">Jeho vynikajúce účinky využívajú hlavne športovci po úrazoch, alebo na zlepšenie výkonu, na stabilizáciu kĺbov počas výkonu, no je obľúbený aj u bežnej populácie. Ocenia ho ľudia po úraze alebo po chirurgických zákrokoch.</p>
     </div>
   </React.Fragment>,
-  tabs: []
+  }, {
+    tabName: "VIDEO",
+  }]
 };
 
 export const Fyzio8 = {

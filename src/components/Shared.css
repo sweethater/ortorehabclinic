@@ -146,3 +146,7 @@ html, body {
 .co-container__tabs {	
     width: 1400px;	
 }
+
+.co-list--no-dots {
+    list-style-type:none;
+}

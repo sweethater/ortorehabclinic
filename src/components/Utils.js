@@ -2,6 +2,10 @@ import React from "react";
 
 export const loadThumbs = (setSource, item) => {
     switch (item) {
+      case "kineziotaping":
+        return <React.Fragment>
+          <img className="co-tabs--video-thumb video-2" src={require("../assets/videos/thumbs/kineziotaping-1.jpg")} onClick={() => setSource("../assets/videos/kineziotaping-1.mp4")} />
+        </React.Fragment>
       case "laser_12":
         return <React.Fragment>
           <img className="co-tabs--video-thumb video-1" src={require("../assets/videos/thumbs/laser_12-1.jpg")} onClick={() => setSource("../assets/videos/laser_12-1.mp4")} />
@@ -36,6 +40,10 @@ export const getDefaultVideoAndPoster = (item) => {
     let video;
     let poster;
     switch(item) {
+      case "kineziotaping":
+        video = require ('../assets/videos/kineziotaping-1.mp4');
+        poster = require ('../assets/videos/posters/kineziotaping-1.jpg');
+        break;
       case "laser_12":
         video = require ('../assets/videos/laser_12-1.mp4');
         poster = require ('../assets/videos/posters/laser_12-1.jpg');
@@ -63,6 +71,10 @@ export const loadVideoAndPoster = (source, item) => {
     let video;
     let poster;
     switch (source) {
+      case '../assets/videos/kineziotaping-1.mp4':
+          video = require ('../assets/videos/kineziotaping-1.mp4');
+          poster = require ('../assets/videos/posters/kineziotaping-1.jpg');
+          break;
       case '../assets/videos/laser_12-1.mp4':
         video = require ('../assets/videos/laser_12-1.mp4');
         poster = require ('../assets/videos/posters/laser_12-1.jpg');
