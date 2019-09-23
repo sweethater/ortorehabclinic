@@ -96,7 +96,7 @@ export class ItemWrapper extends React.Component {
       <Fade>
         <div className={`co-${section}-container co-item-container co-content-container`}>
           <p className="co-container__header co-center">{name}</p>
-          {component.about}
+          <div className="co-container__paragraphs co-center">{component.about}</div>
           <div className="co-container__tabs co-center">
           <Tabs defaultActiveKey={`${item}-1`} onChange={() => this._tabCallback()} >
             {component.tabs.map((tab, i) => getTabPane(tab, i))}

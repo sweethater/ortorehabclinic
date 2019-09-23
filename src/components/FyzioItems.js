@@ -150,12 +150,10 @@ export const Fyzio5 = {
 
 export const Fyzio6 = {
   about: <React.Fragment>
-    <div className="co-container__paragraphs co-center">
-      <p className="co-container__paragraph co-center">TRX predstavuje všestranné cvičenie. Na prvý pohľad si možno nebudete vedieť cvičenie na TRX príliš dobre predstaviť. Môže sa Vám zdať, že cvičenie na ňom je ľahší tréning, pri ktorom sa len pomaly ponaťahujete a trochu si precvičíte svaly. Ale opak je pravdou a prvé zdanie môže klamať.</p>
-      <p className="co-container__paragraph co-center">Princípom tréningu je zavesenie jednej časti tela do popruhov, pričom druhá časť zostáva v kontakte s podložkou. Intenzitu cvičenia si každý môže regulovať sám, a to iba zmenou polohy tela oproti závesnému bodu.</p>
-      <p className="co-container__paragraph co-center">Je až neuveriteľné, ako posunutie tela o pár centimetrov zmení intenzitu vykonávaného prvku. Čím ste nižšie pod závesným bodom, tým je cvik náročnejší a naopak. Počas cvičenia zapájate aj svaly, o ktorých často ani neviete, že ich máte.</p>
-      <p className="co-container__paragraph co-center">Vďaka tomu, že si môžete regulovať intenzitu záťaže (percento telesnej hmotnosti), s ktorou cvičíte, je TRX vhodný pre všetky úrovne fyzickej zdatnosti. Od začiatočníkov až po elitných športovcov. V súčasnej dobe je tento cvičebný systém plne využívaný v športových centrách aj pri outdoorových aktivitách.</p>
-    </div>
+    <p className="co-container__paragraph co-center">TRX predstavuje všestranné cvičenie. Na prvý pohľad si možno nebudete vedieť cvičenie na TRX príliš dobre predstaviť. Môže sa Vám zdať, že cvičenie na ňom je ľahší tréning, pri ktorom sa len pomaly ponaťahujete a trochu si precvičíte svaly. Ale opak je pravdou a prvé zdanie môže klamať.</p>
+    <p className="co-container__paragraph co-center">Princípom tréningu je zavesenie jednej časti tela do popruhov, pričom druhá časť zostáva v kontakte s podložkou. Intenzitu cvičenia si každý môže regulovať sám, a to iba zmenou polohy tela oproti závesnému bodu.</p>
+    <p className="co-container__paragraph co-center">Je až neuveriteľné, ako posunutie tela o pár centimetrov zmení intenzitu vykonávaného prvku. Čím ste nižšie pod závesným bodom, tým je cvik náročnejší a naopak. Počas cvičenia zapájate aj svaly, o ktorých často ani neviete, že ich máte.</p>
+    <p className="co-container__paragraph co-center">Vďaka tomu, že si môžete regulovať intenzitu záťaže (percento telesnej hmotnosti), s ktorou cvičíte, je TRX vhodný pre všetky úrovne fyzickej zdatnosti. Od začiatočníkov až po elitných športovcov. V súčasnej dobe je tento cvičebný systém plne využívaný v športových centrách aj pri outdoorových aktivitách.</p>
   </React.Fragment>,
   tabs: []
 };
@@ -166,7 +164,6 @@ export const Fyzio7 = {
   tabs: [{
     tabName: "O Kinesiotapingu",
     tabContent: <React.Fragment>
-    <div className="co-container__paragraphs co-center">
       <p className="co-container__paragraph co-center">Kinesiotaping je metóda využívaná vo fyzioterapii na ovplyvnenie muskuloskeletálneho systému, lymfatického systému. </p>
       <p className="co-container__paragraph co-center">Používa elastické pásky – kinesiotape, vďaka ktorým sa zvýši intresticiálny priestor, čo má za následok zvýšené prúdenie lymfy a krvi, zníži sa tlak na cievy a tým je urýchlený proces hojenia. Nalepený „tape“ súčasne stimuluje špeciálne kožné receptory, následkom čoho sa zvýši aktivita v danom tkanive, čo proces hojenia ešte umocňuje. Ďalej sa využíva na spevňovanie alebo uvedenie kĺbov do správnej polohy. Výhodou tejto techniky je to, že neobmedzuje sval v pohybe.</p>
       <p className="co-container__paragraph co-center">
@@ -178,8 +175,7 @@ export const Fyzio7 = {
       </p>
       <p className="co-container__paragraph co-center">Slúži tiež na relaxáciu preťažených, natiahnutých alebo natrhnutých svalov. Umožňuje redukciu bolesti, opuchov a rýchlejšie vstrebanie hematómov.</p>
       <p className="co-container__paragraph co-center">Jeho vynikajúce účinky využívajú hlavne športovci po úrazoch, alebo na zlepšenie výkonu, na stabilizáciu kĺbov počas výkonu, no je obľúbený aj u bežnej populácie. Ocenia ho ľudia po úraze alebo po chirurgických zákrokoch.</p>
-    </div>
-  </React.Fragment>,
+    </React.Fragment>,
   }, {
     tabName: "VIDEO",
   }]
@@ -202,11 +198,9 @@ export const Fyzio8 = {
 
 export const Fyzio9 = {
   about: <React.Fragment>
-    <div className="co-container__paragraphs co-center">
-      <p className="co-container__paragraph co-center">Skupinové SM cvičenie - max 3 osoby. SM Systém – Preventívne rehabilitačno-kondičné cvičenie, ktorým sa aktivujú svalové reťazce, vytvára sa svalový korzet a trakčná sila, ktorá vzpriamuje chrbticu. Pri cvičení sa používa elastické lano na vytvorenie odporu pre lepšie zefektívnenie pohybu.</p>
-      <p className="co-container__paragraph co-center">Výsledkom sú posilnené a uvoľnené svaly, zlepšená stabilizácia a mobilizácia chrbtice, koordinácia a kvalita chôdze. Cieľom cvičenia je regenerovať medzistavcové platničky celej chrbtice a predchádzať, či zmierňovať diagnózu skoliózy.</p>
-      <p className="co-container__paragraph co-center"><b>Cvičenie je vhodné aj pre seniorov, na prevenciu pádov a pre kondičných športovcov na zvýšenie výkonnosti. Cvičenie trvá 45 – 50 minút</b>.</p>
-    </div>
+    <p className="co-container__paragraph co-center">Skupinové SM cvičenie - max 3 osoby. SM Systém – Preventívne rehabilitačno-kondičné cvičenie, ktorým sa aktivujú svalové reťazce, vytvára sa svalový korzet a trakčná sila, ktorá vzpriamuje chrbticu. Pri cvičení sa používa elastické lano na vytvorenie odporu pre lepšie zefektívnenie pohybu.</p>
+    <p className="co-container__paragraph co-center">Výsledkom sú posilnené a uvoľnené svaly, zlepšená stabilizácia a mobilizácia chrbtice, koordinácia a kvalita chôdze. Cieľom cvičenia je regenerovať medzistavcové platničky celej chrbtice a predchádzať, či zmierňovať diagnózu skoliózy.</p>
+    <p className="co-container__paragraph co-center"><b>Cvičenie je vhodné aj pre seniorov, na prevenciu pádov a pre kondičných športovcov na zvýšenie výkonnosti. Cvičenie trvá 45 – 50 minút</b>.</p>
   </React.Fragment>,
   tabs: []
 };

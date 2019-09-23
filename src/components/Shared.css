@@ -75,17 +75,17 @@ html, body {
     padding: 60px 40px 0px 40px;
     text-transform: uppercase;
     font-family: 'AvenirBold';
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .co-container__paragraphs {
-    width: 1200px;
+    width: 1300px;
 }
 
 .co-container__paragraph{
     display: block;
     font-size: 18px;
-    padding: 20px 40px 10px 40px;
+    padding: 20px 40px 0 40px;
     margin: 0;
 }
 
