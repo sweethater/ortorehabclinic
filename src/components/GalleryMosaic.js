@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import Gallery from "react-photo-gallery";
@@ -44,17 +43,17 @@ const GalleryContainer = styled.div`
 `;
   
 
-const Caption = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: ${({ theme }) => theme.accentColor};
-  color: ${({ theme }) => theme.pageContentLinkHoverColor};
-  h4 {
-    text-align: center;
-    margin: 1em 0;
-  }
-`;
+// const Caption = styled.div`
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   background-color: ${({ theme }) => theme.accentColor};
+//   color: ${({ theme }) => theme.pageContentLinkHoverColor};
+//   h4 {
+//     text-align: center;
+//     margin: 1em 0;
+//   }
+// `;
 
 const OverlayContainer = styled.div`
   position: relative;

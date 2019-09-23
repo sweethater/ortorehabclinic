@@ -1,5 +1,4 @@
 import React from "react";
-import VideoPlayer from 'react-simple-video-player';
 
 import { TabList } from './Tabs';
 

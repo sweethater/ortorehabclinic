@@ -24,10 +24,6 @@ export const withBackButton = (WrappedComponent) => {
   };
 }
 
-const getSection = (pathname) => {
-  return pathname.split("/").filter(Boolean)[0];
-}
-
 export const backTo = (pathname) => {
   const pathArray = pathname.split("/").filter(Boolean);
   pathArray.splice(-1,1);

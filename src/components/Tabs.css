@@ -46,6 +46,7 @@
 
 .co-tabs__paragraphs {
     width: 600px;
+    /* width: 1000px; */
 }
 
 .co-tabs__paragraph {
@@ -105,6 +106,7 @@
 
 .ant-tabs-bar {
     border: 0;
+    margin-top: 15px;
 }
 
 .ant-tabs-tab {
