@@ -24,12 +24,14 @@ html, body {
 
 .co-orthopedic-container,
 .co-component-menu-item__title-wrapper-orthopedic {
-    background-color: #6DBE4B;
+    /* background-color: #6DBE4B; */
+    background-color: #31A102;
 }
 
 .co-fyzio-container,
 .co-component-menu-item__title-wrapper-fyzio  {
-    background-color: #E1BE00;
+    /* background-color: #E1BE00; */
+    background-color: #C7A800;
 }
 
 .co-rehab-container,
