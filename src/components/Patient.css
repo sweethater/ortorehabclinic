@@ -1,0 +1,32 @@
+.co-patient-container__tab {
+    width: 1400px;
+}
+
+.co-patient-container__paragraph {
+    font-size: 18px;
+    width: 1000px;
+}
+
+.co-patient-container__tab-list-column,
+.co-patient-container__tab-list-links-column {
+    text-align: left !important;
+    width: 50%;
+}
+
+.co-patient-container__tab-list-column ul,
+.co-patient-container__tab-list-links-column ul {
+    list-style-type: none;
+}
+
+.co-patient-container__tab-list-column li {
+    border-left: 3px solid #fff;
+    margin: 20px 10px;
+    padding-left: 10px;
+}
+
+.co-patient-container__tab-list-links-column li {
+    font-size: 24px;
+    color: #fff;
+    vertical-align: middle;
+    margin-top: 20px;
+}

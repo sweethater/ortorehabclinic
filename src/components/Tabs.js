@@ -55,11 +55,11 @@ export class ItemWrapper extends React.Component {
     }
   }
   _tabCallback(key) {
-    console.log(this.videoRef.current);
+    // console.log(this.videoRef.current);
     if (this.videoRef.current) {
       this.videoRef.current.pause();
     }
-    console.log(key);
+    // console.log(key);
   }
 
   redirect(section, item) {
@@ -74,7 +74,6 @@ export class ItemWrapper extends React.Component {
     const itemData = allSectionItems[section][item];
     const { name, component } = itemData;
     const { TabPane } = Tabs;
-    console.log(`${section} => ${item}`);
 
     const getTabPane = (tab, i) => {
       if (tab.tabName === "VIDEO") {

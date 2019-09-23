@@ -120,7 +120,7 @@
 .ant-tabs-content {
     margin-top: 30px;
     color: #fff;
-    height: 760px;
+    height: 100%;
 }
 
 .ant-tabs-ink-bar {

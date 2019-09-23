@@ -74,18 +74,18 @@ export default class App extends React.Component {
   }
  
   _onAction(e) {
-    console.log('user did something', e);
+    // console.log('user did something', e);
   }
  
   _onActive(e) {
-    console.log('user is active', e);
-    console.log('time remaining', this.idleTimer.getRemainingTime());
+    // console.log('user is active', e);
+    // console.log('time remaining', this.idleTimer.getRemainingTime());
     this.setState({redirectHome: false});
   }
  
   _onIdle(e) {
-    console.log('user is idle', e);
-    console.log('last active', this.idleTimer.getLastActiveTime());
+    // console.log('user is idle', e);
+    // console.log('last active', this.idleTimer.getLastActiveTime());
     this.setState({redirectHome: true});
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import VideoPlayer from 'react-simple-video-player';
 
-// import { AdditionalTreatment } from './Shared';
 import { TabList } from './Tabs';
 
 import 'antd/dist/antd.css';
