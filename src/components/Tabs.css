@@ -49,6 +49,14 @@
     /* width: 1000px; */
 }
 
+.co-tabs__paragraphs--flex {
+    display: flex;
+}
+
+.co-tabs__paragraphs--flex > .co-tabs__paragraph {
+    width: 50%;
+}
+
 .co-tabs__paragraph {
     display: block;
     font-size: 18px;

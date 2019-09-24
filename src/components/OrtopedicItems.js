@@ -11,14 +11,20 @@ export const Orthopedic1 = {
   tabs: [{
     tabName: "ČO SPÔSOBUJE ZÁPAL A BOLESŤ",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">nSTRIDE APS spracováva vašu vlastnú krv a poskytuje jedinečný výstupný produkt, ktorý sa aplikuje priamo do kolenného kĺbu a dodáva mu potrebné protizápalové proteíny. V laboratórnych testoch mali tieto proteíny potvrdené excelentné výsledky v spomalení degradácie chrupavky kolena a pri liečbe bolesti.?</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">nSTRIDE APS spracováva vašu vlastnú krv a poskytuje jedinečný výstupný produkt, ktorý sa aplikuje priamo do kolenného kĺbu a dodáva mu potrebné protizápalové proteíny. V laboratórnych testoch mali tieto proteíny potvrdené excelentné výsledky v spomalení degradácie chrupavky kolena a pri liečbe bolesti.?</p>
+      </div>
     </React.Fragment>,
   }, {
     tabName: "ČO SPÔSOBUJE ZÁPAL A BOLESŤ",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">V osteoartritickom kolene prevyšuje množstvo zápalových cytokínov IL-1 a TNF (tzv. „zlé“ proteíny) nad množstvom protizápalových cytokínov IL-1ra, sIL-1R, sTNF-RI a sTNF-RII (tzv. „dobré“ proteíny), čo spôsobuje <b>nerovnováhu</b> vedúcu k bolesti kolena a degenerácii chrupavky.</p>
-      <p className="co-container__paragraph co-center"><b>Pomocou nSTRIDE APS</b> aplikujeme vysoké hladiny „dobrých“ proteínov (IL-1ra, sIL-1R, sTNF-RI a sTNF-Rll), ktoré slúžia na blokovanie zvýšeného množstva zápalových cytokínov IL-1 a TNF a tým nastavíme rovnováhu v kĺbe. Laboratórne štúdie ako aj štúdie na ľuďoch ukázali, že nSTRIDE APS má na rozdiel od tradičných terapií signifi kantne lepšie výsledky na zníženie bolesti a spomalenie degenerácie chrupavky.</p>
-      <p className="co-container__paragraph co-center">Kým sa obnovuje rovnováha proteínov v kolene (2-6 týždňov), aplikáciou <b>nSTRIDE APS</b> zavádzame do kolena aj (stavebné) rastové faktory (IGF-1 a TGF-1). Preto nSTRIDE APS vytvára novú terapiu, ktorá zmierňuje bolesť v kolennom kĺbe, zlepšuje funkciu kĺbov a spomaľuje degradáciu chrupavky. Táto terapia sa poskytuje v lekárskej ambulancii bez chirurgického zákroku.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">V osteoartritickom kolene prevyšuje množstvo zápalových cytokínov IL-1 a TNF (tzv. „zlé“ proteíny) nad množstvom protizápalových cytokínov IL-1ra, sIL-1R, sTNF-RI a sTNF-RII (tzv. „dobré“ proteíny), čo spôsobuje <b>nerovnováhu</b> vedúcu k bolesti kolena a degenerácii chrupavky.</p>
+        <p className="co-tabs__paragraph co-left">
+          Kým sa obnovuje rovnováha proteínov v kolene (2-6 týždňov), aplikáciou <b>nSTRIDE APS</b> zavádzame do kolena aj (stavebné) rastové faktory (IGF-1 a TGF-1). Preto nSTRIDE APS vytvára novú terapiu, ktorá zmierňuje bolesť v kolennom kĺbe, zlepšuje funkciu kĺbov a spomaľuje degradáciu chrupavky. Táto terapia sa poskytuje v lekárskej ambulancii bez chirurgického zákroku.
+          <b>Pomocou nSTRIDE APS</b> aplikujeme vysoké hladiny „dobrých“ proteínov (IL-1ra, sIL-1R, sTNF-RI a sTNF-Rll), ktoré slúžia na blokovanie zvýšeného množstva zápalových cytokínov IL-1 a TNF a tým nastavíme rovnováhu v kĺbe. Laboratórne štúdie ako aj štúdie na ľuďoch ukázali, že nSTRIDE APS má na rozdiel od tradičných terapií signifi kantne lepšie výsledky na zníženie bolesti a spomalenie degenerácie chrupavky.
+        </p>
+      </div>
     </React.Fragment>,
   }, {
     tabName: "ČASTO KLADENÉ OTÁZKY",
@@ -80,8 +86,10 @@ export const Orthopedic2 = {
   }, {
     tabName: "ČO VÁS U ORTOPÉDA ČAKÁ?",
     tabContent: <React.Fragment>
-      <p className="co-tabs__paragraph co-center">Najprv zistíme Vašu anamnézu, dieťatko vyšetríme, zistíme, či má v poriadku hybnosť kĺbov, urobíme mu ultrazvukové vyšetrenie a podľa výsledkov vám odporučíme ďalší vhodný postup. Napríklad špeciálne balenie bábätka. Nemusíte mať žiadne obavy, ide o neinvazívne, nebolestivé ultrazvukové vyšetrenie, ktoré trvá približne 10 minút.</p>
-      <p className="co-tabs__paragraph co-center">Žiadnym spôsobom nepoškodzuje detský organizmus a pomôže odhaliť skryté vývojové vady bedrových kĺbov. Pred vyšetrením bábätka nie je nutná žiadna príprava.</p>
+        <div className="co-tabs__paragraphs--flex co-center">
+          <p className="co-tabs__paragraph co-left">Najprv zistíme Vašu anamnézu, dieťatko vyšetríme, zistíme, či má v poriadku hybnosť kĺbov, urobíme mu ultrazvukové vyšetrenie a podľa výsledkov vám odporučíme ďalší vhodný postup. Napríklad špeciálne balenie bábätka. Nemusíte mať žiadne obavy, ide o neinvazívne, nebolestivé ultrazvukové vyšetrenie, ktoré trvá približne 10 minút.</p>
+          <p className="co-tabs__paragraph co-left">Žiadnym spôsobom nepoškodzuje detský organizmus a pomôže odhaliť skryté vývojové vady bedrových kĺbov. Pred vyšetrením bábätka nie je nutná žiadna príprava.</p>
+        </div>
     </React.Fragment>,
   }]
 };
@@ -104,17 +112,17 @@ export const Orthopedic4 = {
   tabs: [{
     tabName: "PODSTATA TERAPIE",
     tabContent: <React.Fragment>
-      <div className="co-tabs__paragraphs co-center">
-        <p className="co-tabs__paragraph co-center">Liečba vlastnou krvou je čoraz populárnejším ošetrením pleti, ktoré spomaľuje účinky starnutia prirodzenou formou. Jej jedinečnou výhodou je, že je bezpečná, bez komplikácií a je “BIO”, je to Vaša vlastná krv.</p>
-        <p className="co-tabs__paragraph co-center">Podstatou tejto bioterapie je, že získame z krvi pacienta plazmu obohatenú o trombocyty a vysoké množstvo rôznych rastových faktorov (PDGF, AB a BB, IGF, EGF, VEGF, TGF Beta 1 a Beta 2) a iné hojace faktory. Tieto rastové faktory sú zodpovedné za regeneračné a reparačné procesy vo viacerých tkanivách vrátane kostí, šliach, chrupavky a kože. Napomáhajú procesu hojenia pri akútnych úrazoch, alebo pri prechode do chronického štádia. Tento výťažok z krvi sa aplikuje pomocou injekcie do poraneného miesta resp. kĺbu. Rastové faktory aktivujú kaskádu protizápalových, regeneračných a reparačných procesov v patologicky zmenených tkanivách.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">Liečba vlastnou krvou je čoraz populárnejším ošetrením pleti, ktoré spomaľuje účinky starnutia prirodzenou formou. Jej jedinečnou výhodou je, že je bezpečná, bez komplikácií a je “BIO”, je to Vaša vlastná krv.</p>
+        <p className="co-tabs__paragraph co-left">Podstatou tejto bioterapie je, že získame z krvi pacienta plazmu obohatenú o trombocyty a vysoké množstvo rôznych rastových faktorov (PDGF, AB a BB, IGF, EGF, VEGF, TGF Beta 1 a Beta 2) a iné hojace faktory. Tieto rastové faktory sú zodpovedné za regeneračné a reparačné procesy vo viacerých tkanivách vrátane kostí, šliach, chrupavky a kože. Napomáhajú procesu hojenia pri akútnych úrazoch, alebo pri prechode do chronického štádia. Tento výťažok z krvi sa aplikuje pomocou injekcie do poraneného miesta resp. kĺbu. Rastové faktory aktivujú kaskádu protizápalových, regeneračných a reparačných procesov v patologicky zmenených tkanivách.</p>
       </div>
     </React.Fragment>,
   }, {
     tabName: "APLIKÁCIA",
     tabContent: <React.Fragment>
-      <div className="co-tabs__paragraphs co-center">
-        <p className="co-tabs__paragraph co-center">Artróza (čiže osteoartróza) kĺbov - koleno, rameno, členok, lakeť, bedro, malé kĺby cca. 5 aplikácií, vhodné u 1., 2. a časti 3. stupňa artrózy podľa RTG, kedy je ešte v kĺbe prítomná chrupavka.</p>
-        <p className="co-tabs__paragraph co-center">Existujú pozitívne skúsenosti s aplikáciou krvnej plazmy do kĺbov s artrózou 4. stupňa, kedy môže zmierniť bolesti. Táto analgetická indikácia môže byť riešením pre pacientov trpiacich bolesťami, ktorí nemôžu z iných dôvodov podstúpiť operačnú náhradu kĺbu alebo nemôžu trvalo užívať protizápalové lieky s množstvom vedľajších účinkov. Každého pacienta musí dôkladne vyšetriť ortopéd a navrhnúť riešenie. Definitívne rozhodnutie je vždy na pacientovi.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">Artróza (čiže osteoartróza) kĺbov - koleno, rameno, členok, lakeť, bedro, malé kĺby cca. 5 aplikácií, vhodné u 1., 2. a časti 3. stupňa artrózy podľa RTG, kedy je ešte v kĺbe prítomná chrupavka.</p>
+        <p className="co-tabs__paragraph co-left">Existujú pozitívne skúsenosti s aplikáciou krvnej plazmy do kĺbov s artrózou 4. stupňa, kedy môže zmierniť bolesti. Táto analgetická indikácia môže byť riešením pre pacientov trpiacich bolesťami, ktorí nemôžu z iných dôvodov podstúpiť operačnú náhradu kĺbu alebo nemôžu trvalo užívať protizápalové lieky s množstvom vedľajších účinkov. Každého pacienta musí dôkladne vyšetriť ortopéd a navrhnúť riešenie. Definitívne rozhodnutie je vždy na pacientovi.</p>
       </div>
     </React.Fragment>,
   }, {
@@ -142,10 +150,12 @@ export const Orthopedic4 = {
   }, {
     tabName: "POSTUP LIEČBY",
     tabContent: <React.Fragment>
-      <div className="co-tabs__paragraphs co-center">
-        <p className="co-tabs__paragraph co-center">Metóda krvnej plazmy je založená na odbere vlastnej krvi. Čerstvé sérum získané z tejto krvi je po špeciálnej úprave injekčne aplikované priamo do postihnutého miesta. Ide o bežný ambulantný zákrok, u ktorého nie sú používané anestetiká.</p>
-        <p className="co-tabs__paragraph co-center">Pri všetkých uvedených indikáciách počet potrebných aplikáciu krvnej plazmy určí ortopéd.</p>
-        <p className="co-tabs__paragraph co-center">Aplikácia vlastnej krvnej plazmy otvorila novú etapu a významne rozšírila možnosti boja s artrózou, avšak budúcnosť liečby artrózy naďalej spočíva v komplexnosti. Racionálna kombinácia dostupných liečebných postupov, liečby kmeňovými bunkami, krvnou plazmou, rehabilitácie, balneoterapie a režimových opatrení (redukcie váhy, pohyb, zdravý životný štýl) je štandardom terapie. Až pri vyčerpaní týchto liečebných opatrení zostáva možnosť náhrady kĺbu umelým. S rozvojom biochirurgické medicíny a nových technológií liečby artrózy bude týchto operácií iste ubúdať.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">
+          Metóda krvnej plazmy je založená na odbere vlastnej krvi. Čerstvé sérum získané z tejto krvi je po špeciálnej úprave injekčne aplikované priamo do postihnutého miesta. Ide o bežný ambulantný zákrok, u ktorého nie sú používané anestetiká.<br></br>
+          Pri všetkých uvedených indikáciách počet potrebných aplikáciu krvnej plazmy určí ortopéd.
+        </p>
+        <p className="co-tabs__paragraph co-left">Aplikácia vlastnej krvnej plazmy otvorila novú etapu a významne rozšírila možnosti boja s artrózou, avšak budúcnosť liečby artrózy naďalej spočíva v komplexnosti. Racionálna kombinácia dostupných liečebných postupov, liečby kmeňovými bunkami, krvnou plazmou, rehabilitácie, balneoterapie a režimových opatrení (redukcie váhy, pohyb, zdravý životný štýl) je štandardom terapie. Až pri vyčerpaní týchto liečebných opatrení zostáva možnosť náhrady kĺbu umelým. S rozvojom biochirurgické medicíny a nových technológií liečby artrózy bude týchto operácií iste ubúdať.</p>
       </div>
     </React.Fragment>,
   }, {
@@ -158,7 +168,9 @@ export const Orthopedic5 = {
   tabs: [{
     tabName: "AKO VÁM MÔŽU POMÔCŤ?",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">Rázová vlna je akustickou vlnou prenášajucou vysokú energiu do bolestivých miest a do väzivového a myoskeletálneho tkaniva so subakutnymi, subchronickými a chronickými stavmi. Táto energia spúšťa liečebné, regeneračné a rekonstrukčné procesy v šlachách a v mäkkom tkanive.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">Rázová vlna je akustickou vlnou prenášajucou vysokú energiu do bolestivých miest a do väzivového a myoskeletálneho tkaniva so subakutnymi, subchronickými a chronickými stavmi. Táto energia spúšťa liečebné, regeneračné a rekonstrukčné procesy v šlachách a v mäkkom tkanive.</p>
+      </div>
     </React.Fragment>,
   }, {
     tabName: "OBLASŤ POUŽITIA LIEČBY",
@@ -210,7 +222,9 @@ export const Orthopedic7 = {
   tabs: [{
     tabName: "BENEFITY TERAPIE",
     tabContent: <React.Fragment>
-    <p className="co-container__paragraph co-center">Zásadným benefitom daného terapeutického prístupu je liečba bolesti bez rizika liekových interakcií (kolagén nezasahuje do účinnosti ostatných liekov, napr. warfarínu), bez významných nežiaducich účinkov (kolagén je telu vlastná látka dodávaná v injekčnej mikrosuplementačnej dávke), bez alergických reakcií (nezaznamenali sme žiadne alergické reakcie). Pre konkrétnu oblasť protibolestivého použitia sú určené konkrétne kolagénové injekcie (napr. gonartróza MD-Knee, coxartróza MD-Hip, syndróm zmrznutého ramena MD-Shoulder, lumbalgia MD-Lumbar, svalová bolesť MD-Muscle, neuralgická/neuropatická bolesť MD-Neural).</p>
+    <div className="co-tabs__paragraphs--flex co-center">
+      <p className="co-tabs__paragraph co-left">Zásadným benefitom daného terapeutického prístupu je liečba bolesti bez rizika liekových interakcií (kolagén nezasahuje do účinnosti ostatných liekov, napr. warfarínu), bez významných nežiaducich účinkov (kolagén je telu vlastná látka dodávaná v injekčnej mikrosuplementačnej dávke), bez alergických reakcií (nezaznamenali sme žiadne alergické reakcie). Pre konkrétnu oblasť protibolestivého použitia sú určené konkrétne kolagénové injekcie (napr. gonartróza MD-Knee, coxartróza MD-Hip, syndróm zmrznutého ramena MD-Shoulder, lumbalgia MD-Lumbar, svalová bolesť MD-Muscle, neuralgická/neuropatická bolesť MD-Neural).</p>
+    </div>
   </React.Fragment>,
   }],
   about: <p className="co-container__paragraph co-center">"Kolagén podaný injekčne zlepšuje kĺbovú mobilitu, ale napomáha aj uvoľneniu a fyziologickej funkcii svalstva v danej oblasti. Odstraňuje tak príčinu bolesti a prispieva k jej odstráneniu. Kolagén je základnou stavebnou jednotkou spojivového tkaniva kĺbových systémov, a preto jeho mikrosuplementácia zlepšuje profil kolagénového vlákna. Kolagén tak reprezentuje štrukturálny účinok, t.j. chráni a posilňuje kĺbové puzdro, väzy, šľachy, a preto spevňuje ochabnuté a hypermobilné kĺbové systémy.</p>

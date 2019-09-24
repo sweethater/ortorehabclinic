@@ -68,7 +68,7 @@ export const Fyzio2 = {
         <p className="co-tabs__paragraph co-left">Vlnová dĺžka laserového svetla okolo hranice 1000 nm v extrémne krátkom pulznom režime dodáva BTL terapii využívajúcej technológiu vysokovýkonného lasera úplne novú terapeutickú vlastnosť - schopnosť vytvárať mechanickú vlnu v biologickom tkanive. Vlnové dĺžky 1064nm a 980nm sú špeciálne navrhnuté tak, aby sa veľmi dobre vstrebávali v štruktúrach na tekutej báze. Potom, čo sa laserové svetlo dostane na pokožku, vytvára v ľudskom tkanive fotomechanickú vlnu o špecifickej vlnovej dĺžke.</p>
       </div>
     </div>
-    <p className="co-tabs__paragraph co-center">Mechanická stimulácia voľných nervových zakončení a ďalších receptorov bolesti v podkožnom tkanive blokuje priechod bolesti nervovým systémom a prináša tak okamžitú úľavu. Táto mechanická vlna navyše stimuluje lokálnu mikrocirkuláciu a podporuje lymfatickú drenáž danej patologickej oblasti. Kombináciou biostimulácie a fotomechanickej stimulácie BTL terapie vysokovýkonným laserom sa tak lieči tkanivo a zároveň je poskytovaná výkonná a nenávyková metóda kontroly bolesti. Vysokovýkonný laser umožňuje liečbu širokého spektra indikáciou od akútnych svalových poranení až po hlboko uložené kĺbové degenerácie.</p>
+    <p className="co-tabs__paragraph co-left">Mechanická stimulácia voľných nervových zakončení a ďalších receptorov bolesti v podkožnom tkanive blokuje priechod bolesti nervovým systémom a prináša tak okamžitú úľavu. Táto mechanická vlna navyše stimuluje lokálnu mikrocirkuláciu a podporuje lymfatickú drenáž danej patologickej oblasti. Kombináciou biostimulácie a fotomechanickej stimulácie BTL terapie vysokovýkonným laserom sa tak lieči tkanivo a zároveň je poskytovaná výkonná a nenávyková metóda kontroly bolesti. Vysokovýkonný laser umožňuje liečbu širokého spektra indikáciou od akútnych svalových poranení až po hlboko uložené kĺbové degenerácie.</p>
   </React.Fragment>,
   }, {
     tabName: "INDIKÁCIE PRE APLIKÁCIU",
@@ -94,10 +94,15 @@ export const Fyzio3 = {
   tabs: [{
     tabName: "PRINCÍP TR TERAPIE",
     tabContent:  <React.Fragment>
-      <div className="co-tabs__paragraphs co-center">
-        <p className="co-tabs__paragraph co-center">Koncept TR-Terapie: znásobenie efektov kombinácie prístrojovej a manuálnej liečby, kombinácia manuálnych techník a použitie technológie v jednom okamihu alebo tesne po sebe</p>
-        <p className="co-tabs__paragraph co-center">Atermické efekty priechodu rádiofrekvenčného prúdu tkanivom sú: antiedematózny, regeneračný, antiinflamantorný</p>
-        <p className="co-tabs__paragraph co-center">Termické efekty priechodu rádiofrekvenčného prúdu tkánivom sú: myorelaxačný, analgetický, regeneračný</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">Koncept TR-Terapie: znásobenie efektov kombinácie prístrojovej a manuálnej liečby, kombinácia manuálnych techník a použitie technológie v jednom okamihu alebo tesne po sebe</p>
+        <p className="co-tabs__paragraph co-left">
+          Atermické efekty priechodu rádiofrekvenčného prúdu tkanivom sú: 
+          <ul><li>antiedematózny,</li><li>regeneračný,</li> <li>antiinflamantorný</li></ul>
+          <br></br><br></br>
+          Termické efekty priechodu rádiofrekvenčného prúdu tkánivom sú:
+          <ul><li>myorelaxačný,</li><li>analgetický,</li> <li>regeneračný</li></ul>
+        </p>
       </div>
     </React.Fragment>,
   }, {
@@ -129,9 +134,9 @@ export const Fyzio5 = {
   tabs: [{
     tabName: "PRINCÍP SM Systému",
     tabContent:  <React.Fragment>
-      <div className="co-tabs__paragraphs co-center">
-        <p className="co-tabs__paragraph co-center">SM Systém je určený pre každého jedinca – deti od 5 rokov, dospelí i starší ľudia, ktorí majú záujem o zdravý telesný vývoj, prevenciu proti vzniku bolestí chrbta, prípadne trpia problémami s chrbticou.</p>
-        <p className="co-tabs__paragraph co-center">Cvičenia sú vhodné aj počas tehotenstva v snahe obmedziť riziká pri pôrode. Taktiež sú cvičebné metódy SM Systému vhodné pre tých, ktorým nepomohli štandardné fyzioterapie a ich problémy pretrvávajú. SM Systém s obľubou využívajú vrcholoví športovci počas kondičnej prípravy a rehabilitácie.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">SM Systém je určený pre každého jedinca – deti od 5 rokov, dospelí i starší ľudia, ktorí majú záujem o zdravý telesný vývoj, prevenciu proti vzniku bolestí chrbta, prípadne trpia problémami s chrbticou.</p>
+        <p className="co-tabs__paragraph co-left">Cvičenia sú vhodné aj počas tehotenstva v snahe obmedziť riziká pri pôrode. Taktiež sú cvičebné metódy SM Systému vhodné pre tých, ktorým nepomohli štandardné fyzioterapie a ich problémy pretrvávajú. SM Systém s obľubou využívajú vrcholoví športovci počas kondičnej prípravy a rehabilitácie.</p>
       </div>
     </React.Fragment>,
   }, {
@@ -149,10 +154,18 @@ export const Fyzio5 = {
 
 export const Fyzio6 = {
   about: <React.Fragment>
-    <p className="co-container__paragraph co-center">TRX predstavuje všestranné cvičenie. Na prvý pohľad si možno nebudete vedieť cvičenie na TRX príliš dobre predstaviť. Môže sa Vám zdať, že cvičenie na ňom je ľahší tréning, pri ktorom sa len pomaly ponaťahujete a trochu si precvičíte svaly. Ale opak je pravdou a prvé zdanie môže klamať.</p>
-    <p className="co-container__paragraph co-center">Princípom tréningu je zavesenie jednej časti tela do popruhov, pričom druhá časť zostáva v kontakte s podložkou. Intenzitu cvičenia si každý môže regulovať sám, a to iba zmenou polohy tela oproti závesnému bodu.</p>
-    <p className="co-container__paragraph co-center">Je až neuveriteľné, ako posunutie tela o pár centimetrov zmení intenzitu vykonávaného prvku. Čím ste nižšie pod závesným bodom, tým je cvik náročnejší a naopak. Počas cvičenia zapájate aj svaly, o ktorých často ani neviete, že ich máte.</p>
-    <p className="co-container__paragraph co-center">Vďaka tomu, že si môžete regulovať intenzitu záťaže (percento telesnej hmotnosti), s ktorou cvičíte, je TRX vhodný pre všetky úrovne fyzickej zdatnosti. Od začiatočníkov až po elitných športovcov. V súčasnej dobe je tento cvičebný systém plne využívaný v športových centrách aj pri outdoorových aktivitách.</p>
+    <div className="co-tabs__paragraphs--flex co-center">
+      <p className="co-tabs__paragraph co-left">
+        TRX predstavuje všestranné cvičenie. Na prvý pohľad si možno nebudete vedieť cvičenie na TRX príliš dobre predstaviť. Môže sa Vám zdať, že cvičenie na ňom je ľahší tréning, pri ktorom sa len pomaly ponaťahujete a trochu si precvičíte svaly. Ale opak je pravdou a prvé zdanie môže klamať.
+        <br></br><br></br>
+        Princípom tréningu je zavesenie jednej časti tela do popruhov, pričom druhá časť zostáva v kontakte s podložkou. Intenzitu cvičenia si každý môže regulovať sám, a to iba zmenou polohy tela oproti závesnému bodu.
+      </p>
+      <p className="co-tabs__paragraph co-left">
+        Je až neuveriteľné, ako posunutie tela o pár centimetrov zmení intenzitu vykonávaného prvku. Čím ste nižšie pod závesným bodom, tým je cvik náročnejší a naopak. Počas cvičenia zapájate aj svaly, o ktorých často ani neviete, že ich máte.
+        <br></br><br></br>
+        Vďaka tomu, že si môžete regulovať intenzitu záťaže (percento telesnej hmotnosti), s ktorou cvičíte, je TRX vhodný pre všetky úrovne fyzickej zdatnosti. Od začiatočníkov až po elitných športovcov. V súčasnej dobe je tento cvičebný systém plne využívaný v športových centrách aj pri outdoorových aktivitách.
+      </p>
+    </div>
   </React.Fragment>,
   tabs: []
 };
@@ -163,17 +176,24 @@ export const Fyzio7 = {
   tabs: [{
     tabName: "O Kinesiotapingu",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">Kinesiotaping je metóda využívaná vo fyzioterapii na ovplyvnenie muskuloskeletálneho systému, lymfatického systému. </p>
-      <p className="co-container__paragraph co-center">Používa elastické pásky – kinesiotape, vďaka ktorým sa zvýši intresticiálny priestor, čo má za následok zvýšené prúdenie lymfy a krvi, zníži sa tlak na cievy a tým je urýchlený proces hojenia. Nalepený „tape“ súčasne stimuluje špeciálne kožné receptory, následkom čoho sa zvýši aktivita v danom tkanive, čo proces hojenia ešte umocňuje. Ďalej sa využíva na spevňovanie alebo uvedenie kĺbov do správnej polohy. Výhodou tejto techniky je to, že neobmedzuje sval v pohybe.</p>
-      <p className="co-container__paragraph co-center">
-        Podľa toho, aký je terapeutický zámer, sa využíva buď na:
-        <ul className="co-list--no-dots">
-          <li><b>facilitáciu</b> – podpora svalovej činnosti</li>
-          <li><b>inhibíciu</b> – zníženie svalového napätia</li>
-        </ul>
-      </p>
-      <p className="co-container__paragraph co-center">Slúži tiež na relaxáciu preťažených, natiahnutých alebo natrhnutých svalov. Umožňuje redukciu bolesti, opuchov a rýchlejšie vstrebanie hematómov.</p>
-      <p className="co-container__paragraph co-center">Jeho vynikajúce účinky využívajú hlavne športovci po úrazoch, alebo na zlepšenie výkonu, na stabilizáciu kĺbov počas výkonu, no je obľúbený aj u bežnej populácie. Ocenia ho ľudia po úraze alebo po chirurgických zákrokoch.</p>
+      <div className="co-tabs__paragraphs--flex co-center">
+        <p className="co-tabs__paragraph co-left">
+          Kinesiotaping je metóda využívaná vo fyzioterapii na ovplyvnenie muskuloskeletálneho systému, lymfatického systému.
+          <br></br>
+          Používa elastické pásky – kinesiotape, vďaka ktorým sa zvýši intresticiálny priestor, čo má za následok zvýšené prúdenie lymfy a krvi, zníži sa tlak na cievy a tým je urýchlený proces hojenia. Nalepený „tape“ súčasne stimuluje špeciálne kožné receptory, následkom čoho sa zvýši aktivita v danom tkanive, čo proces hojenia ešte umocňuje. Ďalej sa využíva na spevňovanie alebo uvedenie kĺbov do správnej polohy. Výhodou tejto techniky je to, že neobmedzuje sval v pohybe.
+          <br></br><br></br>
+          Jeho vynikajúce účinky využívajú hlavne športovci po úrazoch, alebo na zlepšenie výkonu, na stabilizáciu kĺbov počas výkonu, no je obľúbený aj u bežnej populácie. Ocenia ho ľudia po úraze alebo po chirurgických zákrokoch.
+        </p>
+        <p className="co-tabs__paragraph co-left">
+          Podľa toho, aký je terapeutický zámer, sa využíva buď na:
+          <ul className="co-list">
+            <li><b>facilitáciu</b> – podpora svalovej činnosti</li>
+            <li><b>inhibíciu</b> – zníženie svalového napätia</li>
+          </ul>
+          <br></br><br></br>
+          Slúži tiež na relaxáciu preťažených, natiahnutých alebo natrhnutých svalov. Umožňuje redukciu bolesti, opuchov a rýchlejšie vstrebanie hematómov.
+        </p>
+        </div>
     </React.Fragment>,
   }, {
     tabName: "VIDEO",
@@ -197,9 +217,13 @@ export const Fyzio8 = {
 
 export const Fyzio9 = {
   about: <React.Fragment>
-    <p className="co-container__paragraph co-center">Skupinové SM cvičenie - max 3 osoby. SM Systém – Preventívne rehabilitačno-kondičné cvičenie, ktorým sa aktivujú svalové reťazce, vytvára sa svalový korzet a trakčná sila, ktorá vzpriamuje chrbticu. Pri cvičení sa používa elastické lano na vytvorenie odporu pre lepšie zefektívnenie pohybu.</p>
-    <p className="co-container__paragraph co-center">Výsledkom sú posilnené a uvoľnené svaly, zlepšená stabilizácia a mobilizácia chrbtice, koordinácia a kvalita chôdze. Cieľom cvičenia je regenerovať medzistavcové platničky celej chrbtice a predchádzať, či zmierňovať diagnózu skoliózy.</p>
-    <p className="co-container__paragraph co-center"><b>Cvičenie je vhodné aj pre seniorov, na prevenciu pádov a pre kondičných športovcov na zvýšenie výkonnosti. Cvičenie trvá 45 – 50 minút</b>.</p>
+    <div className="co-tabs__paragraphs--flex co-center">
+      <p className="co-tabs__paragraph co-left">
+        Skupinové SM cvičenie - max 3 osoby. SM Systém – Preventívne rehabilitačno-kondičné cvičenie, ktorým sa aktivujú svalové reťazce, vytvára sa svalový korzet a trakčná sila, ktorá vzpriamuje chrbticu. Pri cvičení sa používa elastické lano na vytvorenie odporu pre lepšie zefektívnenie pohybu.
+        Výsledkom sú posilnené a uvoľnené svaly, zlepšená stabilizácia a mobilizácia chrbtice, koordinácia a kvalita chôdze. Cieľom cvičenia je regenerovať medzistavcové platničky celej chrbtice a predchádzať, či zmierňovať diagnózu skoliózy.
+      </p>
+      <p className="co-tabs__paragraph co-left"><b>Cvičenie je vhodné aj pre seniorov, na prevenciu pádov a pre kondičných športovcov na zvýšenie výkonnosti. Cvičenie trvá 45 – 50 minút</b>.</p>
+    </div>
   </React.Fragment>,
   tabs: []
 };

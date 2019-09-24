@@ -12,7 +12,7 @@ export const Denzito1 = {
   tabs: [{
     tabName: "PODSTATA VYŠETRENIA",
     tabContent: <React.Fragment>
-      <p className="co-container__paragraph co-center">Denzitometria stanoví množstvo kostnej hmoty (denzitu kostí) a je dôležitá na zistenie, či na udržanie kostnej hmoty je nutné užívať lieky, aby nedochádzalo k ďalším stratám kostnej hmoty, taktiež aby sa znížilo riziko zlomenín. U väčšiny prístrojov sa meria stupeň absorpcie RTG lúčov po prechode kostným tkanivom. Hoci pracuje na RTG princípe, netreba sa ho obávať. Ide o bezbolestné vyšetrenie a na rozdiel od bežného RTG snímkovania je dávka ožiarenia zanedbateľná (s výnimkou tehotných žien!). Meria sa hustota kostí v miestach najčastejších zlomenín, t.j. oblasti predlaktia, driekové stavce a horný koniec stehennej kosti.</p>
+      <p className="co-container__paragraph co-left">Denzitometria stanoví množstvo kostnej hmoty (denzitu kostí) a je dôležitá na zistenie, či na udržanie kostnej hmoty je nutné užívať lieky, aby nedochádzalo k ďalším stratám kostnej hmoty, taktiež aby sa znížilo riziko zlomenín. U väčšiny prístrojov sa meria stupeň absorpcie RTG lúčov po prechode kostným tkanivom. Hoci pracuje na RTG princípe, netreba sa ho obávať. Ide o bezbolestné vyšetrenie a na rozdiel od bežného RTG snímkovania je dávka ožiarenia zanedbateľná (s výnimkou tehotných žien!). Meria sa hustota kostí v miestach najčastejších zlomenín, t.j. oblasti predlaktia, driekové stavce a horný koniec stehennej kosti.</p>
     </React.Fragment>,
   }]
 };
