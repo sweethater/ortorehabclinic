@@ -11,7 +11,7 @@ else
     shutdown -h 16:00
 fi
 
-chromium-browser --kiosk --incognito --app=file://home/kiosk/welcome.html --password-store=basic
+chromium-browser --kiosk --incognito --app=file://home/kiosk/welcome.html --password-store=basic &
 
 sleep 5
 curl -s --head  https://raw.githubusercontent.com/sweethater/ortorehabclinic/master/startup-prehook.sh | head -n 1 | grep "HTTP/1.[01] [23].."
