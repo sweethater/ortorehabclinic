@@ -84,7 +84,7 @@ export const FeesOrtopedic = props => {
               <TableItem itemName="Intraartikulárna inj. kys. hyaluronovej 2,5%" itemPrice="85,- Eur"></TableItem>
               <TableItem itemName="Intraartikulárna inj. Kolagénu" itemPrice="15,- Eur"></TableItem>
               <TableItem itemName="Liečba krvnou plazmou ACP" itemPrice="400,- Eur"></TableItem>
-              <TableItem itemName="Plazmoterapia - LIEČBA AUTOLOGNÝMI PROTEÍNMI - NSTRIDE APS" itemPrice="900,- Eur"></TableItem>
+              <TableItem itemName="Plazmoterapia - LIEČBA AUTOLOGNÝMI PROTEÍNMI" itemPrice="900,- Eur"></TableItem>
               <TableItem itemName="Punkcia jedného kĺbu s aplikáciou kortikoidu" itemPrice="10,- Eur"></TableItem>
               <TableItem itemName="Rázové vlny jedna aplikácia" itemPrice="20,- Eur"></TableItem>
               <TableItem itemName="Laser jedna aplikácia" itemPrice="3,- Eur"></TableItem>

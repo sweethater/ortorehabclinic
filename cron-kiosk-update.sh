@@ -14,5 +14,5 @@ kiosk_available=$?
 if [ $kiosk_available -eq 0 ]
 then
 wget -q https://raw.githubusercontent.com/sweethater/ortorehabclinic/master/cron-kiosk.sh -O /home/kiosk/cron-kiosk.sh
-chmod +x /home/kiosk/cron-kiosk..sh
+chmod +x /home/kiosk/cron-kiosk.sh
 fi

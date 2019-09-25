@@ -7,22 +7,25 @@ import './Tabs.css';
 import './Shared.css';
 
 export const Orthopedic1 = {
-  about: <p className="co-container__paragraph co-center">nSTRIDE APS je nová terapia určená na liečbu bolesti pri osteoartróze kolena, ktorá spomaľuje progresiu osteoartrózy a deštrukciu chrupavky v kolene.</p>,
+  about: <p className="co-container__paragraph co-center">Liečba autolognými proteínmi je nová terapia určená na liečbu bolesti pri osteoartróze kolena, ktorá spomaľuje progresiu osteoartrózy a deštrukciu chrupavky v kolene.</p>,
   tabs: [{
-    tabName: "ČO SPÔSOBUJE ZÁPAL A BOLESŤ",
+    tabName: "ČO JE Liečba autolognými proteínmi",
     tabContent: <React.Fragment>
       <div className="co-tabs__paragraphs--flex co-center">
-        <p className="co-tabs__paragraph co-left">nSTRIDE APS spracováva vašu vlastnú krv a poskytuje jedinečný výstupný produkt, ktorý sa aplikuje priamo do kolenného kĺbu a dodáva mu potrebné protizápalové proteíny. V laboratórnych testoch mali tieto proteíny potvrdené excelentné výsledky v spomalení degradácie chrupavky kolena a pri liečbe bolesti.?</p>
+        <p className="co-tabs__paragraph co-left">Liečba autolognými proteínmi spracováva vašu vlastnú krv a poskytuje jedinečný výstupný produkt, ktorý sa aplikuje priamo do kolenného kĺbu a dodáva mu potrebné protizápalové proteíny. V laboratórnych testoch mali tieto proteíny potvrdené excelentné výsledky v spomalení degradácie chrupavky kolena a pri liečbe bolesti.?</p>
       </div>
     </React.Fragment>,
   }, {
     tabName: "ČO SPÔSOBUJE ZÁPAL A BOLESŤ",
     tabContent: <React.Fragment>
       <div className="co-tabs__paragraphs--flex co-center">
-        <p className="co-tabs__paragraph co-left">V osteoartritickom kolene prevyšuje množstvo zápalových cytokínov IL-1 a TNF (tzv. „zlé“ proteíny) nad množstvom protizápalových cytokínov IL-1ra, sIL-1R, sTNF-RI a sTNF-RII (tzv. „dobré“ proteíny), čo spôsobuje <b>nerovnováhu</b> vedúcu k bolesti kolena a degenerácii chrupavky.</p>
         <p className="co-tabs__paragraph co-left">
-          Kým sa obnovuje rovnováha proteínov v kolene (2-6 týždňov), aplikáciou <b>nSTRIDE APS</b> zavádzame do kolena aj (stavebné) rastové faktory (IGF-1 a TGF-1). Preto nSTRIDE APS vytvára novú terapiu, ktorá zmierňuje bolesť v kolennom kĺbe, zlepšuje funkciu kĺbov a spomaľuje degradáciu chrupavky. Táto terapia sa poskytuje v lekárskej ambulancii bez chirurgického zákroku.
-          <b>Pomocou nSTRIDE APS</b> aplikujeme vysoké hladiny „dobrých“ proteínov (IL-1ra, sIL-1R, sTNF-RI a sTNF-Rll), ktoré slúžia na blokovanie zvýšeného množstva zápalových cytokínov IL-1 a TNF a tým nastavíme rovnováhu v kĺbe. Laboratórne štúdie ako aj štúdie na ľuďoch ukázali, že nSTRIDE APS má na rozdiel od tradičných terapií signifi kantne lepšie výsledky na zníženie bolesti a spomalenie degenerácie chrupavky.
+          V osteoartritickom kolene prevyšuje množstvo zápalových cytokínov IL-1 a TNF (tzv. „zlé“ proteíny) nad množstvom protizápalových cytokínov IL-1ra, sIL-1R, sTNF-RI a sTNF-RII (tzv. „dobré“ proteíny), čo spôsobuje <b>nerovnováhu</b> vedúcu k bolesti kolena a degenerácii chrupavky.
+          <br></br><br></br>
+          Kým sa obnovuje rovnováha proteínov v kolene (2-6 týždňov), aplikáciou <b>autologných proteínov</b> zavádzame do kolena aj (stavebné) rastové faktory (IGF-1 a TGF-1). Preto liečba autolognými proteínmi vytvára novú terapiu, ktorá zmierňuje bolesť v kolennom kĺbe, zlepšuje funkciu kĺbov a spomaľuje degradáciu chrupavky. Táto terapia sa poskytuje v lekárskej ambulancii bez chirurgického zákroku.
+        </p>
+        <p className="co-tabs__paragraph co-left">          
+          <b>Pomocou liečby autolognými proteínmi</b> aplikujeme vysoké hladiny „dobrých“ proteínov (IL-1ra, sIL-1R, sTNF-RI a sTNF-Rll), ktoré slúžia na blokovanie zvýšeného množstva zápalových cytokínov IL-1 a TNF a tým nastavíme rovnováhu v kĺbe. Laboratórne štúdie ako aj štúdie na ľuďoch ukázali, že liečba autolognými proteínmi má na rozdiel od tradičných terapií signifi kantne lepšie výsledky na zníženie bolesti a spomalenie degenerácie chrupavky.
         </p>
       </div>
     </React.Fragment>,
@@ -31,24 +34,24 @@ export const Orthopedic1 = {
     tabContent: <React.Fragment>
       <div className="co-container__tab-list co-center">
         <TabList items={[{
-          question: "Čo je nSTRIDE APS?",
-          answer: "nSTRIDE APS je autológna terapia (z vlastného tela), ktorá je určená na liečbu bolesti kĺbov spojených s osteoartrózou. nSTRIDE APS má preukázateľné ochranné vlastnosti chrupavky.",
+          question: "Čo je liečba autolognými proteínmi?",
+          answer: "Liečba autolognými proteínmi je autológna terapia (z vlastného tela), ktorá je určená na liečbu bolesti kĺbov spojených s osteoartrózou. Liečba autolognými proteínmi má preukázateľné ochranné vlastnosti chrupavky.",
         }, {
-          question: "Ako funguje nSTRIDE APS?",
-          answer: "nSTRIDE APS sa aplikuje priamo do kolenného kĺbu. Pozitívne výsledky sú možné vďaka prítomnosti vysokej koncentrácie protizápalových proteínov. Tieto „dobré“ proteíny pomáhajú blokovať zápal v kĺbe, čim znižujú bolesť a spomaľujú degradáciu chrupavky pri osteoartóze.",
+          question: "Ako funguje iečba autolognými proteínmi?",
+          answer: "Liečba autolognými proteínmi sa aplikuje priamo do kolenného kĺbu. Pozitívne výsledky sú možné vďaka prítomnosti vysokej koncentrácie protizápalových proteínov. Tieto „dobré“ proteíny pomáhajú blokovať zápal v kĺbe, čim znižujú bolesť a spomaľujú degradáciu chrupavky pri osteoartóze.",
         }, {
-          question: "Z čoho sa nSTRIDE APS vyrába?",
-          answer: "nSTRIDE APS spracováva vlastnú krv pacienta v ordinácii lekára. Vďaka špeciálemu príslušenstvu a jednorázovým sterilným komponentom sa centrifugáciou separujú biele krvinky, krvné doštičky a plazmatické bielkoviny do malého objemu plazmy.",
+          question: "Z čoho sa autologne proteíny vyrába?",
+          answer: "Autologne proteiny spracováva vlastnú krv pacienta v ordinácii lekára. Vďaka špeciálemu príslušenstvu a jednorázovým sterilným komponentom sa centrifugáciou separujú biele krvinky, krvné doštičky a plazmatické bielkoviny do malého objemu plazmy.",
         }, {
-          question: "Ako sa nSTRIDE APS podáva?",
-          answer: "Finálnou centrifugáciou sa separuje cca 2-3 ml plazmatickej zlúčeniny tvorenej z vysokej dávky protizápalových proteínov. Príprava nSTRIDE APS trvá od odobratia krvného materiálu až po fi nálnu aplikáciu do kĺbu cca 60 min.",
+          question: "Ako sa liečba autolognými proteínmi podáva?",
+          answer: "Finálnou centrifugáciou sa separuje cca 2-3 ml plazmatickej zlúčeniny tvorenej z vysokej dávky protizápalových proteínov. Príprava autologných proteínov trvá od odobratia krvného materiálu až po fi nálnu aplikáciu do kĺbu cca 60 min.",
         }, {
           question: "Existujú vedľajšie účinky?",
           answer: "Môžu sa vyskytnúť vedľajšie účinky ako napríklad podliatina, lokálna bolesť alebo opuch, zväčša súvisiace s odberom krvi, aplikáciou do kolenného púzdra, vyšetrením MRI alebo röntgenovým vyšetrením.",
         }]} />
         <TabList items={[{
-          question: "Vylieči nSTRIDE APS moju osteoartrózu?",
-          answer: "V dnešnej dobe neexistuje žiadny liek na OA. Avšak úspešná liečba nSTRIDE APS znižuje alebo zmierňuje bolesť, spomaľuje degradáciu chrupavky, môže zvýšiť celkovú funkčnosť kĺbu a Vaše pohodlie.",
+          question: "Vylieči liečba autolognými proteínmi moju osteoartrózu?",
+          answer: "V dnešnej dobe neexistuje žiadny liek na OA. Avšak úspešná liečba autolognými proteínmi znižuje alebo zmierňuje bolesť, spomaľuje degradáciu chrupavky, môže zvýšiť celkovú funkčnosť kĺbu a Vaše pohodlie.",
         }, {
           question: "Kedy začne liečba fungovať?",
           answer: "Úľavu od bolesti možno očakávať po jednom až dvoch týždňoch.",
@@ -59,7 +62,7 @@ export const Orthopedic1 = {
           question: "Ako dlho môžem očakávať, že výhody budú trvať?",
           answer: "Na základe predklinických a skorých klinických výsledkov môžu pacienti očakávať prínosy až do 24 mesiacov a dlhšie.",
         }, {
-          question: "Koľko injekcií nSTRIDE APS sa vyžaduje?",
+          question: "Koľko injekcií pri liečba autolognými proteínmi sa vyžaduje?",
           answer: "Klinické štúdie preukázali účinnosť jednej injekcie po dobu dlhšiu ako 24 mesiacov.",
         }]} />
       </div>
